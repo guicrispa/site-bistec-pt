@@ -81,3 +81,25 @@ section {
     padding: 12px;
     border-radius: 6px;
 }
+
+/*----BANNER---------------------------------------------------------*/
+.banner-bistec{
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.banner-bistec img{
+    width: 100%;
+}
+.banner-bistec-texto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -50%);
+    color: #fff;
+    font-size: 4vw;
+}
+.banner-bistec-texto p{
+    font-size: 3vw;
+}
