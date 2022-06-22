@@ -129,8 +129,10 @@ ion-icon {
 }
 
 .button_support:hover {
-    background: #10498a;
-    color: #114E93;
+    background: #133e6e;
+}
+.button_support .button_text:hover{
+    color: #e6f1f8;
 }
 
 .support_icon {
