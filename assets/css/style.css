@@ -170,3 +170,24 @@ ion-icon {
     font-size: 3vw;
     margin-left: 2.5vw;
 }
+
+/*--RODAPÉ---------------------------------------------*/   
+footer{
+    background-color: #262525;
+    padding-top: 5%; padding-bottom: 2%;
+}
+footer ion-icon{
+    color: #D0CEC6;
+    font-size: 8vh;
+    border: #D0CEC6 solid 0.2vw;
+    border-radius: 100%;
+    padding: 1%;
+}
+.redes-sociais{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
