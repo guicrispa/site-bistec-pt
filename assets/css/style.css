@@ -40,16 +40,6 @@ header ul li {
     list-style: none;
 }
 
-.button-normal a:hover {
-    border-bottom: 2px solid #141414;
-}
-
-section {
-    background-color: #141414;
-    height: 582px;
-}
-
-
 .button {
 	display: inline-flex;
     height: 30px;
@@ -101,7 +91,7 @@ a {
 }
 
 .normal:hover{
-    border-bottom: 2px solid #141414;
+    border-bottom: 3px solid #141414;
 }
 
 ion-icon {
@@ -160,4 +150,23 @@ ion-icon {
 }
 .banner-bistec-texto p{
     font-size: 3vw;
+}
+
+
+/*---PRODUTOS------------------------------------*/
+.bistec-produtos{
+    padding: 7%;
+    display: flex;
+    margin-bottom: 5.8vw;
+}
+
+.bistec-produtos img{
+    width: 40vw;
+    height: 20vh;
+    margin: 1vw;
+    margin-right: 2.5vw;
+}
+.texto-automacao{
+    font-size: 3vw;
+    margin-left: 2.5vw;
 }
