@@ -260,6 +260,7 @@ footer ion-icon{
     border: #D0CEC6 solid 0.2vw;
     border-radius: 100%;
     padding: 1%;
+    margin-bottom: 2%;
 }
 footer ion-icon:hover{
     cursor: pointer;
@@ -273,7 +274,7 @@ footer ion-icon:hover{
     align-items: center;
     margin-left: 10%;
     margin-right: 10%;
-    border-bottom: 3px solid #A0C8F9;
+    border-bottom: 2px solid #A0C8F9;
 }
 .ionspecial{
     color: #A0C8F9;
