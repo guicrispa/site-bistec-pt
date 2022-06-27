@@ -183,6 +183,9 @@ footer ion-icon{
     border-radius: 100%;
     padding: 1%;
 }
+footer ion-icon:hover{
+    cursor: pointer;
+}
 .redes-sociais{
     display: flex;
     justify-content: space-between;
@@ -190,4 +193,8 @@ footer ion-icon{
     align-items: center;
     margin-left: 10%;
     margin-right: 10%;
+}
+.ionspecial{
+    color: #A0C8F9;
+    border: #A0C8F9 solid 0.2vw;
 }
