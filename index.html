@@ -10,13 +10,26 @@
 <body>
     <!-- cabeçalho -->
 
-    <header>
-        <div class="header-bistec">
+    <header class="header-bistec">
             <a href="#" class="logo-bistec"><img src="assets/images/logo-bistec.png" alt=""></a>
+            <ul class="normal-menu">
+                <li><a href="#" class=" normal">HOME</a></li>
+                <li>
+                    <a href="#" class=" normal">PORTFÓLIO <ion-icon name="chevron-down-outline"></ion-icon></a>  
+                    <ul class="normal-submenu">
+                        <li><a href="#">BISTEC AUTOMAÇÃO</a></li>
+                        <li><a href="#">BISTEC CLOUD</a></li>
+                        <li><a href="#">BISTEC EDU</a></li>
+                        <li><a href="#">BISTEC GDPR</a></li>
+                        <li><a href="#">BISTEC OUTSOURCING</a></li>
+                        <li><a href="#">BISTEC RENTING</a></li>
+                        <li><a href="#">BISTEC SOFT</a></li>
+                        <li><a href="#">BISTEC MSP</a></li>
+                    </ul> 
+                </li>
+                <li><a href="#" class=" normal">CONTATO</a></li>
+            </ul>
             <ul>
-                <li><button type="button" class=" normal">HOME</button></li>
-                <li><button type="button" class=" normal">PORTFÓLIO</button></li>
-                <li><button type="button" class=" normal">CONTATO</button></li>
                 <li>
                     <a href="https://www.cupomfiscaleletronico.com.br/">
                         <button type="button" class="button" >
@@ -26,26 +39,125 @@
                     </a>
                 </li>
                 <li>
-                    <button type="button" class="button_support">
-                        <span class="button_icon support_icon"><ion-icon name="headset-outline"></ion-icon></span>
-                        <span class="button_text">SUPORTE</span>
-                    </button>
+                    <a href="https://www.bistec.com.br/suporte/">
+                        <button type="button" class="button_support">
+                            <span class="button_icon support_icon"><ion-icon name="headset-outline"></ion-icon></span>
+                            <span class="button_text">SUPORTE</span>
+                        </button>
+                    </a>
                 </li>
             </ul>
-        </div>
     </header>
 
-    <!-- banner -->
-
-    <section>
-        <div class="banner-bistec">
+    <!-- CORPO -->
+    <article>
+        <!-- banner -->
+        <section class="banner-bistec">
             <img src="assets/images/bg-bondinho.png" alt="Imagem de fundo com mascara de cor vermelha, mostrando um bondinho de portugal">
             <div class="banner-bistec-texto">
                 <h3>Bistec Portugal</h3>
                 <p>Serviços em tecnologia para todas as empresas</p>
             </div>
+        </section>
+
+
+        <!-- PRODUTOS -->
+        <section class="bistec-produtos">
+                <img src="assets/images/img-lg-bistec-automação.png" alt="">
+                    <h4 class="texto-automacao">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementum
+                    </h4>
+        </section>
+
+        <section class="bistec-produtos">
+            <img src="assets/images/img-lg-bistec-cloud.png" alt="">
+                <h4 class="texto-automacao">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementum
+                </h4>
+        </section>
+
+        <section class="bistec-produtos">
+            <img src="assets/images/img-lg-bistec-edu.png" alt="">
+                <h4 class="texto-automacao">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementum
+                </h4>
+        </section>
+
+        <section class="bistec-produtos">
+            <img src="assets/images/img-lg-GPDR.png" alt="">
+                <h4 class="texto-automacao">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementum
+                </h4>
+        </section>
+
+        <section class="bistec-produtos">
+            <img src="assets/images/img-lg-bistec-outsourcing.png" alt="">
+                <h4 class="texto-automacao">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementum
+                </h4>
+        </section>
+
+        <section class="bistec-produtos">
+            <img src="assets/images/img-lg-bistec-renting.png" alt="">
+                <h4 class="texto-automacao">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementum
+                </h4>
+        </section>
+
+        <section class="bistec-produtos">
+            <img src="assets/images/img-lg-bistec-soft.png" alt="">
+                <h4 class="texto-automacao">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementum
+                </h4>
+        </section>
+
+        <section class="bistec-produtos">
+            <img src="assets/images/img-lg-bistec-msp.png" alt="">
+                <h4 class="texto-automacao">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementum
+                </h4>
+        </section>
+    </article>
+
+    <!-- RODAPÉ -->
+    
+    <footer>
+        <div class="redes-sociais">
+            <div id="special"><ion-icon name="mail"></ion-icon></div>
+            <ion-icon name="logo-facebook" id="ionface"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-youtube"></ion-icon>
+            <ion-icon name="logo-twitter" class="special"></ion-icon>
+            <ion-icon name="logo-flickr"></ion-icon>
+            <ion-icon name="logo-soundcloud"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <ion-icon id="special2" name="location-outline"></ion-icon>
         </div>
-    </section>
+
+        <div class="contact item1">
+            <a href="#"><img src="assets/images/portugal.png" alt="Portugal País"> Bistec Portugal </a> 
+            <a href="#">+351 308 807 114</a>
+        </div>
+
+        <div class="contact item2">
+            <a href="#"><img src="assets/images/whatsapp.png" alt="Logo Whatsapp Business"> Whatsapp Business </a> 
+            <a href="#">+55 (13) 99210-1945</a>
+        </div>
+
+        <div class="contact item3">
+            <a href="#"><img src="assets/images/brazil.png" alt="Brasil País"> Bistec Brasil </a> 
+            <a href="#">+55 (13) 3235-7735</a> 
+            <a href="#">+55 (13) 3522-8184</a>
+        </div>
+        <div class="contact item4">
+            <a href="#"><img src="assets/images/clock.png" alt="Logo Horário"> Funcionamento </a>
+            <a href="#">de Segunda à Sexta:</a>
+            <a href="#">08:15h - 18:00h</a>
+        </div>
+    </footer>
+    <div class="footer-copyright">
+        <p>©2022 Bistec · Consultoria de TI · Todos os direitos reservados.</p>
+    </div>
 
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
 </body>
