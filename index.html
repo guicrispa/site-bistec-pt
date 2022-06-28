@@ -124,9 +124,9 @@
     <footer>
         <div class="redes-sociais">
             <ion-icon name="mail" class="ionspecial" onclick="email()"></ion-icon>
-            <ion-icon name="logo-facebook" onclick="link('facebook.com/bistecweb')"></ion-icon>
+            <ion-icon name="logo-facebook" onclick="link('facebook.com/bistecweb')" onmouseover="teste()" onfocus="teste()"></ion-icon>
             <ion-icon name="logo-instagram" onclick="link('instagram.com/bistecweb')"></ion-icon>
-            <ion-icon name="logo-youtube" onclick="link('youtube.com/bistecweb')"></ion-icon>
+            <ion-icon name="logo-youtube" onclick="link('youtube.com/bistecweb')" onkeypress="teste()"></ion-icon>
             <ion-icon name="logo-twitter" onclick="link('twitter.com/bistecweb')"></ion-icon>
             <ion-icon name="logo-flickr" onclick="link('flickr.com/bistec')"></ion-icon>
             <ion-icon name="logo-soundcloud" onclick="link('soundcloud.com/bistecweb')"></ion-icon>
@@ -166,6 +166,10 @@
         }
         function email(){
             window.open('mailto:bistec@bistec.com.br')
+        }
+
+        function teste(){
+            alert('oi')
         }
     </script>
 </body>
