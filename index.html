@@ -123,15 +123,15 @@
 
     <footer>
         <div class="redes-sociais">
-            <ion-icon name="mail" class="ionspecial" onclick="link()"></ion-icon>
-            <ion-icon name="logo-facebook"></ion-icon>
-            <ion-icon name="logo-instagram"></ion-icon>
-            <ion-icon name="logo-youtube"></ion-icon>
-            <ion-icon name="logo-twitter"></ion-icon>
-            <ion-icon name="logo-flickr"></ion-icon>
-            <ion-icon name="logo-soundcloud"></ion-icon>
-            <ion-icon name="logo-linkedin"></ion-icon>
-            <ion-icon name="location" class="ionspecial"></ion-icon>
+            <ion-icon name="mail" class="ionspecial" onclick="email()"></ion-icon>
+            <ion-icon name="logo-facebook" onclick="link('facebook.com/bistecweb')"></ion-icon>
+            <ion-icon name="logo-instagram" onclick="link('instagram.com/bistecweb')"></ion-icon>
+            <ion-icon name="logo-youtube" onclick="link('youtube.com/bistecweb')"></ion-icon>
+            <ion-icon name="logo-twitter" onclick="link('twitter.com/bistecweb')"></ion-icon>
+            <ion-icon name="logo-flickr" onclick="link('flickr.com/bistec')"></ion-icon>
+            <ion-icon name="logo-soundcloud" onclick="link('soundcloud.com/bistecweb')"></ion-icon>
+            <ion-icon name="logo-linkedin" onclick="link('br.linkedin.com/company/bistec')"></ion-icon>
+            <ion-icon name="location" class="ionspecial" onclick="link('google.com/maps/dir/bistec')"></ion-icon>
         </div>
 
         <div class="contact item1">
@@ -161,10 +161,11 @@
 
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
     <script>
-        function link(){
-            // window.location.assign("https://www.google.com");
-            window.location = "https://www.google.com"
-            target = "_blank";
+        function link(site){
+            window.open(`https://${site}`, "_blanck"); 
+        }
+        function email(){
+            window.open('mailto:bistec@bistec.com.br')
         }
     </script>
 </body>
