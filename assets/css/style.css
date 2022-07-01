@@ -245,7 +245,11 @@ ion-icon {
     margin: 1vw;
     margin-right: 2.5vw;
 }
-.texto-produtos{
+.texto-produtos h4{
+    font-size: 3vw;
+    margin-left: 2.5vw;
+}
+.texto-produtos h2{
     font-size: 3vw;
     margin-left: 2.5vw;
 }
