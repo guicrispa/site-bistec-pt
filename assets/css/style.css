@@ -234,24 +234,28 @@ ion-icon {
 
 /*---PRODUTOS------------------------------------*/
 .bistec-produtos{
-    padding: 50px 25px;
+    padding: 5vw 2.5vw 2.5vw 2.5vw;
     display: flex;
-    margin-bottom: 2;
+    align-items: center;
+    justify-content: center;
 }
-
+.texto-produtos{
+    margin-left: 2.5vw;;
+}
 .bistec-produtos img{
     width: 40vw;
     height: 20vh;
     margin: 1vw;
     margin-right: 2.5vw;
 }
-.texto-produtos h4{
-    font-size: 3vw;
-    margin-left: 2.5vw;
-}
 .texto-produtos h2{
-    font-size: 3vw;
-    margin-left: 2.5vw;
+    font-size: 3.3vw;
+}
+.texto-produtos h4{
+    font-size: 2.5vw;
+}
+.texto-produtos p{
+    font-size: 1.5vw;
 }
 
 /*--RODAPÉ---------------------------------------------*/   
