@@ -67,18 +67,21 @@
                 <div class="texto-produtos">
                     <h2>Troque a anotação pela automação</h2>
                     <h4>Facilite a sua gestão e o consumo dos seus clientes. Automatize.</h4>
-                    <p>
-                        A Bistec, já consolidada no mercado de <strong>tecnologia para o comércio e serviços</strong>, oferece o kit completo para montar seu PDV e automatizar suas vendas. Adquira a Solução SAT Fiscal, facilite sua gestão e as transações com seus clientes, e esteja em dia com a legislação fiscal.
-                    </p>
-                    <p>
-                        Os kits podem conter terminais de venda (teclados inteligentes), leitores de código de barras, computadores etc.
-                    </p>
-                    <p>
-                        Elimine falhas de controle operacional com os relógios de pontos digitais. Com o modelo móvel o controle de ponto dos funcionários pode ser realizado onde eles estiverem.
-                    </p>
-                    <p>
-                        Agora, se você esta procurando a melhor solução para gestão da sua empresa, clique <strong><a href="https://hiper.com.br/experimente-gratis?HCode=BIS01625" target="_blank" rel="noopener noreferrer">aqui</a></strong> e Experimente grátis por 7 dias!<br/>
-                    </p>
+                    <button onclick="controlaDialog('dialog-automacao')" id="bt-dialog">Saiba mais</button>
+                    <dialog id="dialog-automacao">
+                        <p>
+                            A Bistec, já consolidada no mercado de <strong>tecnologia para o comércio e serviços</strong>, oferece o kit completo para montar seu PDV e automatizar suas vendas. Adquira a Solução SAT Fiscal, facilite sua gestão e as transações com seus clientes, e esteja em dia com a legislação fiscal.
+                        </p>
+                        <p>
+                            Os kits podem conter terminais de venda (teclados inteligentes), leitores de código de barras, computadores etc.
+                        </p>
+                        <p>
+                            Elimine falhas de controle operacional com os relógios de pontos digitais. Com o modelo móvel o controle de ponto dos funcionários pode ser realizado onde eles estiverem.
+                        </p>
+                        <p>
+                            Agora, se você esta procurando a melhor solução para gestão da sua empresa, clique <strong><a href="https://hiper.com.br/experimente-gratis?HCode=BIS01625" target="_blank" rel="noopener noreferrer">aqui</a></strong> e Experimente grátis por 7 dias!<br/>
+                        </p>
+                    </dialog>
                 </div>
         </section>
 
@@ -87,15 +90,18 @@
                 <div class="texto-produtos">
                     <h2>Backup corporativo na nuvem</h2>
                     <h4>Guarde o que é importante com segurança, sem ocupar espaço algum!</h4>
-                    <p>
-                        As informações corporativas estão cada vez mais digitalizadas e online. Por isso, as empresas devem se prevenir contra a perda de informações importantes e, para tanto, precisam adotar políticas de backup eficazes que contemplem o armazenamento fora do ambiente produtivo.
-                    </p>
-                    <p>
-                        Com o backup na nuvem você resguarda o seu negócio, ajudando a proteger os arquivos importantes de que a sua empresa precisa. Restaure rapidamente os arquivos após uma falha do sistema ou perda de dados, para retomar o funcionamento normal logo em seguida.
-                    </p>
-                    <p>
-                        O Bistec Cloud é a solução ideal de backup em nuvem, seguro e elástico, sem custos de investimentos em infraestrutura e de acordo com a <a href="https://www.bistec.com.br/portfolio/bistec-lgpd/">Lei Geral de Proteção de Dados (LGPD)</a>.
-                    </p>
+                    <button onclick="controlaDialog('dialog-cloud')">Saiba mais</button>
+                    <dialog id="dialog-cloud">
+                        <p>
+                            As informações corporativas estão cada vez mais digitalizadas e online. Por isso, as empresas devem se prevenir contra a perda de informações importantes e, para tanto, precisam adotar políticas de backup eficazes que contemplem o armazenamento fora do ambiente produtivo.
+                        </p>
+                        <p>
+                            Com o backup na nuvem você resguarda o seu negócio, ajudando a proteger os arquivos importantes de que a sua empresa precisa. Restaure rapidamente os arquivos após uma falha do sistema ou perda de dados, para retomar o funcionamento normal logo em seguida.
+                        </p>
+                        <p>
+                            O Bistec Cloud é a solução ideal de backup em nuvem, seguro e elástico, sem custos de investimentos em infraestrutura e de acordo com a <a href="https://www.bistec.com.br/portfolio/bistec-lgpd/">Lei Geral de Proteção de Dados (LGPD)</a>.
+                        </p>
+                    </dialog>
                 </div>
         </section>
 
@@ -275,6 +281,21 @@
 
         function teste(){
             console.log("oi")
+        }
+
+        //Funções do Pop-up
+        function controlaDialog(tt){
+            if(document.getElementBy(tt).open){
+                fechaDialog()
+            }else{
+                abreDialog()
+            }
+        }
+        function fechaDialog(){
+            document.getElementById("dialog").removeAttribute("open")
+        }
+        function abreDialog(){
+            document.getElementById("dialog").setAttribute("open", "")
         }
     </script>
 </body>
