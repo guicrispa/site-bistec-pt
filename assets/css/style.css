@@ -75,10 +75,26 @@ header .normal-submenu li a:hover {
     transition: 0.2s;
 }
 
+.normal-submenu ion-icon {
+    font-size: 15px;
+    color: #141414;
+    margin-right: 5px;
+}
+
+/*
+.normal-submenu ion-icon:hover {
+    color: #fff;
+}
+*/
+
 header ul ul {
     position: absolute;
     top: 38px;
     display: none;
+}
+
+header .normal-submenu li a:hover > ion-icon {
+    color: #fff;
 }
 
 header ul :hover > ul{
@@ -159,9 +175,9 @@ ion-icon {
 	display: inline-flex;
     height: 30px;
 	padding: 0;
-    margin: 0 10px;
+    margin: 0;
 	border: none;
-	outline: none;    
+	outline: none;
 	border-radius: 6px;
 	overflow: hidden;
 	font-family: 'Inter', sans-serif;
@@ -187,13 +203,13 @@ ion-icon {
     display: flex;
     gap: 2px;
   }
-  
+
 .menu li {
   list-style: none;
   width: 150px;
   height: 30px;
 }
-  
+
 .menu a {
     display: block;
     text-decoration: none;
@@ -206,6 +222,10 @@ ion-icon {
     font-size: 1rem;
     transition: all .2s linear;
     padding: 10px 0;
+}
+
+.menu-cell {
+    display: none;
 }
 /*----BANNER---------------------------------------------------------*/
 .banner-bistec{
@@ -227,30 +247,34 @@ ion-icon {
     font-size: 4vw;
     font-weight: 600;
 }
-.banner-bistec-texto p{
+.banner-bistec-texto h2{
     font-size: 3vw;
 }
 
 
 /*---PRODUTOS------------------------------------*/
 .bistec-produtos{
-    padding: 50px 25px;
+    padding: 25px 110px;
     display: flex;
-    margin-bottom: 2;
+    margin-bottom: 2px;
 }
 
 .bistec-produtos img{
+    align-items: center;
     width: 40vw;
     height: 20vh;
-    margin: 1vw;
-    margin-right: 2.5vw;
-}
-.texto-produtos{
-    font-size: 3vw;
-    margin-left: 2.5vw;
+    transform: translate(-05%, 20%);
+    margin: 4% auto;
+    padding-right: 25px;
 }
 
-/*--RODAPÉ---------------------------------------------*/   
+.texto-produtos{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+/*--RODAPÉ---------------------------------------------*/
 footer{
     background-color: #262525;
     padding-top: 25px; padding-bottom: 25px;
@@ -298,7 +322,7 @@ footer ion-icon:hover{
     text-align: left;
     font-size: 20px;
     font-weight: 100;
-    max-width: 50%;
+    max-width: 45%;
 }
 
 footer .item1,
@@ -340,4 +364,34 @@ footer .item3 p {
     border-style: solid;
     border-color: transparent;
     user-select: none;
+}
+
+@media (max-width: 600px) {
+    .header-bistec {
+        width: 100%;
+        display: block;
+        padding: 10px 0;
+    }
+
+    .normal-menu,  
+    .buttons-menu{
+        display: none;
+    }
+
+    .logo-bistec {
+        align-items: flex-start;
+        margin: 0;
+        margin-left: 10px;
+    }
+
+    .menu-cell {
+        display: block;
+        float: right;
+    }
+    .menu-cell li ion-icon {
+        display: block;
+        padding: 0;
+        margin-top: 10px;
+        font-size: 35px;
+    }
 }
