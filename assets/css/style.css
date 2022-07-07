@@ -101,7 +101,7 @@ header ul :hover > ul{
     display: block;
 }
 
-.button {
+.button, .bt-dialog {
 	display: inline-flex;
     height: 30px;
 	padding: 0;
@@ -283,6 +283,27 @@ ion-icon {
     font-size: 20px;
 }
 
+.bt-dialog{
+	background: #088d4b;
+    margin: 1vw 0vw 0vw 0vw;
+}
+
+.bt-dialog:hover {
+	background: #14a00a;
+}
+
+.bt-dialog:active{
+	background: #3be23b;
+}
+
+.bt-dialog .button_text {
+	color: rgb(48, 48, 48);
+    font-size: 1.6vw;
+}
+.bt-dialog ion-icon{
+    color: rgb(81, 153, 235);
+    font-size: 2vw;
+}
 /*--RODAPÉ---------------------------------------------*/
 footer{
     background-color: #262525;
