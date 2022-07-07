@@ -306,7 +306,10 @@ ion-icon {
 }
 
 .dialog-produtos{
+    position: fixed;
+    top: 25%;
     width: 60vw;
+    height: 50vh;
     margin: auto;
     z-index: 2;
     background-color: #1765be;
