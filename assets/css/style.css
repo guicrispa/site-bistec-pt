@@ -304,6 +304,17 @@ ion-icon {
     color: rgb(81, 153, 235);
     font-size: 2vw;
 }
+
+.dialog-produtos{
+    width: 60vw;
+    margin: auto;
+    z-index: 2;
+    background-color: #1765be;
+    border-radius: 2%;
+    padding: 1%;
+    box-shadow: 0 0 80em rgb(0, 255, 255), 0 0 4em #1f82f3;
+    border: none;
+}
 /*--RODAPÉ---------------------------------------------*/
 footer{
     background-color: #262525;
