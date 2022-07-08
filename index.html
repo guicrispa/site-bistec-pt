@@ -51,7 +51,7 @@
             <ul class="menu-cell">
                 <li>
                     <a href="#">
-                        <ion-icon name="menu-outline" onclick="menuResponsive()"></ion-icon>
+                        <ion-icon name="menu-outline" onkeypress="teste()" onclick="menuResponsive()"></ion-icon>
                     </a>                    
                 </li>
             </ul>
@@ -68,14 +68,24 @@
             </div>
         </section>
 
+        <section class="banner-bistec-mobile">
+            <img src="assets/images/bg-bondinho-cell.png" alt="Imagem de fundo com mascara de cor vermelha, mostrando um bondinho de portugal para mobile">
+            <div class="banner-bistec-texto">
+                <h1>Bistec Portugal</h1>
+                <h2>Serviços em tecnologia para todas as empresas</h2>
+            </div>
+        </section>
+
 
         <!-- PRODUTOS -->
         <section class="bistec-produtos" id="bistec-automaçao">
-                <img src="assets/images/img-lg-bistec-automacao.png" alt="Bistec Automação">
+                <img src="assets/images/img-lg-bistec-automacao.png" alt="Bistec Automação"> 
                 <div class="texto-produtos">
                     <h2>Troque a anotação pela automação</h2>
                     <h4>Facilite a sua gestão e o consumo dos seus clientes. Automatize.</h4>
-                    <button onclick="controlaDialog('dialog-automacao')" class="bt-dialog">Saiba mais</button>
+                    <button onclick="controlaDialog('dialog-automacao')" class="bt-dialog">
+                        Saiba mais
+                    </button> 
                     <dialog id="dialog-automacao" class="dialog-produtos">
                         <p>
                             A Bistec, já consolidada no mercado de <strong>tecnologia para o comércio e serviços</strong>, oferece o kit completo para montar seu PDV e automatizar suas vendas. Adquira a Solução SAT Fiscal, facilite sua gestão e as transações com seus clientes, e esteja em dia com a legislação fiscal.
@@ -98,7 +108,7 @@
                 <div class="texto-produtos">
                     <h2>Backup corporativo na nuvem</h2>
                     <h4>Guarde o que é importante com segurança, sem ocupar espaço algum!</h4>
-                    <button onclick="controlaDialog('dialog-cloud')">Saiba mais</button>
+                    <button class="bt-dialog" onclick="controlaDialog('dialog-cloud')">Saiba mais</button>
                     <dialog id="dialog-cloud">
                         <p>
                             As informações corporativas estão cada vez mais digitalizadas e online. Por isso, as empresas devem se prevenir contra a perda de informações importantes e, para tanto, precisam adotar políticas de backup eficazes que contemplem o armazenamento fora do ambiente produtivo.
@@ -116,7 +126,7 @@
         <section class="bistec-produtos" id="bistec-edu">
             <img src="assets/images/img-lg-bistec-edu.png" alt="Bistec Edu">
                 <div class="texto-produtos">
-                    <h4>Treinamentos: use a tecnologia com capacidade máxima.</h4>
+                    <h2>Treinamentos: use a tecnologia com capacidade máxima.</h2>
                     <button onclick="controlaDialog('dialog-edu')" class="bt-dialog">Saiba mais</button>
                     <dialog id="dialog-edu" class="dialog-produtos">
                         <p>
@@ -141,6 +151,7 @@
         <section class="bistec-produtos" id="bistec-gpdr">
             <img src="assets/images/img-lg-GPDR.png" alt="Bistec GDPR">
             <div class="texto-produtos">
+                    <h2>Adeque sua empresa ao GDPR</h2>
                     <h4>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementum
                     </h4>
@@ -260,9 +271,15 @@
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementum
                     </p>
+                    
+                    <button onclick="controlaDialog('dialog-wifi')" class="bt-dialog">Saiba mais</button>
+                    <dialog id="dialog-wifi" class="dialog-produtos">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementumLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementumLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementumLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementum
+                        </p>
+                    </dialog>
                 </h4>
         </section>
-    </article>
 
     <!-- rodapé -->
 
@@ -309,7 +326,7 @@
                 <p>
                     <img src="assets/images/clock.png" alt="Logo Horário"> Funcionamento 
                 </p> 
-                <p>de Segunda à Sexta:</p> 
+                <p>Segunda à Sexta:</p> 
                 <p>08:15h - 18:00h</p>
             </div>
         </div>
