@@ -81,6 +81,7 @@
                         <span class="button_text">Saiba Mais</span>                    
                     </button>
                     <dialog id="dialog-automacao" class="dialog-produtos">
+                        <button onclick="fechaDialog()">X</button>
                         <p>
                             A Bistec, já consolidada no mercado de <strong>tecnologia para o comércio e serviços</strong>, oferece o kit completo para montar seu PDV e automatizar suas vendas. Adquira a Solução SAT Fiscal, facilite sua gestão e as transações com seus clientes, e esteja em dia com a legislação fiscal.
                         </p>
@@ -107,6 +108,7 @@
                         <span class="button_text">Saiba Mais</span>                    
                     </button>
                     <dialog id="dialog-cloud" class="dialog-produtos">
+                        <button onclick="fechaDialog()">X</button>
                         <p>
                             As informações corporativas estão cada vez mais digitalizadas e online. Por isso, as empresas devem se prevenir contra a perda de informações importantes e, para tanto, precisam adotar políticas de backup eficazes que contemplem o armazenamento fora do ambiente produtivo.
                         </p>
@@ -130,6 +132,7 @@
                         <span class="button_text">Saiba Mais</span>                    
                     </button>
                     <dialog id="dialog-edu" class="dialog-produtos">
+                        <button onclick="fechaDialog()">X</button>
                         <p>
                             A Bistec Edu é a divisão de <strong>prestação de serviços de treinamentos em informática</strong> e de desenvolvimento profissional e gerencial.
                         </p>
@@ -161,6 +164,7 @@
                     <span class="button_text">Saiba Mais</span>                    
                 </button>
                 <dialog id="dialog-gdpr" class="dialog-produtos">
+                    <button onclick="fechaDialog()">X</button>
                     <p>
                         GPDR Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementumLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementumLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementumLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementum
                     </p>
@@ -178,6 +182,7 @@
                         <span class="button_text">Saiba Mais</span>                    
                     </button>
                     <dialog id="dialog-outsourcing" class="dialog-produtos">
+                        <button onclick="fechaDialog()">X</button>
                         <p>
                             Por um valor mensal, sua empresa pode contar com suporte técnico telefônico e on-line, além de visitas técnicas preventivas e corretivas. Realizamos manutenções periódicas e resolvemos casos mais graves em seus equipamentos, com o compromisso de atender de forma rápida e eficiente.
                         </p>
@@ -201,6 +206,7 @@
                             <span class="button_text">Saiba Mais</span>                    
                         </button>
                     <dialog id="dialog-renting" class="dialog-produtos">
+                        <button onclick="fechaDialog()">X</button>
                         <p>
                             Mantenha a sua liquidez adquirindo os sistemas de gestão e TI através da locação de equipamentos.
                         </p>
@@ -233,6 +239,7 @@
                             <span class="button_text">Saiba Mais</span>                    
                         </button>
                     <dialog id="dialog-soft" class="dialog-produtos">
+                        <button onclick="fechaDialog()">X</button>
                         <p>
                             Se você esta procurando um Software para Automação Comercial, clique <strong><a href="https://www.bistec.com.br/portfolio/bistec-automacao/">aqui</a></strong> e você será direcionado para a página BISTEC Automação.
                         </p>
@@ -272,6 +279,7 @@
                         <span class="button_text">Saiba Mais</span>                    
                     </button>
                     <dialog id="dialog-msp" class="dialog-produtos">
+                        <button onclick="fechaDialog()">X</button>
                         <p>
                             MSP Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementumLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementumLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementumLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementum
                         </p>
@@ -291,6 +299,7 @@
                     <span class="button_text">Saiba Mais</span>                    
                 </button>
                 <dialog id="dialog-wifi" class="dialog-produtos">
+                    <button onclick="fechaDialog()">X</button>
                     <p>
                         Wifi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementum
                     </p>
@@ -376,17 +385,12 @@
 
         //Funções do Pop-up -----------------------------------------------------------------
         function controlaDialog(idDialog){
-            if(document.getElementById(idDialog).open){
-                fechaDialog(idDialog)
-            }else{
-                abreDialog(idDialog)
-            }
-        }
-        function fechaDialog(idDialog){
-            document.getElementById(idDialog).removeAttribute("open")
-        }
-        function abreDialog(idDialog){
+            fechaDialog()
             document.getElementById(idDialog).setAttribute("open", "")
+        }
+
+        function fechaDialog(){
+            document.querySelectorAll('dialog').forEach(dia => dia.removeAttribute('open'))
         }
     </script>
 </body>
