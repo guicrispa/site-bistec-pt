@@ -385,12 +385,23 @@
 
         //Funções do Pop-up -----------------------------------------------------------------
         function controlaDialog(idDialog){
-            fechaDialog()
-            document.getElementById(idDialog).setAttribute("open", "")
+            if(document.getElementById(idDialog).open){
+                fechaDialog(idDialog)
+            }else{
+                abreDialog(idDialog)
+            }       
         }
 
         function fechaDialog(){
             document.querySelectorAll('dialog').forEach(dia => dia.removeAttribute('open'))
+            document.getElementsByTagName('html')[0].removeAttribute("onclick", "fechaDialog()")
+        }
+        function abreDialog(idDialog) {
+            fechaDialog()
+            document.getElementById(idDialog).setAttribute("open", "")
+            setTimeout(() => {
+                document.getElementsByTagName('html')[0].setAttribute("onclick", "fechaDialog()")
+            }, "100")
         }
     </script>
 </body>
