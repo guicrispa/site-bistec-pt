@@ -126,7 +126,7 @@
                             As informações corporativas estão cada vez mais digitalizadas e online, por isso as empresas devem se prevenir contra a perda de informações importantes. Com essa solução você ajuda a proteger os arquivos que a sua empresa precisa e os restaura rapidamente após uma falha do sistema ou perda de dados.
                         </p>
                         <p>
-                            O Bistec Cloud é a solução ideal de backup em nuvem, seguro e elástico, sem custos de investimentos em infraestrutura e de acordo com o Regulamento Geral de Proteção de Dados (GDPR).
+                            O Bistec Cloud é a solução ideal de backup em nuvem, seguro e elástico, sem custos de investimentos em infraestrutura e de acordo com o Regulamento Geral de Proteção de Dados (GDPR).
                         </p>
                     </dialog>
                 </div>
@@ -357,73 +357,6 @@
     </div>
 
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
-    <script>
-        //Funções dos links das redes socias ------------------------------------------------
-        function link(site){
-            window.open(`https://${site}`, "_blank"); 
-        }
-        function email(){
-            window.open('mailto:bistec@bistec.com.br')
-        }
-
-        function teste(){
-            console.log("oi");
-        }
-
-        function menuResponsive(){
-            console.log('testando');
-        }
-
-        //Funções do Pop-up -----------------------------------------------------------------
-        var modal = document.getElementById("myModal");
-
-        var btn = document.getElementById("myBtn");
-
-        var span = document.getElementsByClassName("close")[0];
-
-        var modal_content = document.getElementsByClassName("modal-content")
-
-        btn.onclick = function() {
-        modal.style.display = "block";
-        }
-
-        modal.onclick = function() {
-        modal.style.display = "none";
-        }
-
-        modal_content.onclick = function() {
-        modal.style.display = "block";
-        }
-
-        span.onclick = function() {
-        modal.style.display = "none";
-        }
-
-        window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-        }
-
-        function controlaDialog(idDialog){
-            if(document.getElementById(idDialog).open){
-                fechaDialog(idDialog)
-            }else{
-                abreDialog(idDialog)
-            }       
-        }
-
-        function fechaDialog(){
-            document.querySelectorAll('dialog').forEach(dia => dia.removeAttribute('open'))
-            document.getElementsByTagName('html')[0].removeAttribute("onclick", "fechaDialog()")
-        }
-        function abreDialog(idDialog) {
-            fechaDialog()
-            document.getElementById(idDialog).setAttribute("open", "")
-            setTimeout(() => {
-                document.getElementsByTagName('html')[0].setAttribute("onclick", "fechaDialog()")
-            }, "100")
-        }
-    </script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
