@@ -52,7 +52,7 @@
             <ul class="menu-cell">
                 <li>
                     <a href="#">
-                        <ion-icon name="menu-outline" onclick="menuResponsive()"></ion-icon>
+                        <ion-icon name="menu-outline" onkeypress="teste()" onclick="menuResponsive()"></ion-icon>
                     </a>                    
                 </li>
             </ul>
@@ -69,32 +69,49 @@
             </div>
         </section>
 
+        <section class="banner-bistec-mobile">
+            <img src="assets/images/bg-bondinho-cell.png" alt="Imagem de fundo com mascara de cor vermelha, mostrando um bondinho de portugal para mobile">
+            <div class="banner-bistec-texto">
+                <h1>Bistec Portugal</h1>
+                <h2>Serviços em tecnologia para todas as empresas</h2>
+            </div>
+        </section>
+
 
         <!-- PRODUTOS -->
         <section class="bistec-produtos" id="bistec-automaçao">
-                <img src="assets/images/img-lg-bistec-automacao.png" alt="Bistec Automação">
+                <img src="assets/images/img-lg-bistec-automacao.png" alt="Bistec Automação"> 
                 <div class="texto-produtos">
                     <h2>Troque a anotação pela automação</h2>
                     <h4>Facilite a sua gestão e o consumo dos seus clientes. Automatize!</h4>
-                    <button onclick="controlaDialog('dialog-automacao')" class="bt-dialog">
-                        <span class="button_icon"><ion-icon name="information-circle-outline"></ion-icon></span>
-                        <span class="button_text">Saiba Mais</span>                    
+
+                    <button  id="myBtn" onclick="controlaDialog('dialog-automacao')" class="bt-dialog">
+                        <span class="button_text">Saiba Mais</span>                   
                     </button>
-                    <dialog id="dialog-automacao" class="dialog-produtos">
-                        <button onclick="fechaDialog()">X</button>
-                        <p>
-                            A Bistec, já consolidada no mercado de <strong>tecnologia para o comércio e serviços</strong>, oferece o kit completo para montar seu PDV e automatizar suas vendas. Adquira a Solução SAT Fiscal, facilite sua gestão e as transações com seus clientes, e esteja em dia com a legislação fiscal.
-                        </p>
-                        <p>
-                            Os kits podem conter terminais de venda (teclados inteligentes), leitores de código de barras, computadores etc.
-                        </p>
-                        <p>
-                            Elimine falhas de controle operacional com os relógios de pontos digitais. Com o modelo móvel o controle de ponto dos funcionários pode ser realizado onde eles estiverem.
-                        </p>
-                        <p>
-                            Agora, se você esta procurando a melhor solução para gestão da sua empresa, clique <strong><a href="https://hiper.com.br/experimente-gratis?HCode=BIS01625" target="_blank" rel="noopener noreferrer">aqui</a></strong> e Experimente grátis por 7 dias!<br/>
-                        </p>
-                    </dialog>
+                    
+                    <div id="myModal" class="modal">
+
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2>Bistec Automação</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    A Bistec, já consolidada no mercado de tecnologia para o comércio e serviço</strong>, oferece o kit completo para montar seu PDV e automatizar suas vendas. Adquira a Solução SAT Fiscal, facilite sua gestão e as transações com seus clientes, e esteja em dia com a legislação fiscal.
+                                </p> <br>
+                
+                                <p>
+                                    Os kits podem conter terminais de venda (teclados inteligentes), leitores de código de barras, computadores etc.
+                                </p> <br>
+                                <p>
+                                    Elimine falhas de controle operacional com os relógios de pontos digitais. Com o modelo móvel o controle de ponto dos funcionários pode ser realizado onde eles estiverem.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <p>©2022 Bistec · Consultoria de TI · Todos os direitos reservados.</p>
+                            </div>
+                      </div>
                 </div>
         </section>
 
@@ -103,22 +120,33 @@
                 <div class="texto-produtos">
                     <h2>Backup corporativo na nuvem</h2>
                     <h4>Guarde o que é importante com segurança, sem ocupar espaço algum!</h4>
-                    <button onclick="controlaDialog('dialog-cloud')" class="bt-dialog">
-                        <span class="button_icon"><ion-icon name="information-circle-outline"></ion-icon></span>
+                    <button id="myBtn" onclick="controlaDialog('dialog-cloud')" class="bt-dialog">
                         <span class="button_text">Saiba Mais</span>                    
                     </button>
-                    <dialog id="dialog-cloud" class="dialog-produtos">
-                        <button onclick="fechaDialog()">X</button>
-                        <p>
-                            As informações corporativas estão cada vez mais digitalizadas e online. Por isso, as empresas devem se prevenir contra a perda de informações importantes e, para tanto, precisam adotar políticas de backup eficazes que contemplem o armazenamento fora do ambiente produtivo.
-                        </p>
-                        <p>
-                            Com o backup na nuvem você resguarda o seu negócio, ajudando a proteger os arquivos importantes de que a sua empresa precisa. Restaure rapidamente os arquivos após uma falha do sistema ou perda de dados, para retomar o funcionamento normal logo em seguida.
-                        </p>
-                        <p>
-                            O Bistec Cloud é a solução ideal de backup em nuvem, seguro e elástico, sem custos de investimentos em infraestrutura e de acordo com a <a href="https://www.bistec.com.br/portfolio/bistec-lgpd/">Lei Geral de Proteção de Dados (LGPD)</a>.
-                        </p>
-                    </dialog>
+                    <div id="myModal" class="modal">
+
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2>Bistec Automação</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    A Bistec, já consolidada no mercado de tecnologia para o comércio e serviço</strong>, oferece o kit completo para montar seu PDV e automatizar suas vendas. Adquira a Solução SAT Fiscal, facilite sua gestão e as transações com seus clientes, e esteja em dia com a legislação fiscal.
+                                </p> <br>
+                
+                                <p>
+                                    Os kits podem conter terminais de venda (teclados inteligentes), leitores de código de barras, computadores etc.
+                                </p> <br>
+                                <p>
+                                    Elimine falhas de controle operacional com os relógios de pontos digitais. Com o modelo móvel o controle de ponto dos funcionários pode ser realizado onde eles estiverem.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <p>©2022 Bistec · Consultoria de TI · Todos os direitos reservados.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
         </section>
 
@@ -128,8 +156,7 @@
                     <h2>Treinamentos: use a tecnologia com capacidade máxima.</h2>
                     <h4>Faça o treinamento com toda a sua equipe e explore 100% da capacidade das soluções adquiridas.</h4>
                     <button onclick="controlaDialog('dialog-edu')" class="bt-dialog">
-                        <span class="button_icon"><ion-icon name="information-circle-outline"></ion-icon></span>
-                        <span class="button_text">Saiba Mais</span>                    
+                        <span class="button_text">Saiba Mais</span>                     
                     </button>
                     <dialog id="dialog-edu" class="dialog-produtos">
                         <button onclick="fechaDialog()">X</button>
@@ -155,12 +182,11 @@
         <section class="bistec-produtos" id="bistec-gpdr">
             <img src="assets/images/img-lg-GPDR.png" alt="Bistec GDPR">
             <div class="texto-produtos">
-                <h2>Vestibulum accumsan sem ornare libero sodales elementum</h2>
+                <h2>Adeque sua empresa ao GDPR</h2>
                 <h4>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementum
                 </h4>
                 <button onclick="controlaDialog('dialog-gdpr')" class="bt-dialog">
-                    <span class="button_icon"><ion-icon name="information-circle-outline"></ion-icon></span>
                     <span class="button_text">Saiba Mais</span>                    
                 </button>
                 <dialog id="dialog-gdpr" class="dialog-produtos">
@@ -178,8 +204,7 @@
                     <h2>Contrate outsourcing de TI</h2><p>
                     <h4>Contrate técnicos preparados para cuidar de sua empresa.</h4>
                     <button onclick="controlaDialog('dialog-outsourcing')" class="bt-dialog">
-                        <span class="button_icon"><ion-icon name="information-circle-outline"></ion-icon></span>
-                        <span class="button_text">Saiba Mais</span>                    
+                        <span class="button_text">Saiba Mais</span>                     
                     </button>
                     <dialog id="dialog-outsourcing" class="dialog-produtos">
                         <button onclick="fechaDialog()">X</button>
@@ -202,7 +227,6 @@
                     <h2>Renting de TI</h2>
                         <h4>Faça a locação de equipamentos, e mantenha a liquidez de sua empresa</h4>
                         <button onclick="controlaDialog('dialog-renting')" class="bt-dialog">
-                            <span class="button_icon"><ion-icon name="information-circle-outline"></ion-icon></span>
                             <span class="button_text">Saiba Mais</span>                    
                         </button>
                     <dialog id="dialog-renting" class="dialog-produtos">
@@ -235,8 +259,7 @@
                     <h2>Todo tipo de software</h2><p>
                         <h4>O Bistec soft agora cuida do seu site e contas de e-mail!</h4>
                         <button onclick="controlaDialog('dialog-soft')" class="bt-dialog">
-                            <span class="button_icon"><ion-icon name="information-circle-outline"></ion-icon></span>
-                            <span class="button_text">Saiba Mais</span>                    
+                            <span class="button_text">Saiba Mais</span>                     
                         </button>
                     <dialog id="dialog-soft" class="dialog-produtos">
                         <button onclick="fechaDialog()">X</button>
@@ -275,8 +298,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementum
                     </h4>
                     <button onclick="controlaDialog('dialog-msp')" class="bt-dialog">
-                        <span class="button_icon"><ion-icon name="information-circle-outline"></ion-icon></span>
-                        <span class="button_text">Saiba Mais</span>                    
+                        <span class="button_text">Saiba Mais</span>                  
                     </button>
                     <dialog id="dialog-msp" class="dialog-produtos">
                         <button onclick="fechaDialog()">X</button>
@@ -295,8 +317,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementum
                 </h4>
                 <button onclick="controlaDialog('dialog-wifi')" class="bt-dialog">
-                    <span class="button_icon"><ion-icon name="information-circle-outline"></ion-icon></span>
-                    <span class="button_text">Saiba Mais</span>                    
+                    <span class="button_text">Saiba Mais</span>                      
                 </button>
                 <dialog id="dialog-wifi" class="dialog-produtos">
                     <button onclick="fechaDialog()">X</button>
@@ -309,7 +330,6 @@
                 </dialog>
             </div>
         </section>
-    </article>
 
     <!-- rodapé -->
 
@@ -356,7 +376,7 @@
                 <p>
                     <img src="assets/images/clock.png" alt="Logo Horário"> Funcionamento 
                 </p> 
-                <p>de Segunda à Sexta:</p> 
+                <p>Segunda à Sexta:</p> 
                 <p>08:15h - 18:00h</p>
             </div>
         </div>
@@ -384,7 +404,37 @@
         }
 
         //Funções do Pop-up -----------------------------------------------------------------
-        function controlaDialog(idDialog){
+        var modal = document.getElementById("myModal");
+
+        var btn = document.getElementById("myBtn");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        var modal_content = document.getElementsByClassName("modal-content")
+
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        modal.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        modal_content.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+
+        /* function controlaDialog(idDialog){
             if(document.getElementById(idDialog).open){
                 fechaDialog(idDialog)
             }else{
@@ -402,7 +452,7 @@
             setTimeout(() => {
                 document.getElementsByTagName('html')[0].setAttribute("onclick", "fechaDialog()")
             }, "100")
-        }
+        } */
     </script>
 </body>
 </html>
