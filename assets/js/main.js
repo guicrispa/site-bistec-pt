@@ -15,14 +15,19 @@ function menuResponsive(){
 }
 
 //Funções do Pop-up -----------------------------------------------------------------
-function openModal(idModal, idBtnClose){
+function openModal(idModal){
     let modal = document.getElementById(idModal)
+    let btnCloseModal = document.getElementsByClassName('close')
+    //troca a propriedade display, fazendo a modal aparecer
     modal.style.display = "block"
-    setTimeout(() => {
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
+    //fecha a modal ao clicar no "x"
+    btnCloseModal.forEach(btnClose => btnClose.onclick = () => {
+        modal.style.display = "none"
+    })
+    //fecha a modal ao clicar fora
+    window.onclick = (event) => {
+        if (event.target == modal) {
+            modal.style.display = "none";
         }
-    }, 10);
+    }   
 }
