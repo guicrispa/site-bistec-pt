@@ -1,0 +1,54 @@
+/* tablet */
+@media (min-width: 621px) and (max-width:950px){
+    .header-bistec {
+        width: 100%;
+        display: block;
+        padding: 10px 0;
+        position: relative;
+    }
+
+    .normal-menu,  
+    .buttons-menu{
+        display: none;
+    }
+
+    .logo-bistec {
+        align-items: flex-start;
+        margin: 0;
+        margin-left: 10px;
+    }
+
+    .menu-cell {
+        display: block;
+        float: right;
+        margin-right: 20px;
+    }
+    .menu-cell li ion-icon {
+        color: #141414;
+        display: block;
+        padding: 0;
+        margin-top: 10px;
+        font-size: 35px;
+    }
+
+    /* banner */
+
+    .banner-bistec img {
+        margin-top: 0;
+    }
+
+    /* rodapé */
+
+    .redes-sociais {
+        max-width: 80%;
+    }
+
+    footer ion-icon {
+        padding: 8px;
+        font-size: 2.75vh;
+    }
+
+    .contacts {
+        max-width: 65%;
+    }
+}
