@@ -85,12 +85,11 @@
                     <h2>Troque a anotação pela automação</h2>
                     <h4>Facilite a sua gestão e o consumo dos seus clientes. Automatize!</h4>
 
-                    <button  id="myBtn" onclick="controlaDialog('dialog-automacao')" class="bt-dialog">
+                    <button onclick="openModal('modal-automacao')" class="bt-dialog">
                         <span class="button_text">Saiba Mais</span>                   
                     </button>
                     
-                    <div id="myModal" class="modal">
-
+                    <div id="modal-automacao" class="modal">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <span class="close">&times;</span>
@@ -107,7 +106,9 @@
                             <div class="modal-footer">
                                 <p>©2022 Bistec · Consultoria de TI · Todos os direitos reservados.</p>
                             </div>
-                      </div>
+                        </div>
+                    </div>
+
                 </div>
         </section>
 
@@ -116,19 +117,31 @@
                 <div class="texto-produtos">
                     <h2>Backup corporativo na nuvem</h2>
                     <h4>Guarde o que é importante com segurança, sem ocupar espaço algum!</h4>
-                    <button id="myBtn" onclick="controlaDialog('dialog-cloud')" class="bt-dialog">
-                        <span class="button_text">Saiba Mais</span>                    
+
+                    <button onclick="openModal('modal-cloud')" class="bt-dialog">
+                        <span class="button_text">Saiba Mais</span>                   
                     </button>
-                    <dialog id="dialog-cloud" class="dialog-produtos">
-                        <button onclick="fechaDialog()">X</button>
-                        <h2>Bistec Cloud</h2>
-                        <p>
-                            As informações corporativas estão cada vez mais digitalizadas e online, por isso as empresas devem se prevenir contra a perda de informações importantes. Com essa solução você ajuda a proteger os arquivos que a sua empresa precisa e os restaura rapidamente após uma falha do sistema ou perda de dados.
-                        </p>
-                        <p>
-                            O Bistec Cloud é a solução ideal de backup em nuvem, seguro e elástico, sem custos de investimentos em infraestrutura e de acordo com o Regulamento Geral de Proteção de Dados (GDPR).
-                        </p>
-                    </dialog>
+
+                    <div id="modal-cloud" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2>Bistec Cloud</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    As informações corporativas estão cada vez mais digitalizadas e online, por isso as empresas devem se prevenir contra a perda de informações importantes. Com essa solução você ajuda a proteger os arquivos que a sua empresa precisa e os restaura rapidamente após uma falha do sistema ou perda de dados.
+                                </p>
+                                <p>
+                                    O Bistec Cloud é a solução ideal de backup em nuvem, seguro e elástico, sem custos de investimentos em infraestrutura e de acordo com o Regulamento Geral de Proteção de Dados (GDPR).
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <p>©2022 Bistec · Consultoria de TI · Todos os direitos reservados.</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
         </section>
 
@@ -137,19 +150,30 @@
                 <div class="texto-produtos">
                     <h2>Treinamentos: use a tecnologia com capacidade máxima.</h2>
                     <h4>Faça o treinamento com toda a sua equipe e explore 100% da capacidade das soluções adquiridas.</h4>
-                    <button onclick="controlaDialog('dialog-edu')" class="bt-dialog">
-                        <span class="button_text">Saiba Mais</span>                     
+                    <button onclick="openModal('modal-edu')" class="bt-dialog">
+                        <span class="button_text">Saiba Mais</span>                   
                     </button>
-                    <dialog id="dialog-edu" class="dialog-produtos">
-                        <button onclick="fechaDialog()">X</button>
-                        <h2>Bistec Edu</h2>
-                        <p>
-                            Constantemente, a implementação de um software de gestão acaba por falhar, porque não é dada a atenção necessária a esse profissional que utilizará a ferramenta no dia-a-dia. Para evitar este tipo de situação, o Bistec Edu fornece formação para toda a sua equipa explorar 100% da capacidade das soluções adquiridas.
-                        </p>
-                        <p>
-                            Temos profissionais com mais de 25 anos de experiência académica e educadores certificados do Google nível 1.
-                        </p>
-                    </dialog>
+
+                    <div id="modal-edu" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2>Bistec Edu</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    Constantemente, a implementação de um software de gestão acaba por falhar, porque não é dada a atenção necessária a esse profissional que utilizará a ferramenta no dia-a-dia. Para evitar este tipo de situação, o Bistec Edu fornece formação para toda a sua equipa explorar 100% da capacidade das soluções adquiridas.
+                                </p>
+                                <p>
+                                    Temos profissionais com mais de 25 anos de experiência académica e educadores certificados do Google nível 1.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <p>©2022 Bistec · Consultoria de TI · Todos os direitos reservados.</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
         </section>
 
@@ -160,15 +184,28 @@
                 <h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementum
                 </h4>
-                <button onclick="controlaDialog('dialog-gdpr')" class="bt-dialog">
-                    <span class="button_text">Saiba Mais</span>                    
+                
+                <button onclick="openModal('modal-gpdr')" class="bt-dialog">
+                    <span class="button_text">Saiba Mais</span>                   
                 </button>
-                <dialog id="dialog-gdpr" class="dialog-produtos">
-                    <button onclick="fechaDialog()">X</button>
-                    <p>
-                        GPDR Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementumLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementumLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementumLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementum
-                    </p>
-                </dialog>
+                
+                <div id="modal-gpdr" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>Bistec GPDR</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                GPDR Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementumLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementumLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementumLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquam quam id accumsan. Vestibulum accumsan sem ornare libero sodales elementum
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <p>©2022 Bistec · Consultoria de TI · Todos os direitos reservados.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -177,19 +214,31 @@
                 <div class="texto-produtos">
                     <h2>Contrate outsourcing de TI</h2><p>
                     <h4>Contrate técnicos preparados para cuidar de sua empresa.</h4>
-                    <button onclick="controlaDialog('dialog-outsourcing')" class="bt-dialog">
-                        <span class="button_text">Saiba Mais</span>                     
+                    
+                    <button onclick="openModal('modal-outsourcing')" class="bt-dialog">
+                        <span class="button_text">Saiba Mais</span>                   
                     </button>
-                    <dialog id="dialog-outsourcing" class="dialog-produtos">
-                        <button onclick="fechaDialog()">X</button>
-                        <h2>Bistec Outsourcing</h2>
-                        <p>
-                            Por uma mensalidade, a sua empresa pode contar com suporte técnico telefónico e online, bem como visitas técnicas preventivas e corretivas. Realizamos a manutenção periódica e resolvemos problemas mais graves, sejam eles equipamentos ou software, com o serviço dos nossos técnicos, treinados para servir a sua empresa de forma rápida e eficaz.
-                        </p>
-                        <p>
-                            Ao contratar os nossos serviços e optar pelo atendimento de final de semana e feriados, a sua empresa não fica na mão quando você mais precisa.
-                        </p>
-                    </dialog>
+                    
+                    <div id="modal-outsourcing" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2>Bistec Outsourcing</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    Por uma mensalidade, a sua empresa pode contar com suporte técnico telefónico e online, bem como visitas técnicas preventivas e corretivas. Realizamos a manutenção periódica e resolvemos problemas mais graves, sejam eles equipamentos ou software, com o serviço dos nossos técnicos, treinados para servir a sua empresa de forma rápida e eficaz.
+                                </p>
+                                <p>
+                                    Ao contratar os nossos serviços e optar pelo atendimento de final de semana e feriados, a sua empresa não fica na mão quando você mais precisa.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <p>©2022 Bistec · Consultoria de TI · Todos os direitos reservados.</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
         </section>
 
@@ -197,20 +246,32 @@
             <img src="assets/images/img-lg-bistec-renting.png" alt="Bistec Renting">
                 <div class="texto-produtos">
                     <h2>Renting de TI</h2>
-                        <h4>Faça a locação de equipamentos, e mantenha a liquidez de sua empresa</h4>
-                        <button onclick="controlaDialog('dialog-renting')" class="bt-dialog">
-                            <span class="button_text">Saiba Mais</span>                    
-                        </button>
-                    <dialog id="dialog-renting" class="dialog-produtos">
-                        <button onclick="fechaDialog()">X</button>
-                        <h2>Bistec Renting</h2>
-                        <p>
-                            Mantenha a sua liquidez adquirindo os sistemas de gestão e TI através da locação de equipamentos. Esta solução permite que você preserve as suas linhas de crédito junto aos bancos e assim faça um investimento rentável durante o ciclo de vida dos seus equipamentos, assim melhorando a sua classificação de crédito.
-                        </p>
-                        <p>
-                            Tenha acesso à tecnologia de ponta e, quando o contrato acabar, você pode fazer upgrade nos equipamentos.
-                        </p>
-                    </dialog>
+                    <h4>Faça a locação de equipamentos, e mantenha a liquidez de sua empresa</h4>
+                    
+                    <button onclick="openModal('modal-renting')" class="bt-dialog">
+                        <span class="button_text">Saiba Mais</span>                   
+                    </button>
+                    
+                    <div id="modal-renting" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2>Bistec Renting</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    Mantenha a sua liquidez adquirindo os sistemas de gestão e TI através da locação de equipamentos. Esta solução permite que você preserve as suas linhas de crédito junto aos bancos e assim faça um investimento rentável durante o ciclo de vida dos seus equipamentos, assim melhorando a sua classificação de crédito.
+                                </p>
+                                <p>
+                                    Tenha acesso à tecnologia de ponta e, quando o contrato acabar, você pode fazer upgrade nos equipamentos.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <p>©2022 Bistec · Consultoria de TI · Todos os direitos reservados.</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
         </section>
 
@@ -218,34 +279,45 @@
             <img src="assets/images/img-lg-bistec-soft.png" alt="Bistec Soft">
                 <div class="texto-produtos">
                     <h2>Todo tipo de software</h2><p>
-                        <h4>O Bistec soft agora cuida do seu site e contas de e-mail!</h4>
-                        <button onclick="controlaDialog('dialog-soft')" class="bt-dialog">
-                            <span class="button_text">Saiba Mais</span>                     
-                        </button>
-                    <dialog id="dialog-soft" class="dialog-produtos">
-                        <button onclick="fechaDialog()">X</button>
-                        <h2>Bistec Soft</h2>
-                        <h3>Crie já o seu site institucional conosco!</h3>
-                        <p>
-                            Tenha um site institucional (www.nomedaminhaempresa.com.br) hospedado em servidor com alta disponibilidade e contas de e-mail profissionais para sua empresa (contato@nomedaminhaempresa.com.br).
-                        </p>
-                        <p>Contrate agora e obtenha:</p>
-                        <ul>
-                            <li>1 site com domínio .com.br</li>
-                            <li>100 GB de armazenamento</li>
-                            <li>SSL Grátis</li>
-                            <li>Contas de e-mail ilimitadas</li>
-                        </ul>
-                        <p>Possuímos também outras soluções para diversos segmentos, como:</p>
-                        <ul>
-                            <li>Desenvolvimento de e-commerce + domínio + hospedagem + manutenção + suporte;</li>
-                            <li>Solução de chat online para sites. Clique <a href="https://www.jivochat.com.br/?partner_id=23677&amp;pricelist_id=114&amp;lang=pt" target="_blank" rel="noopener noreferrer"><strong>aqui</strong></a> e teste por 14 dias</li>
-                            <li>Software de roteirização (logística)</li>
-                            <li>Antivírus</li>
-                            <li>Realidade Aumentada</li>
-                        </ul>
-                        </p>
-                    </dialog>
+                    <h4>O Bistec soft agora cuida do seu site e contas de e-mail!</h4>
+                    
+                    <button onclick="openModal('modal-soft')" class="bt-dialog">
+                        <span class="button_text">Saiba Mais</span>                   
+                    </button>
+                    
+                    <div id="modal-soft" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2>Bistec Soft</h2>
+                            </div>
+                            <div class="modal-body">
+                                <h3>Crie já o seu site institucional conosco!</h3>
+                                <p>
+                                    Tenha um site institucional (www.nomedaminhaempresa.com.br) hospedado em servidor com alta disponibilidade e contas de e-mail profissionais para sua empresa (contato@nomedaminhaempresa.com.br).
+                                </p>
+                                <p>Contrate agora e obtenha:</p>
+                                <ul>
+                                    <li>1 site com domínio .com.br</li>
+                                    <li>100 GB de armazenamento</li>
+                                    <li>SSL Grátis</li>
+                                    <li>Contas de e-mail ilimitadas</li>
+                                </ul>
+                                <p>Possuímos também outras soluções para diversos segmentos, como:</p>
+                                <ul>
+                                    <li>Desenvolvimento de e-commerce + domínio + hospedagem + manutenção + suporte;</li>
+                                    <li>Solução de chat online para sites. Clique <a href="https://www.jivochat.com.br/?partner_id=23677&amp;pricelist_id=114&amp;lang=pt" target="_blank" rel="noopener noreferrer"><strong>aqui</strong></a> e teste por 14 dias</li>
+                                    <li>Software de roteirização (logística)</li>
+                                    <li>Antivírus</li>
+                                    <li>Realidade Aumentada</li>
+                                </ul>                               
+                            </div>
+                            <div class="modal-footer">
+                                <p>©2022 Bistec · Consultoria de TI · Todos os direitos reservados.</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
         </section>
 
@@ -256,21 +328,34 @@
                     <h4>
                         A Bistec atua utilizando ferramentas gerenciais para analisar em tempo real o que esta acontecendo com seu sistemas.
                     </h4>
-                    <button onclick="controlaDialog('dialog-msp')" class="bt-dialog">
-                        <span class="button_text">Saiba Mais</span>                  
+                    
+                    <button onclick="openModal('modal-msp')" class="bt-dialog">
+                        <span class="button_text">Saiba Mais</span>                   
                     </button>
-                    <dialog id="dialog-msp" class="dialog-produtos">
-                        <button onclick="fechaDialog()">X</button>
-                        <p>
-                            Quando se trata de atendimento técnico para a sua empresa atualmente existem dois modelos, o break-fix (quebrou-consertou) e o MSP (Provedores de Serviços Gerenciados).
-                        </p>
-                        <p>
-                            No modelo break-fix o suporte técnico é acionado após o problema acontecer e até que ele seja resolvido você fica com seu equipamento/sistema inoperante.
-                        </p>
-                        <p>
-                            Já no modelo MSP, a Bistec atua <strong>ativamente</strong>, utilizando ferramentas gerenciais, para analisar em tempo real o que está acontecendo com seu computador e sistemas. Dessa forma é possível sanar seus problemas <strong>mesmo que eles aconteçam.</strong>
-                        </p>
-                    </dialog>
+                    
+                    <div id="modal-msp" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2>Bistec MSP</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    Quando se trata de atendimento técnico para a sua empresa atualmente existem dois modelos, o break-fix (quebrou-consertou) e o MSP (Provedores de Serviços Gerenciados).
+                                </p>
+                                <p>
+                                    No modelo break-fix o suporte técnico é acionado após o problema acontecer e até que ele seja resolvido você fica com seu equipamento/sistema inoperante.
+                                </p>
+                                <p>
+                                    Já no modelo MSP, a Bistec atua <strong>ativamente</strong>, utilizando ferramentas gerenciais, para analisar em tempo real o que está acontecendo com seu computador e sistemas. Dessa forma é possível sanar seus problemas <strong>mesmo que eles aconteçam.</strong>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <p>©2022 Bistec · Consultoria de TI · Todos os direitos reservados.</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
         </section>
 
@@ -281,24 +366,35 @@
                 <h4>
                     Tudo que a sua empresa precisa para ter uma rede wi-Fi com alto desempenho e de qualidade.
                 </h4>
-                <button onclick="controlaDialog('dialog-wifi')" class="bt-dialog">
-                    <span class="button_text">Saiba Mais</span>                      
+                
+                <button onclick="openModal('modal-wifi')" class="bt-dialog">
+                    <span class="button_text">Saiba Mais</span>                   
                 </button>
-                <dialog id="dialog-wifi" class="dialog-produtos">
-                    <button onclick="fechaDialog()">X</button>
-                    <h2>Bistec Wifi</h2>
-                    <h3>Chega de sinal fraco, Bistec Wi-fi é a solução que o seu negócio precisa!</h3>
-                    <p>
-                        Esta solução é tudo que a sua empresa precisa para ter uma rede wi-fi com alto desempenho e qualidade, assim obtendo uma ótima experiência de navegação. Temos soluções para projetos de baixa e média complexidade:
-                    </p>
-                    <ul>
-                        <li>Gerenciamento Cloud;</li>
-                        <li>Login Social – Liberado por meio do check-in nas principais redes sociais, Linkedin, Facebook, Instagram, etc;</li>
-                        <li>Splash Pages – Anúncios e propagandas;</li>
-                        <li>Dashboard Analytics.</li>
-                    </ul>
-                    </p>
-                </dialog>
+                
+                <div id="modal-wifi" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>Bistec Wi-fi</h2>
+                        </div>
+                        <div class="modal-body">
+                            <h3>Chega de sinal fraco, Bistec Wi-fi é a solução que o seu negócio precisa!</h3>
+                            <p>
+                                Esta solução é tudo que a sua empresa precisa para ter uma rede wi-fi com alto desempenho e qualidade, assim obtendo uma ótima experiência de navegação. Temos soluções para projetos de baixa e média complexidade:
+                            </p>
+                            <ul>
+                                <li>Gerenciamento Cloud;</li>
+                                <li>Login Social – Liberado por meio do check-in nas principais redes sociais, Linkedin, Facebook, Instagram, etc;</li>
+                                <li>Splash Pages – Anúncios e propagandas;</li>
+                                <li>Dashboard Analytics.</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <p>©2022 Bistec · Consultoria de TI · Todos os direitos reservados.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
