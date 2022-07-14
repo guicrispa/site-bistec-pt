@@ -232,6 +232,7 @@ a {
 .menu-cell {
     display: none;
 }
+
 /*----BANNER---------------------------------------------------------*/
 .banner-bistec{
     width: auto;
@@ -264,7 +265,6 @@ a {
 .banner-bistec-texto h2{
     font-size: 3vw;
 }
-
 
 /*---PRODUTOS------------------------------------*/
 .bistec-produtos{
@@ -340,6 +340,7 @@ a {
     height: 100%; 
     overflow: auto; 
     background-color: rgb(0,0,0); 
+<<<<<<< HEAD
     background-color: rgba(0,0,0,0.8); 
     font-family: 'Inter', sans-serif;
   }
@@ -353,6 +354,19 @@ a {
     text-align: center;
     border-bottom: 1px solid #080808;
   }
+=======
+    background-color: rgba(0,0,0,0.7); 
+    
+}
+
+.modal-header {
+    padding: 1.5em;
+    background-color: #123354;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+>>>>>>> bff1de4ef7a86d76aff6cdc91cd37d0579e3bbbb
   
   .modal-body {
     padding: 1em 2em;
@@ -368,8 +382,12 @@ a {
     border-top: 1px solid #080808;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+<<<<<<< HEAD
     color: #A0C8F9;
   }
+=======
+}
+>>>>>>> bff1de4ef7a86d76aff6cdc91cd37d0579e3bbbb
   
   .modal-content {
     position: relative;
@@ -379,34 +397,41 @@ a {
     height: 60%;
     animation-name: animatepopup;
     animation-duration: 0.4s;
-  }
+}
   
+<<<<<<< HEAD
   @keyframes animatepopup {
     from {left: -1300px; opacity: 0}
     to {left: 0; opacity: 1}
   }
+=======
+@keyframes animatetop {
+from {top: -300px; opacity: 0}
+to {top: 0; opacity: 1}
+}
+>>>>>>> bff1de4ef7a86d76aff6cdc91cd37d0579e3bbbb
 
 .close {
     color: rgb(216, 216, 216);
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
+}
   
   .close:hover,
   .close:focus {
     color: rgb(255, 255, 255);
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
 dialog span {
     background-color: #10498a;
     color: #F3FAFA;
     width: 100%;
     padding: 10px;
-
 }
+
 /*--RODAPÉ---------------------------------------------*/
 footer{
     background-color: #262525;
@@ -497,252 +522,4 @@ footer .item3 p {
     border-style: solid;
     border-color: transparent;
     user-select: none;
-}
-
-/*mobile */
-
-@media (max-width: 620px) {
-    .header-bistec {
-        width: 100%;
-        display: block;
-        padding: 10px 0;
-    }
-
-    .normal-menu,  
-    .buttons-menu{
-        display: none;
-    }
-
-    .logo-bistec {
-        align-items: flex-start;
-        margin: 0;
-    }
-
-    .menu-cell {
-        display: block;
-        float: right;
-        margin-right: 20px;
-    }
-    .menu-cell li ion-icon {
-        color: #141414;
-        display: block;
-        padding: 0;
-        margin-top: 10px;
-        font-size: 35px;
-    }
-    
-    /* banner */
-
-    .banner-bistec {
-        display: none;
-    }
-    
-    .banner-bistec-mobile {
-        display: block;
-        width: auto;
-        margin: auto;
-        position: relative;
-    }
-
-    .banner-bistec-mobile img{
-        width: 100%;
-        height: 85vh;
-        margin-top: 77px;
-    }
-
-    .banner-bistec-texto {
-        transform: translate(-45%, -50%);
-    }
-
-    .banner-bistec-texto h1 {
-        font-size: 6vw;
-    }
-    .banner-bistec-texto h2 {
-        font-size: 4vw;
-    }
-
-    /* produtos */
-
-    .bistec-produtos {
-        flex-direction: column;
-        margin-top: 5em;
-    }
-
-    .bistec-produtos img {
-      width: 65%;
-    }
-
-    .texto-produtos {
-      display: flex;
-      flex-direction: column;
-      margin: auto;
-      max-width: 85%;
-    }
-    .texto-produtos h2{
-      text-align: center;
-      font-size: 5.2vw;
-      font-weight: 500;
-    }
-    .texto-produtos h4{
-        text-align: center;
-        font-size: 4.2vw;
-        font-weight: 400;
-    }
-    
-    .bt-dialog {
-        padding: 0 10px;
-        margin: auto;
-        margin-top: 3.5vh;
-    }
-    
-    .bt-dialog .button_text {
-        font-size: 3vh;
-    }
-
-    /* rodapé */
-
-    footer {
-        margin-top: 2em;
-    }
-
-    .redes-sociais {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    footer ion-icon {
-        padding: 12px;
-        font-size: 4.5vh;
-    }
-
-    .contacts {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        text-align: left;
-        font-size: 20px;
-        max-width: 55%;
-    }
-
-    .footer-copyright p {
-        max-width: 70%;
-    }
-}
-
-/* tablet */
-@media (min-width: 621px) and (max-width:950px){
-    .header-bistec {
-        width: 100%;
-        display: block;
-        padding: 10px 0;
-        position: relative;
-    }
-
-    .normal-menu,  
-    .buttons-menu{
-        display: none;
-    }
-
-    .logo-bistec {
-        align-items: flex-start;
-        margin: 0;
-        margin-left: 10px;
-    }
-
-    .menu-cell {
-        display: block;
-        float: right;
-        margin-right: 20px;
-    }
-    .menu-cell li ion-icon {
-        color: #141414;
-        display: block;
-        padding: 0;
-        margin-top: 10px;
-        font-size: 35px;
-    }
-
-    /* banner */
-
-    .banner-bistec img {
-        margin-top: 0;
-    }
-
-    /* produtos */
-
-    .bistec-produtos {
-        flex-direction: column;
-        margin-top: 5em;
-    }
-
-    .bistec-produtos img {
-      width: 55%;
-    }
-
-    .texto-produtos {
-      display: flex;
-      flex-direction: column;
-      margin: auto;
-      max-width: 85%;
-    }
-    .texto-produtos h2{
-      text-align: center;
-      font-size: 4.6vw;
-      font-weight: 500;
-    }
-    .texto-produtos h4{
-        text-align: center;
-        font-size: 3.2vw;
-        font-weight: 400;
-    }
-    
-    .bt-dialog {
-        margin: auto;
-        margin-top: 2vh;
-    }
-    
-    .bt-dialog .button_text {
-        font-size: 25px;
-    }
-
-    /* rodapé */
-
-    footer {
-        margin-top: 4vh;
-    }
-
-    .redes-sociais {
-        max-width: 80%;
-    }
-
-    footer ion-icon {
-        padding: 8px;
-    }
-
-    .contacts {
-        max-width: 65%;
-    }
-}
-
-@media (min-width: 951px) and (max-width: 1219px){
-    .redes-sociais {
-        max-width: 80%;
-    }
-
-    footer ion-icon {
-        padding: 8px;
-        font-size: 4vh;
-    }
-}
-
-/* tv */
-
-@media (min-width: 2400px) {
-    .redes-sociais {
-        max-width: 70%;
-    }
-
-    footer ion-icon {
-        padding: 8px;
-        font-size: 45px;
-    }
 }
