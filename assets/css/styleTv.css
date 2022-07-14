@@ -1,0 +1,11 @@
+/* tv */
+@media (min-width: 2400px) {
+    .redes-sociais {
+        max-width: 70%;
+    }
+
+    footer ion-icon {
+        padding: 8px;
+        font-size: 45px;
+    }
+}
