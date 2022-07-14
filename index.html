@@ -85,7 +85,7 @@
                     <h2>Troque a anotação pela automação</h2>
                     <h4>Facilite a sua gestão e o consumo dos seus clientes. Automatize!</h4>
 
-                    <button  id="myBtn" onclick="controlaDialog('dialog-automacao')" class="bt-dialog">
+                    <button id="myBtn" onclick="controlaDialog('dialog-automacao')" class="bt-dialog">
                         <span class="button_text">Saiba Mais</span>                   
                     </button>
                     
@@ -120,33 +120,21 @@
                 <div class="texto-produtos">
                     <h2>Backup corporativo na nuvem</h2>
                     <h4>Guarde o que é importante com segurança, sem ocupar espaço algum!</h4>
-                    <button id="myBtn" onclick="controlaDialog('dialog-cloud')" class="bt-dialog">
+                    <button onclick="controlaDialog('dialog-cloud')" class="bt-dialog">
                         <span class="button_text">Saiba Mais</span>                    
                     </button>
-                    <div id="myModal" class="modal">
-
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <span class="close">&times;</span>
-                                <h2>Bistec Automação</h2>
-                            </div>
-                            <div class="modal-body">
-                                <p>
-                                    A Bistec, já consolidada no mercado de tecnologia para o comércio e serviço</strong>, oferece o kit completo para montar seu PDV e automatizar suas vendas. Adquira a Solução SAT Fiscal, facilite sua gestão e as transações com seus clientes, e esteja em dia com a legislação fiscal.
-                                </p> <br>
-                
-                                <p>
-                                    Os kits podem conter terminais de venda (teclados inteligentes), leitores de código de barras, computadores etc.
-                                </p> <br>
-                                <p>
-                                    Elimine falhas de controle operacional com os relógios de pontos digitais. Com o modelo móvel o controle de ponto dos funcionários pode ser realizado onde eles estiverem.
-                                </p>
-                            </div>
-                            <div class="modal-footer">
-                                <p>©2022 Bistec · Consultoria de TI · Todos os direitos reservados.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <dialog id="dialog-cloud" class="dialog-produtos">
+                        <button onclick="fechaDialog()">X</button>
+                        <p>
+                            As informações corporativas estão cada vez mais digitalizadas e online. Por isso, as empresas devem se prevenir contra a perda de informações importantes e, para tanto, precisam adotar políticas de backup eficazes que contemplem o armazenamento fora do ambiente produtivo.
+                        </p>
+                        <p>
+                            Com o backup na nuvem você resguarda o seu negócio, ajudando a proteger os arquivos importantes de que a sua empresa precisa. Restaure rapidamente os arquivos após uma falha do sistema ou perda de dados, para retomar o funcionamento normal logo em seguida.
+                        </p>
+                        <p>
+                            O Bistec Cloud é a solução ideal de backup em nuvem, seguro e elástico, sem custos de investimentos em infraestrutura e de acordo com a <a href="https://www.bistec.com.br/portfolio/bistec-lgpd/">Lei Geral de Proteção de Dados (LGPD)</a>.
+                        </p>
+                    </dialog>
                 </div>
         </section>
 
