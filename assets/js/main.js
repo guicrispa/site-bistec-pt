@@ -33,6 +33,17 @@ function openModal(idModal){
 }
 
 //Menu mobile
+
+//ajusta para o menu se adequar conforme a mudança da tela
+window.onresize = () => {
+    let menu = document.getElementsByClassName('normal-menu')[0]
+    if(!window.matchMedia("(min-width: 950px)").matches){
+        menu.style.display = 'none'
+    }else{
+        menu.style.display = 'inherit'
+    }
+}
+//abre e fecha menu mobile
 function menuResponsive(){
     let menu = document.getElementsByClassName('normal-menu')[0]
     if(menu.style.display == 'inherit'){
