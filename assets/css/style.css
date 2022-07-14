@@ -340,7 +340,6 @@ a {
     height: 100%; 
     overflow: auto; 
     background-color: rgb(0,0,0); 
-<<<<<<< HEAD
     background-color: rgba(0,0,0,0.8); 
     font-family: 'Inter', sans-serif;
   }
@@ -354,19 +353,6 @@ a {
     text-align: center;
     border-bottom: 1px solid #080808;
   }
-=======
-    background-color: rgba(0,0,0,0.7); 
-    
-}
-
-.modal-header {
-    padding: 1.5em;
-    background-color: #123354;
-    color: white;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
->>>>>>> bff1de4ef7a86d76aff6cdc91cd37d0579e3bbbb
   
   .modal-body {
     padding: 1em 2em;
@@ -382,12 +368,8 @@ a {
     border-top: 1px solid #080808;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-<<<<<<< HEAD
     color: #A0C8F9;
   }
-=======
-}
->>>>>>> bff1de4ef7a86d76aff6cdc91cd37d0579e3bbbb
   
   .modal-content {
     position: relative;
@@ -399,17 +381,10 @@ a {
     animation-duration: 0.4s;
 }
   
-<<<<<<< HEAD
   @keyframes animatepopup {
     from {left: -1300px; opacity: 0}
     to {left: 0; opacity: 1}
   }
-=======
-@keyframes animatetop {
-from {top: -300px; opacity: 0}
-to {top: 0; opacity: 1}
-}
->>>>>>> bff1de4ef7a86d76aff6cdc91cd37d0579e3bbbb
 
 .close {
     color: rgb(216, 216, 216);
