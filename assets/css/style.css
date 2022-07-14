@@ -56,7 +56,6 @@ header .normal-menu {
 header .normal-menu li{
     position: relative;
     list-style: none;
-    display: inline-block;
 }
 
 header .normal-menu li a {

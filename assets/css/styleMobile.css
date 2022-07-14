@@ -6,9 +6,14 @@
         padding: 10px 0;
     }
 
-    .normal-menu,  
-    .buttons-menu{
+    .normal-menu{
+        background-color: rgb(124, 147, 164);
         display: none;
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 0;
+        padding: 3% 8%;
     }
 
     .logo-bistec {

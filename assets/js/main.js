@@ -31,3 +31,13 @@ function openModal(idModal){
         }
     }   
 }
+
+//Menu mobile
+function menuResponsive(){
+    let menu = document.getElementsByClassName('normal-menu')[0]
+    if(menu.style.display == 'inherit'){
+        menu.style.display = 'none'
+    }else{
+        menu.style.display = 'inherit'
+    }
+}
