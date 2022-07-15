@@ -97,6 +97,52 @@
         font-size: 3vh;
     }
 
+    /*modal*/
+
+    .modal-content {
+        position: relative;
+        margin: 18% auto;
+        padding: 0;
+        width: 85%;
+        height: 80%;
+        animation-name: animatepopup;
+        animation-duration: 0.4s;
+    }
+
+    .modal-header {
+        padding: 0.5em 1em;
+        color: #fff;
+        text-align: center;
+        border-bottom: 1px solid #080808;
+      }
+
+    .close {
+        line-height: 80%;
+    }
+      
+      .modal-body {
+        padding: 1em 1em;
+    }
+
+    .modal-body p {
+        font-size: 0.7em;
+        padding: 0.3em 0;
+      }
+
+    .modal-body ul li {
+        list-style: none;
+        font-size: 0.6em;
+    }
+      
+    .modal-footer {
+        padding: 0.5em 1em;
+      }
+    
+      .modal-footer p {
+        text-align: center;
+        font-size: 0.65em;
+      }
+
     /* rodapé */
 
     footer {
