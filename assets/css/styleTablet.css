@@ -1,3 +1,4 @@
+
 /* tablet */
 @media (min-width: 621px) and (max-width:950px){
     .header-bistec {
@@ -42,7 +43,48 @@
         margin-top: 0;
     }
 
+    /* produtos */
+
+    .bistec-produtos {
+        flex-direction: column;
+        margin-top: 5em;
+    }
+
+    .bistec-produtos img {
+      width: 55%;
+    }
+
+    .texto-produtos {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      max-width: 85%;
+    }
+    .texto-produtos h2{
+      text-align: center;
+      font-size: 4.6vw;
+      font-weight: 500;
+    }
+    .texto-produtos h4{
+        text-align: center;
+        font-size: 3.2vw;
+        font-weight: 400;
+    }
+    
+    .bt-dialog {
+        margin: auto;
+        margin-top: 2vh;
+    }
+    
+    .bt-dialog .button_text {
+        font-size: 25px;
+    }
+
     /* rodapé */
+
+    footer {
+        margin-top: 4vh;
+    }
 
     .redes-sociais {
         max-width: 80%;
@@ -50,7 +92,6 @@
 
     footer ion-icon {
         padding: 8px;
-        font-size: 2.75vh;
     }
 
     .contacts {
