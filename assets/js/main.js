@@ -35,14 +35,21 @@ function openModal(idModal){
 //Menu mobile
 
 //ajusta para o menu se adequar conforme a mudança da tela
-window.onresize = () => {
+const verificaTela = () => {
+    console.log('oi')
     let menu = document.getElementsByClassName('normal-menu')[0]
-    if(!window.matchMedia("(min-width: 950px)").matches){
+    let portifolio = document.getElementsByClassName('normal')[1]
+    if(!window.matchMedia("(min-width: 951px)").matches){
         menu.style.display = 'none'
+        portifolio.removeAttribute('href') //tira direcionamento no mobile
     }else{
         menu.style.display = 'inherit'
+        portifolio.setAttribute('href', '#bistec-automaçao')
     }
 }
+window.onresize = verificaTela
+window.onload = verificaTela
+
 //abre e fecha menu mobile
 function menuResponsive(){
     let menu = document.getElementsByClassName('normal-menu')[0]
