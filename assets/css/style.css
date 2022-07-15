@@ -108,7 +108,7 @@ header ul :hover > ul{
     display: block;
 }
 
-.button, .bt-dialog {
+.button {
 	display: inline-flex;
     height: 30px;
 	padding: 0;
@@ -302,10 +302,17 @@ a {
 }
 
 .bt-dialog{
-	background: #141414;
+	background-color: #141414;
     margin: 1vw 0vw 0vw 0vw;
-    justify-content: center;
     align-items: center;
+    padding: 0 10px;
+    color: #fff;
+    height: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+	border: none;
+	outline: none;
+    font-weight: 800;
 }
 
 .bt-dialog:hover {
@@ -323,7 +330,7 @@ a {
 }
 
 .modal {
-    display: none; 
+    display: none;
     position: fixed; 
     z-index: 1; 
     left: 0;
@@ -332,48 +339,54 @@ a {
     height: 100%; 
     overflow: auto; 
     background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.7); 
-    
-}
+    background-color: rgba(0,0,0,0.8); 
+    font-family: 'Inter', sans-serif;
+  }
 
 .modal-header {
-    padding: 1.5em;
-    background-color: #123354;
-    color: white;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    background-color: #10498a;
+    padding: 0.5em 2em;
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid #080808;
+  }
   
   .modal-body {
-    padding: 1.5em;
-    background-color: #ffffff
+    padding: 1em 2em;
+    background-color: #ffffff;
+    border-top: 1px solid #080808;
+    border-bottom: 1px solid #080808;
 }
   
   .modal-footer {
-    padding: 1.5em;
+    padding: 0.5em 2em;
     background-color: #141414;
     color: white;   
+    border-top: 1px solid #080808;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-}
+    color: #A0C8F9;
+  }
   
   .modal-content {
     position: relative;
-    margin: 10% auto;
+    margin: 12% auto;
     padding: 0;
     width: 55%;
     height: 60%;
-    animation-name: animatetop;
+    animation-name: animatepopup;
     animation-duration: 0.4s;
 }
   
-@keyframes animatetop {
-from {top: -300px; opacity: 0}
-to {top: 0; opacity: 1}
-}
+  @keyframes animatepopup {
+    from {left: -1300px; opacity: 0}
+    to {left: 0; opacity: 1}
+  }
 
 .close {
-    color: #aaa;
+    color: rgb(216, 216, 216);
     float: right;
     font-size: 28px;
     font-weight: bold;
