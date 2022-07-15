@@ -272,7 +272,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 300;
+    max-width: 90%;
 }
 .texto-produtos{
     margin-left: 2.5vw;
@@ -284,7 +284,7 @@ a {
     margin-right: 2.5vw;
 }
 .texto-produtos h2{
-    font-size: 3.3vw;
+    font-size: 3vw;
     font-weight: 500;
 }
 .texto-produtos h4{
@@ -293,7 +293,7 @@ a {
 }
 .texto-produtos p{
     font-size: 1.5vw;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .texto-produtos{
@@ -355,28 +355,48 @@ a {
   }
   
   .modal-body {
-    padding: 1em 2em;
+    padding: 1.5em 1em;
     background-color: #ffffff;
     border-top: 1px solid #080808;
     border-bottom: 1px solid #080808;
 }
+
+.modal-body h3 {
+    font-weight: 700;
+    font-size: 0.8em;
+}
+
+.modal-body ul li {
+    list-style: none;
+    font-size: 0.7em;
+    font-weight: 500;
+}
+
+.modal-body p {
+    padding: 0.5em 0;
+}
   
   .modal-footer {
-    padding: 0.5em 2em;
+    padding: 0.5em 0em;
     background-color: #141414;
     color: white;   
     border-top: 1px solid #080808;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     color: #A0C8F9;
+    text-align: center;
   }
+
+  .modal-footer p {
+    font-size: 14px;
+}
   
   .modal-content {
     position: relative;
-    margin: 12% auto;
+    margin: 10% auto;
     padding: 0;
-    width: 55%;
-    height: 60%;
+    width: 50%;
+    height: 63%;
     animation-name: animatepopup;
     animation-duration: 0.4s;
 }
@@ -387,7 +407,7 @@ a {
   }
 
 .close {
-    color: rgb(216, 216, 216);
+    color: #F3FAFA;
     float: right;
     font-size: 28px;
     font-weight: bold;
