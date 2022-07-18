@@ -10,4 +10,9 @@
         padding: 8px;
         font-size: 45px;
     }
+
+    .contacts {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 55%;
+    }
 }
