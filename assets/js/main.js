@@ -10,10 +10,6 @@ function teste(){
     console.log("oi");
 }
 
-function menuResponsive(){
-    console.log('testando');
-}
-
 //Funções do Pop-up -----------------------------------------------------------------
 function openModal(idModal){
     let modal = document.getElementById(idModal)
@@ -36,7 +32,6 @@ function openModal(idModal){
 
 //ajusta para o menu se adequar conforme a mudança da tela
 const verificaTela = () => {
-    console.log('oi')
     let menu = document.getElementsByClassName('normal-menu')[0]
     let portifolio = document.getElementsByClassName('normal')[1]
     if(!window.matchMedia("(min-width: 951px)").matches){
