@@ -82,11 +82,12 @@
     }
 
     .redes-sociais {
-        max-width: 80%;
+        max-width: 85%;
     }
 
     footer ion-icon {
         padding: 8px;
+        font-size: 4vh;
     }
 
     .contacts {
