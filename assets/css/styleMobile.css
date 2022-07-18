@@ -15,6 +15,9 @@
         top: 0;
         padding: 3% 8%;
     }
+    .normal-menu li{
+        width: fit-content;
+    }
 
     .logo-bistec {
         align-items: flex-start;
@@ -32,6 +35,13 @@
         padding: 0;
         margin-top: 10px;
         font-size: 35px;
+    }
+
+    .normal-submenu{
+        /* width: 100%; */
+        z-index: 1;
+        /* margin: 0;
+        padding: 0; */
     }
     
     /* banner */
