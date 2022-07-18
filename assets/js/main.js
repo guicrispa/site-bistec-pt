@@ -10,10 +10,6 @@ function teste(){
     console.log("oi");
 }
 
-function menuResponsive(){
-    console.log('testando');
-}
-
 //Funções do Pop-up -----------------------------------------------------------------
 function openModal(idModal){
     let modal = document.getElementById(idModal)
@@ -30,4 +26,31 @@ function openModal(idModal){
             modal.style.display = "none";
         }
     }   
+}
+
+//Menu mobile
+
+//ajusta para o menu se adequar conforme a mudança da tela
+const verificaTela = () => {
+    let menu = document.getElementsByClassName('normal-menu')[0]
+    let portifolio = document.getElementsByClassName('normal')[1]
+    if(!window.matchMedia("(min-width: 951px)").matches){
+        menu.style.display = 'none'
+        portifolio.removeAttribute('href') //tira direcionamento no mobile
+    }else{
+        menu.style.display = 'inherit'
+        portifolio.setAttribute('href', '#bistec-automaçao')
+    }
+}
+window.onresize = verificaTela
+window.onload = verificaTela
+
+//abre e fecha menu mobile
+function menuResponsive(){
+    let menu = document.getElementsByClassName('normal-menu')[0]
+    if(menu.style.display == 'inherit'){
+        menu.style.display = 'none'
+    }else{
+        menu.style.display = 'inherit'
+    }
 }
