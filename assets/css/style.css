@@ -96,7 +96,7 @@ header .normal-submenu li a:hover {
 
 header ul ul {
     position: absolute;
-    top: 38px;
+    top: 45px;
     display: none;
 }
 
@@ -237,6 +237,7 @@ a {
     width: auto;
     margin: auto;
     position: relative;
+    border-bottom: 2px solid #141414;
 }
 
 .banner-bistec img{
@@ -261,8 +262,13 @@ a {
     font-size: 4vw;
     font-weight: 300;
 }
+
+.banner-bistec-texto h1{
+    font-size: 5.2vw;
+}
+
 .banner-bistec-texto h2{
-    font-size: 3vw;
+    font-size: 3.7vw;
 }
 
 /*---PRODUTOS------------------------------------*/
@@ -287,7 +293,7 @@ a {
     font-weight: 500;
 }
 .texto-produtos h4{
-    font-size: 2.5vw;
+    font-size: 2.53vw;
     font-weight: 400;
 }
 .texto-produtos p{
@@ -430,6 +436,8 @@ dialog span {
 footer{
     background-color: #262525;
     padding-top: 25px; padding-bottom: 25px;
+    border-bottom: 1px solid #A0C8F9;
+    border-top: 2px solid #A0C8F9;
 }
 footer ion-icon{
     color: #D0CEC6;
