@@ -104,7 +104,7 @@ header .normal-submenu li a:hover > ion-icon {
     color: #fff;
 }
 
-header ul :hover > ul{
+header ul :hover > ul:focus{
     display: block;
 }
 
@@ -445,7 +445,6 @@ footer ion-icon{
     border: #D0CEC6 solid 2px;
     border-radius: 100%;
     padding: 1.4%;
-    margin-bottom: 25px;
 }
 footer ion-icon:hover{
     cursor: pointer;
@@ -460,10 +459,11 @@ footer ion-icon:hover{
     align-items: center;
     margin-left: 10%;
     margin-right: 10%;
-    border-bottom: 3px solid #A0C8F9;
-    margin: auto;
+    /* border-bottom: 3px solid #A0C8F9; */
+    margin: 0 auto;
     max-width: 70%;
 }
+
 .ionspecial{
     color: #A0C8F9;
     border: #A0C8F9 solid 2px;
@@ -480,9 +480,11 @@ footer ion-icon:hover{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: left;
+    border-top: 3px solid #a0c8f9;
     font-size: 20px;
     font-weight: 100;
-    max-width: 45%;
+    max-width: 60%;
+    margin-top: 25px; 
 }
 
 footer .item1,
