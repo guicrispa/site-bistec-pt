@@ -1,16 +1,14 @@
-//Funções dos links das redes socias ------------------------------------------------
-function link(site){
-    window.open(`https://${site}`, "_blank"); 
-}
-function email(){
-    window.open('mailto:bistec@bistec.com.br')
-}
-
-function teste(){
-    console.log("oi");
-}
-
 //Funções do Pop-up -----------------------------------------------------------------
+document.getElementsByClassName('bt-dialog')[0].addEventListener('click', ()=>{openModal('modal-automacao')})
+document.getElementsByClassName('bt-dialog')[1].addEventListener('click', ()=>{openModal('modal-cloud')})
+document.getElementsByClassName('bt-dialog')[2].addEventListener('click', ()=>{openModal('modal-edu')})
+document.getElementsByClassName('bt-dialog')[3].addEventListener('click', ()=>{openModal('modal-gpdr')})
+document.getElementsByClassName('bt-dialog')[4].addEventListener('click', ()=>{openModal('modal-outsourcing')})
+document.getElementsByClassName('bt-dialog')[5].addEventListener('click', ()=>{openModal('modal-renting')})
+document.getElementsByClassName('bt-dialog')[6].addEventListener('click', ()=>{openModal('modal-soft')})
+document.getElementsByClassName('bt-dialog')[7].addEventListener('click', ()=>{openModal('modal-msp')})
+document.getElementsByClassName('bt-dialog')[8].addEventListener('click', ()=>{openModal('modal-wifi')})
+
 function openModal(idModal){
     let modal = document.getElementById(idModal)
     let btnCloseModal = document.getElementsByClassName('close')
@@ -46,6 +44,7 @@ window.onresize = verificaTela
 window.onload = verificaTela
 
 //abre e fecha menu mobile
+document.getElementsByName('menu-outline')[0].addEventListener('click', menuResponsive)
 function menuResponsive(){
     let menu = document.getElementsByClassName('normal-menu')[0]
     if(menu.style.display == 'inherit'){

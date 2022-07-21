@@ -42,24 +42,24 @@
                 </li>
                 <li><!--Butão de Loja-->
                     <a href="https://www.cupomfiscaleletronico.com.br/" target="_blank">
-                        <button type="button" class="button" >
+                        <div type="button" class="button" >
                             <span class="button_icon"><ion-icon name="cart-outline"></ion-icon></span>
                             <span class="button_text">LOJA</span>
-                        </button>
+                        </div>
                     </a>
                 </li>
                 <li><!--Botão Suporte-->
                     <a href="https://www.bistec.com.br/suporte/" target="_blank">
-                        <button type="button" class="button_support">
+                        <div type="button" class="button_support">
                             <span class="button_icon support_icon"><ion-icon name="headset-outline"></ion-icon></span>
                             <span class="button_text">SUPORTE</span>
-                        </button>
+                        </div>
                     </a>
                 </li>
             </ul>
             <ul class="menu-cell">
                 <li>
-                    <ion-icon name="menu-outline" onkeypress="teste()" onclick="menuResponsive()"></ion-icon>                  
+                    <ion-icon name="menu-outline"></ion-icon>                  
                 </li>
             </ul>
     </header>
@@ -91,7 +91,7 @@
                     <h2>Troque a anotação pela automação</h2>
                     <h4>Facilite a sua gestão e o consumo dos seus clientes. Automatize!</h4>
 
-                    <button onclick="openModal('modal-automacao')" class="bt-dialog">
+                    <button class="bt-dialog">
                         <span class="button_text">Saiba Mais</span>                   
                     </button>
                     
@@ -124,7 +124,7 @@
                     <h2>Backup corporativo na nuvem</h2>
                     <h4>Guarde o que é importante com segurança, sem ocupar espaço algum!</h4>
 
-                    <button onclick="openModal('modal-cloud')" class="bt-dialog">
+                    <button class="bt-dialog">
                         <span class="button_text">Saiba Mais</span>                   
                     </button>
 
@@ -156,7 +156,7 @@
                 <div class="texto-produtos">
                     <h2>Treinamentos: use a tecnologia com capacidade máxima.</h2>
                     <h4>Faça o treinamento com toda a sua equipe e explore 100% da capacidade das soluções adquiridas.</h4>
-                    <button onclick="openModal('modal-edu')" class="bt-dialog">
+                    <button class="bt-dialog">
                         <span class="button_text">Saiba Mais</span>                   
                     </button>
 
@@ -191,7 +191,7 @@
                     Estar preparado para cumprir o Regulamento Geral de Proteção de Dados e proteger contra multas e fugas de informações de terceiros
                 </h4>
                 
-                <button onclick="openModal('modal-gpdr')" class="bt-dialog">
+                <button class="bt-dialog">
                     <span class="button_text">Saiba Mais</span>                   
                 </button>
                 
@@ -224,7 +224,7 @@
                     <h2>Contrate outsourcing de TI</h2><p>
                     <h4>Contrate técnicos preparados para cuidar de sua empresa.</h4>
                     
-                    <button onclick="openModal('modal-outsourcing')" class="bt-dialog">
+                    <button class="bt-dialog">
                         <span class="button_text">Saiba Mais</span>                   
                     </button>
                     
@@ -257,7 +257,7 @@
                     <h2>Renting de TI</h2>
                     <h4>Faça a locação de equipamentos, e mantenha a liquidez de sua empresa</h4>
                     
-                    <button onclick="openModal('modal-renting')" class="bt-dialog">
+                    <button class="bt-dialog">
                         <span class="button_text">Saiba Mais</span>                   
                     </button>
                     
@@ -290,7 +290,7 @@
                     <h2>Todo tipo de software</h2><p>
                     <h4>O Bistec soft agora cuida do seu site e contas de e-mail!</h4>
                     
-                    <button onclick="openModal('modal-soft')" class="bt-dialog">
+                    <button class="bt-dialog">
                         <span class="button_text">Saiba Mais</span>                   
                     </button>
                     
@@ -338,7 +338,7 @@
                         A Bistec atua utilizando ferramentas gerenciais para analisar em tempo real o que esta acontecendo com seu sistemas.
                     </h4>
                     
-                    <button onclick="openModal('modal-msp')" class="bt-dialog">
+                    <button class="bt-dialog">
                         <span class="button_text">Saiba Mais</span>                   
                     </button>
                     
@@ -376,7 +376,7 @@
                     Tudo que a sua empresa precisa para ter uma rede wi-Fi com alto desempenho e de qualidade.
                 </h4>
                 
-                <button onclick="openModal('modal-wifi')" class="bt-dialog">
+                <button class="bt-dialog">
                     <span class="button_text">Saiba Mais</span>                   
                 </button>
                 
@@ -411,15 +411,15 @@
 
     <footer>
         <div class="redes-sociais">
-            <a href="#contacts_section"><ion-icon name="mail" class="ionspecial" onclick="email()" onkeypress="teste()"></ion-icon></a>
-            <a href="https://facebook.com/bistecweb"><ion-icon name="logo-facebook" onclick="link('facebook.com/bistecweb')" onkeypress="teste()"></ion-icon></a>
-            <a href="https://instagram.com/bistecweb"><ion-icon name="logo-instagram" onclick="link('instagram.com/bistecweb')" onkeypress="teste()"></ion-icon></a>
-            <a href="https://youtube.com/bistecweb"><ion-icon name="logo-youtube" onclick="link('youtube.com/bistecweb')" onkeypress="teste()"></ion-icon></a>
-            <a href="https://www.twitter.com/bistecweb"><ion-icon name="logo-twitter" onclick="link('twitter.com/bistecweb')" onkeypress="teste()"></ion-icon></a>
-            <a href="https://www.flickr.com/bistec"><ion-icon name="logo-flickr" onclick="link('flickr.com/bistec')" onkeypress="teste()"></ion-icon></a>
-            <a href="https://soundcloud.com/bistecweb"><ion-icon name="logo-soundcloud" onclick="link('soundcloud.com/bistecweb')" onkeypress="teste()"></ion-icon></a>
-            <a href="https://linkedin.com/company/bistec"><ion-icon name="logo-linkedin" onclick="link('br.linkedin.com/company/bistec')" onkeypress="teste()"></ion-icon></a>
-            <a href="https://google.com/maps/dir/bistec"><ion-icon name="location" class="ionspecial" onclick="link('google.com/maps/dir/bistec')" onkeypress="teste()"></ion-icon></a>
+            <a href="mailto:bistec@bistec.com.br" target="_blank"><ion-icon name="mail" class="ionspecial"></ion-icon></a>
+            <a href="https://facebook.com/bistecweb" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://instagram.com/bistecweb" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://youtube.com/bistecweb" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a href="https://www.twitter.com/bistecweb" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="https://www.flickr.com/bistec" target="_blank"><ion-icon name="logo-flickr"></ion-icon></a>
+            <a href="https://soundcloud.com/bistecweb" target="_blank"><ion-icon name="logo-soundcloud"></ion-icon></a>
+            <a href="https://linkedin.com/company/bistec" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="https://google.com/maps/dir/bistec" target="_blank"><ion-icon name="location" class="ionspecial"></ion-icon></a>
         </div>
 
         <div class="contacts">
