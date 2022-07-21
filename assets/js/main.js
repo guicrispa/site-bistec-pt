@@ -1,13 +1,19 @@
 //Funções dos links das redes socias ------------------------------------------------
+document.getElementsByName('mail')[0].addEventListener('click', email)
+document.getElementsByName('logo-facebook')[0].addEventListener('click', ()=>{link('facebook.com/bistecweb')})
+document.getElementsByName('logo-instagram')[0].addEventListener('click', ()=>{link('instagram.com/bistecweb')})
+document.getElementsByName('logo-youtube')[0].addEventListener('click', ()=>{link('youtube.com/bistecweb')})
+document.getElementsByName('logo-twitter')[0].addEventListener('click', ()=>{link('twitter.com/bistecweb')})
+document.getElementsByName('logo-flickr')[0].addEventListener('click', ()=>{link('flickr.com/bistec')})
+document.getElementsByName('logo-soundcloud')[0].addEventListener('click', ()=>{link('soundcloud.com/bistecweb')})
+document.getElementsByName('logo-linkedin')[0].addEventListener('click', ()=>{link('br.linkedin.com/company/bistec')})
+document.getElementsByName('location')[0].addEventListener('click', ()=>{link('google.com/maps/dir/bistec')})
+
 function link(site){
     window.open(`https://${site}`, "_blank"); 
 }
 function email(){
     window.open('mailto:bistec@bistec.com.br')
-}
-
-function teste(){
-    console.log("oi");
 }
 
 //Funções do Pop-up -----------------------------------------------------------------
