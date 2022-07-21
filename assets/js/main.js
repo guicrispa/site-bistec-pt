@@ -11,6 +11,16 @@ function teste(){
 }
 
 //Funções do Pop-up -----------------------------------------------------------------
+document.getElementsByClassName('bt-dialog')[0].addEventListener('click', ()=>{openModal('modal-automacao')})
+document.getElementsByClassName('bt-dialog')[1].addEventListener('click', ()=>{openModal('modal-cloud')})
+document.getElementsByClassName('bt-dialog')[2].addEventListener('click', ()=>{openModal('modal-edu')})
+document.getElementsByClassName('bt-dialog')[3].addEventListener('click', ()=>{openModal('modal-gpdr')})
+document.getElementsByClassName('bt-dialog')[4].addEventListener('click', ()=>{openModal('modal-outsourcing')})
+document.getElementsByClassName('bt-dialog')[5].addEventListener('click', ()=>{openModal('modal-renting')})
+document.getElementsByClassName('bt-dialog')[6].addEventListener('click', ()=>{openModal('modal-soft')})
+document.getElementsByClassName('bt-dialog')[7].addEventListener('click', ()=>{openModal('modal-msp')})
+document.getElementsByClassName('bt-dialog')[8].addEventListener('click', ()=>{openModal('modal-wifi')})
+
 function openModal(idModal){
     let modal = document.getElementById(idModal)
     let btnCloseModal = document.getElementsByClassName('close')
