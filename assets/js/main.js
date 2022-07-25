@@ -1,32 +1,31 @@
 //Funções do Pop-up -----------------------------------------------------------------
-document.getElementsByClassName('bt-dialog')[0].addEventListener('click', ()=>{openModal('modal-automacao')})
-document.getElementsByClassName('bt-dialog')[1].addEventListener('click', ()=>{openModal('modal-cloud')})
-document.getElementsByClassName('bt-dialog')[2].addEventListener('click', ()=>{openModal('modal-edu')})
-document.getElementsByClassName('bt-dialog')[3].addEventListener('click', ()=>{openModal('modal-gpdr')})
-document.getElementsByClassName('bt-dialog')[4].addEventListener('click', ()=>{openModal('modal-outsourcing')})
-document.getElementsByClassName('bt-dialog')[5].addEventListener('click', ()=>{openModal('modal-renting')})
-document.getElementsByClassName('bt-dialog')[6].addEventListener('click', ()=>{openModal('modal-soft')})
-document.getElementsByClassName('bt-dialog')[7].addEventListener('click', ()=>{openModal('modal-msp')})
-document.getElementsByClassName('bt-dialog')[8].addEventListener('click', ()=>{openModal('modal-wifi')})
+var btSaibaMais = document.getElementsByClassName('bt-dialog')
+//configura a função controlModal nos elementos com classes bt-dialog
+for (let i = 0; i < btSaibaMais.length; i++) {
+    btSaibaMais[i].addEventListener('click', ()=>{controlaModal(i)})
+}
 
-function openModal(idModal){
-    let modal = document.getElementById(idModal)
+function controlaModal(numModal){
+    let modal = document.getElementsByClassName('modal')[numModal]
     let btnCloseModal = document.getElementsByClassName('close')
+
     //troca a propriedade display, fazendo a modal aparecer
     modal.style.display = "block"
     //fecha a modal ao clicar no "x"
-    btnCloseModal.forEach(btnClose => btnClose.onclick = () => {
-        modal.style.display = "none"
-    })
+    btnCloseModal[numModal].onclick = () => {
+        modal.style.display = "none"        
+    }
     //fecha a modal ao clicar fora
     window.onclick = (event) => {
         if (event.target == modal) {
-            modal.style.display = "none";
+            document.getElementsByClassName('modal').forEach(
+                fechaModais => fechaModais.style.display = "none"
+            )
         }
     }   
 }
 
-//Menu mobile
+//Menu mobile ---------------------------------------------------------------------------
 
 //ajusta para o menu se adequar conforme a mudança da tela
 const verificaTela = () => {
