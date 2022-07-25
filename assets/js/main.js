@@ -1,23 +1,24 @@
 //Funções do Pop-up -----------------------------------------------------------------
-document.getElementsByClassName('bt-dialog')[0].addEventListener('click', ()=>{openModal('modal-automacao')})
-document.getElementsByClassName('bt-dialog')[1].addEventListener('click', ()=>{openModal('modal-cloud')})
-document.getElementsByClassName('bt-dialog')[2].addEventListener('click', ()=>{openModal('modal-edu')})
-document.getElementsByClassName('bt-dialog')[3].addEventListener('click', ()=>{openModal('modal-gpdr')})
-document.getElementsByClassName('bt-dialog')[4].addEventListener('click', ()=>{openModal('modal-outsourcing')})
-document.getElementsByClassName('bt-dialog')[5].addEventListener('click', ()=>{openModal('modal-renting')})
-document.getElementsByClassName('bt-dialog')[6].addEventListener('click', ()=>{openModal('modal-soft')})
-document.getElementsByClassName('bt-dialog')[7].addEventListener('click', ()=>{openModal('modal-msp')})
-document.getElementsByClassName('bt-dialog')[8].addEventListener('click', ()=>{openModal('modal-wifi')})
+document.getElementsByClassName('bt-dialog')[0].addEventListener('click', ()=>{controlaModal('modal-automacao', 0)})
+document.getElementsByClassName('bt-dialog')[1].addEventListener('click', ()=>{controlaModal('modal-cloud', 1)})
+document.getElementsByClassName('bt-dialog')[2].addEventListener('click', ()=>{controlaModal('modal-edu', 2)})
+document.getElementsByClassName('bt-dialog')[3].addEventListener('click', ()=>{controlaModal('modal-gpdr', 3)})
+document.getElementsByClassName('bt-dialog')[4].addEventListener('click', ()=>{controlaModal('modal-outsourcing', 4)})
+document.getElementsByClassName('bt-dialog')[5].addEventListener('click', ()=>{controlaModal('modal-renting', 5)})
+document.getElementsByClassName('bt-dialog')[6].addEventListener('click', ()=>{controlaModal('modal-soft', 6)})
+document.getElementsByClassName('bt-dialog')[7].addEventListener('click', ()=>{controlaModal('modal-msp', 7)})
+document.getElementsByClassName('bt-dialog')[8].addEventListener('click', ()=>{controlaModal('modal-wifi', 8)})
 
-function openModal(idModal){
+function controlaModal(idModal, numModal){
     let modal = document.getElementById(idModal)
+    let modalEspecifica = document.getElementsByClassName('modal')[numModal]
     let btnCloseModal = document.getElementsByClassName('close')
     //troca a propriedade display, fazendo a modal aparecer
     modal.style.display = "block"
     //fecha a modal ao clicar no "x"
-    btnCloseModal.forEach(btnClose => btnClose.onclick = () => {
-        modal.style.display = "none"
-    })
+    btnCloseModal[numModal].onclick = () => {
+        modalEspecifica.style.display = "none"        
+    }
     //fecha a modal ao clicar fora
     window.onclick = (event) => {
         if (event.target == modal) {
@@ -25,6 +26,25 @@ function openModal(idModal){
         }
     }   
 }
+function fechaModal(modalEspecifica) {
+}
+
+// function controlaModal(idModal){
+//     let modal = document.getElementById(idModal)
+//     let btnCloseModal = document.getElementsByClassName('close')
+//     //troca a propriedade display, fazendo a modal aparecer
+//     modal.style.display = "block"
+//     //fecha a modal ao clicar no "x"
+//     btnCloseModal.forEach(btnClose => btnClose.onclick = () => {
+//         modal.style.display = "none"
+//     })
+//     //fecha a modal ao clicar fora
+//     window.onclick = (event) => {
+//         if (event.target == modal) {
+//             modal.style.display = "none";
+//         }
+//     }   
+// }
 
 //Menu mobile
 
