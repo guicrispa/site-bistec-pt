@@ -2,6 +2,10 @@
 /* tv */
 
 @media (min-width: 2400px) {
+
+    .bt-dialog {
+        padding: 2.5em 1em;
+    }
     .redes-sociais {
         max-width: 70%;
     }
