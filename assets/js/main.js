@@ -7,7 +7,7 @@ for (let i = 0; i < btSaibaMais.length; i++) {
 function controlaModal(numModal){
     let modal = document.getElementsByClassName('modal')[numModal]
     let btnCloseModal = document.getElementsByClassName('close')
-    
+
     //troca a propriedade display, fazendo a modal aparecer
     modal.style.display = "block"
     //fecha a modal ao clicar no "x"
@@ -17,7 +17,7 @@ function controlaModal(numModal){
     //fecha a modal ao clicar fora
     window.onclick = (event) => {
         if (event.target == modal) {
-            modal.style.display = "none";
+            document.getElementsByClassName('modal').forEach(fechaModais => fechaModais.style.display = "none")
         }
     }   
 }
