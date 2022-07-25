@@ -1,23 +1,18 @@
 //Funções do Pop-up -----------------------------------------------------------------
-document.getElementsByClassName('bt-dialog')[0].addEventListener('click', ()=>{controlaModal('modal-automacao', 0)})
-document.getElementsByClassName('bt-dialog')[1].addEventListener('click', ()=>{controlaModal('modal-cloud', 1)})
-document.getElementsByClassName('bt-dialog')[2].addEventListener('click', ()=>{controlaModal('modal-edu', 2)})
-document.getElementsByClassName('bt-dialog')[3].addEventListener('click', ()=>{controlaModal('modal-gpdr', 3)})
-document.getElementsByClassName('bt-dialog')[4].addEventListener('click', ()=>{controlaModal('modal-outsourcing', 4)})
-document.getElementsByClassName('bt-dialog')[5].addEventListener('click', ()=>{controlaModal('modal-renting', 5)})
-document.getElementsByClassName('bt-dialog')[6].addEventListener('click', ()=>{controlaModal('modal-soft', 6)})
-document.getElementsByClassName('bt-dialog')[7].addEventListener('click', ()=>{controlaModal('modal-msp', 7)})
-document.getElementsByClassName('bt-dialog')[8].addEventListener('click', ()=>{controlaModal('modal-wifi', 8)})
+var btSaibaMais = document.getElementsByClassName('bt-dialog')
+for (let i = 0; i < btSaibaMais.length; i++) {
+    btSaibaMais[i].addEventListener('click', ()=>{controlaModal(i)})
+}
 
-function controlaModal(idModal, numModal){
-    let modal = document.getElementById(idModal)
-    let modalEspecifica = document.getElementsByClassName('modal')[numModal]
+function controlaModal(numModal){
+    let modal = document.getElementsByClassName('modal')[numModal]
     let btnCloseModal = document.getElementsByClassName('close')
+    
     //troca a propriedade display, fazendo a modal aparecer
     modal.style.display = "block"
     //fecha a modal ao clicar no "x"
     btnCloseModal[numModal].onclick = () => {
-        modalEspecifica.style.display = "none"        
+        modal.style.display = "none"        
     }
     //fecha a modal ao clicar fora
     window.onclick = (event) => {
@@ -26,25 +21,6 @@ function controlaModal(idModal, numModal){
         }
     }   
 }
-function fechaModal(modalEspecifica) {
-}
-
-// function controlaModal(idModal){
-//     let modal = document.getElementById(idModal)
-//     let btnCloseModal = document.getElementsByClassName('close')
-//     //troca a propriedade display, fazendo a modal aparecer
-//     modal.style.display = "block"
-//     //fecha a modal ao clicar no "x"
-//     btnCloseModal.forEach(btnClose => btnClose.onclick = () => {
-//         modal.style.display = "none"
-//     })
-//     //fecha a modal ao clicar fora
-//     window.onclick = (event) => {
-//         if (event.target == modal) {
-//             modal.style.display = "none";
-//         }
-//     }   
-// }
 
 //Menu mobile
 
