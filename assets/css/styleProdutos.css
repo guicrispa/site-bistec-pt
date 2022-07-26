@@ -1,0 +1,34 @@
+/* corpo - página de produtos */
+
+.produto-texto {
+    max-width: 75%;
+    padding: 1%;
+}
+
+.produto-texto p {
+    padding: 2% 0;
+    font-size: 1.2em;
+}
+
+.produto-texto p a {
+    text-decoration: underline;
+    font-weight: 800;
+    color: #5906A7;
+}
+
+.produto-texto h1 {
+    font-size: 3em;
+    text-align: center;
+    padding: 3% 0;
+}
+
+@media (max-width: 620px) {
+    .produto-texto h1 {
+        font-size: 2em;
+    }
+    
+    .produto-texto p {
+        padding: 2% 0;
+        font-size: 1em;
+    }
+}
