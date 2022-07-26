@@ -13,6 +13,7 @@
         width: 100%;
         right: 0;
         padding: 3% 8%;
+        border-bottom: 1px solid #b3b3b3;
     }
     .normal-menu li{
         width: fit-content;
@@ -41,6 +42,10 @@
         z-index: 1;
         /* margin: 0;
         padding: 0; */
+    }
+
+    .button_support {
+        margin-top: 6%;
     }
     
     /* banner */
