@@ -1,0 +1,38 @@
+#formContato{
+    margin: 12vh 14vw 5vh;
+    display: flex;
+    flex-direction: column;
+    border: 0.3vw solid black;
+    border-radius: 3%;
+    background-color: #a5a5e7;
+}
+#formContato > input, textarea, button{
+    margin: 1vh 2vw 3vh;
+    height: 6vh;
+    padding: 2%;
+}
+#formContato textarea{
+    height: 15vh;
+}
+#formContato label{
+    margin-top: 1vh
+}
+#labelTitulo{
+    border-bottom: 0.1vw solid black;
+    width: 100%;
+    text-align: center;
+    padding: 2vh;
+    font-size: xx-large;
+    font-weight: 800;
+}
+#formContato button{
+    font-size: 3vw;
+    background-color: #da3636;
+    height: auto;
+    padding: 0;
+    cursor: pointer;
+}
+#formContato button:hover{
+    background-color: #da0d0d;
+    color: #ffffff;
+}
