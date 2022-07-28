@@ -27,12 +27,13 @@
 }
 #formContato button{
     font-size: 3vw;
-    background-color: #da3636;
+    background-color: #640606;
+    color: #dfdfd6;
     height: auto;
     padding: 0;
     cursor: pointer;
 }
 #formContato button:hover{
-    background-color: #da0d0d;
+    background-color: #960303;
     color: #ffffff;
 }
