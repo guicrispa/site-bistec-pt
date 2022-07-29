@@ -29,7 +29,7 @@
             <li>
                 <a href="suporte.html" class="normal">PORTFÓLIO <ion-icon name="chevron-down-outline"></ion-icon></a>  
                 <ul class="normal-submenu">
-                    <li><a href="produtos/automaçao.html"><ion-icon name="at-sharp"></ion-icon> BISTEC AUTOMAÇÃO</a></li>
+                    <li><a href="produtos/automacao.html"><ion-icon name="at-sharp"></ion-icon> BISTEC AUTOMAÇÃO</a></li>
                     <li><a href="produtos/cloud.html"> <ion-icon name="cloud-done-sharp"></ion-icon> BISTEC CLOUD</a></li>
                     <li><a href="produtos/edu.html"> <ion-icon name="pencil-sharp"></ion-icon> BISTEC EDU</a></li>
                     <li><a href="produtos/gdpr.html"><ion-icon name="shield-checkmark-sharp"></ion-icon> BISTEC GDPR</a></li>
@@ -69,23 +69,37 @@
 
     <!-- CORPO -->
     <article>
-        <form action="https://formsubmit.co/0e7f2fce85bd2065e42938316ca03ac1" method="POST" id="formContato">
-            <label id="labelTitulo">Formulário para contato</label>
-            <label for="nome">Nome completo:</label>
-            <input type="text" name="nome" placeholder="Nome Completo">
-            <label for="email-cliente">Seu endereço de email:</label>
-            <input type="email" name="email-cliente" placeholder="exemplo@exemplo.com">
-            <label for="assunto">Assunto do email:</label>
-            <input type="text" name="assunto" placeholder="Assunto">
-            <label for="conteudo">Conteúdo:</label>
-            <textarea type="text" name="conteudo" placeholder="Deixe seu comentáio"></textarea>
-            <button type="submit">Enviar</button>
-
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="http://localhost">
-            <input type="text" name="_honey" style="display:none">
-            <input type="hidden" name="_autoresponse" value="Email Recebido">
-       </form>
+        <div class="formulario">
+            <form action="https://formsubmit.co/0e7f2fce85bd2065e42938316ca03ac1" method="POST" id="formContato">
+                <h3>Formulário para Contato</h3>
+                <div class="campos">
+                    <label for="nome">Nome completo:</label><br>
+                    <input type="text" name="Seu e-mail:" id="" placeholder="Digite seu nome aqui" required>
+                </div>
+                
+                <div class="campos">
+                    <label for="email-completo">Seu endereço de e-mail:</label><br>
+                    <input type="email" name="Assunto do e-mail" id="" required placeholder="Digite seu endereço de e-mail aqui">
+                </div>            
+                
+                <div class="campos">
+                    <label for="assunto">Assunto do e-mail:</label>
+                    <br>
+                    <input type="text" name="Assunto do e-mail" id="" placeholder="Digite aqui do que seu e-mail se trata" required>
+                </div>
+                
+                <div class="campos">
+                    <label for="comentario"> Seu comentário: </label><br>
+                    <textarea type="text" name="conteudo" placeholder="Deixe seu comentário"></textarea>
+                </div>
+                
+    
+                <div class="campos">
+                    <input type="submit" value="Enviar">
+                </div>
+                
+            </form>
+        </div>
     </article>
     <!-- rodapé -->
 
