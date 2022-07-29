@@ -70,22 +70,28 @@
     <!-- CORPO -->
     <article>
         <form action="https://formsubmit.co/0e7f2fce85bd2065e42938316ca03ac1" method="POST" id="formContato">
-            <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="http://bistec.com.pt">
-            <input type="text" name="_honey" style="display:none">
-            <input type="hidden" name="_autoresponse" value="Email Recebido">
+            <input type="hidden" name="_autoresponse" value="Email Recebido. Obrigado e caso seja necessário, estaremos entrando em contato assim que possivel">
             <input type="hidden" name="_subject" value="Email Site Bistec Portugal">
+            <!-- <input type="hidden" name="_captcha" value="false"> -->
+            <!-- <input type="text" name="_honey" style="display:none"> -->
+
 
             <label id="labelTitulo">Formulário para contato</label>
+
             <label for="nome">Nome completo:</label>
             <input type="text" name="nome" placeholder="Nome Completo" required>
+
             <label for="email-cliente">Seu endereço de email:</label>
-            <input type="email" name="email-cliente" placeholder="exemplo@exemplo.com" required>
+            <input type="email" name="email" placeholder="exemplo@exemplo.com" required>
+
             <label for="assunto">Assunto do email:</label>
             <input type="text" name="assunto" placeholder="Assunto" required>
+
             <label for="conteudo">Conteúdo:</label>
             <textarea type="text" name="conteudo" placeholder="Deixe seu comentáio" required></textarea>
-            <button type="submit">Enviar</button>
+            
+            <button type="submit" id="btEnviaForm">Enviar</button>
        </form>
     </article>
     <!-- rodapé -->

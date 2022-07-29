@@ -52,3 +52,9 @@ function menuResponsive(){
         menu.style.display = 'inherit'
     }
 }
+
+//CONTATO  ---------------------------------------------------------------------------------
+var btEnviarForm = document.getElementById('btEnviaForm')
+btEnviarForm.addEventListener('click', (event)=>{
+    alert("Você receberá um email com os dados que foram preenchidos")
+})
