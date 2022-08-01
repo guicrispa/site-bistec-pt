@@ -1,39 +1,69 @@
-#formContato{
-    margin: 12vh 14vw 5vh;
-    display: flex;
-    flex-direction: column;
-    border: 0.3vw solid black;
-    border-radius: 3%;
-    background-color: #a5a5e7;
+
+body {
+    background: linear-gradient(135deg, #71b7ed, #9b59b6);
 }
-#formContato > input, textarea, button{
-    margin: 1vh 2vw 3vh;
-    height: 6vh;
+
+article {
+    margin-top: 77px;
+    max-width: 60%;
+}
+
+.formulario {
+    border-radius: 1em;
+    background-color: rgb(0, 0, 0);
+    color: rgb(224, 224, 224);
+    border: rgb(224, 224, 224);
+    margin: 2.5em 0;
+}
+
+.campos {
     padding: 2%;
-}
-#formContato textarea{
-    height: 15vh;
-}
-#formContato label{
-    margin-top: 1vh
-}
-#labelTitulo{
-    border-bottom: 0.1vw solid black;
-    width: 100%;
     text-align: center;
-    padding: 2vh;
-    font-size: xx-large;
-    font-weight: 800;
 }
-#formContato button{
-    font-size: 3vw;
-    background-color: #640606;
-    color: #dfdfd6;
-    height: auto;
-    padding: 0;
+
+.campos label {
+    font-size: 1em;
+    font-weight: 500;
+    margin: 9em 0;
+}
+input, textarea {
+    padding: 2%;
+    margin: 1.5% 0;
+    width: 100%;
+    background: rgb(22, 22, 22);
+    color: rgb(224, 224, 224);
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 10px;
+}
+
+.formulario h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2em;
+    padding: 0.5em 0;
+    text-align: center;
+}
+
+input[type=submit] {
+    background: linear-gradient(135deg, #65ADE2, #BA83C0);
+    border: transparent;
+    font-size: 1.5em;
+    color: black;
+    font-weight: 900;
+}
+
+input[type=submit]:hover {
+    background: linear-gradient(135deg, #BA83C0, #65ADE2);
     cursor: pointer;
 }
-#formContato button:hover{
-    background-color: #960303;
-    color: #ffffff;
+
+
+@media (max-width: 620px) {
+    .formulario form h3 {
+        font-size: 1.4em;
+    }
+    article {
+        margin-top: 117px;
+        max-width: 95%;
+    }
 }
