@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suporte Técnico - Bistec Portugal</title>
-    <link rel="stylesheet" href="./assets/css/styleSuporte.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/styleMobile.css">
     <link rel="stylesheet" href="./assets/css/styleTablet.css">
@@ -17,8 +16,8 @@
 <body>
     <!-- cabeçalho -->
 
-    <header class="header-bistec">
-        <a href="index.html" class="logo-bistec">
+    <header class="header-bistec" id="header_first_section">
+        <a href="#header_first_section" class="logo-bistec">
             <img src="assets/images/logo-bistec.png" alt="Logo - Bistec">
         </a>
         <ul class="normal-menu">
@@ -45,7 +44,7 @@
             </li>
             <li><!--Butão de Loja-->
                 <a href="https://www.cupomfiscaleletronico.com.br/" target="_blank">
-                    <div type="button" class="button" >
+                    <div class="button">
                         <span class="button_icon"><ion-icon name="cart-outline"></ion-icon></span>
                         <span class="button_text">LOJA</span>
                     </div>
@@ -53,7 +52,7 @@
             </li>
             <li><!--Botão Suporte-->
                 <a href="suporte.html">
-                    <div type="button" class="button_support">
+                    <div class="button_support">
                         <span class="button_icon support_icon"><ion-icon name="headset-outline"></ion-icon></span>
                         <span class="button_text">SUPORTE</span>
                     </div>
@@ -71,26 +70,26 @@
     <article>
         <div class="formulario">
             <form action="https://formsubmit.co/0e7f2fce85bd2065e42938316ca03ac1" method="POST" id="formContato">
-                <h3>Formulário para Contato</h3>
+                <h1>Formulário para Contato</h1>
                 <div class="campos">
-                    <label for="nome">Nome completo:</label><br>
-                    <input type="text" name="Seu e-mail:" id="" placeholder="Digite seu nome aqui" required>
+                    <label>Nome completo:</label><br>
+                    <input type="text" name="Seu e-mail:" placeholder="Digite seu nome aqui" required>
                 </div>
                 
                 <div class="campos">
-                    <label for="email-completo">Seu endereço de e-mail:</label><br>
-                    <input type="email" name="Assunto do e-mail" id="" required placeholder="Digite seu endereço de e-mail aqui">
+                    <label>Seu endereço de e-mail:</label><br>
+                    <input type="email" name="Assunto do e-mail" required placeholder="Digite seu endereço de e-mail aqui">
                 </div>            
                 
                 <div class="campos">
-                    <label for="assunto">Assunto do e-mail:</label>
+                    <label>Assunto do e-mail:</label>
                     <br>
-                    <input type="text" name="Assunto do e-mail" id="" placeholder="Digite aqui do que seu e-mail se trata" required>
+                    <input type="text" name="Assunto do e-mail" placeholder="Digite aqui do que seu e-mail se trata" required>
                 </div>
                 
                 <div class="campos">
-                    <label for="comentario"> Seu comentário: </label><br>
-                    <textarea type="text" name="conteudo" placeholder="Deixe seu comentário"></textarea>
+                    <label> Seu comentário: </label><br>
+                    <textarea name="conteudo" placeholder="Deixe seu comentário"></textarea>
                 </div>
                 
     
@@ -121,7 +120,7 @@
                 <a href="#contacts_section" id="contacts_section">
                     <img src="assets/images/portugal.png" alt="Portugal País"> Bistec Portugal
                 </a>
-                <p><a href="tel:+351 308 807 114">+351 308 807 114</a></p>
+                <p><a href="tel:+351308807114">+351 308 807 114</a></p>
             </div>
     
             <div class="contact item2">
@@ -136,10 +135,10 @@
                     <img src="assets/images/brazil.png" alt="Brasil País"> Bistec Brasil 
                 </a>  
                 <p>
-                    <a href="tel:+55 (13) 3235-7735">+55 (13) 3235-7735</a>  
+                    <a href="tel:+55(13)3235-7735">+55 (13) 3235-7735</a>  
                 </p>
                 <p>
-                    <a href="tel:+55 (13) 3522-8184">+55 (13) 3522-8184</a>
+                    <a href="tel:+55(13)3522-8184">+55 (13) 3522-8184</a>
                 </p>
             </div>
             <div class="contact item4">
@@ -158,5 +157,5 @@
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
     <script src="./assets/js/main.js"></script>
     <script src="//code.jivosite.com/widget/3bZuUHkWaM" async></script>
-</body>
+<body>
 </html>
