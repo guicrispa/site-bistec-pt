@@ -36,11 +36,12 @@ input, textarea {
     border-radius: 10px;
 }
 
-.formulario form h3 {
+.formulario h1 {
     text-align: center;
     font-weight: 700;
     font-size: 2em;
     padding: 0.5em 0;
+    text-align: center;
 }
 
 input[type=submit] {
@@ -62,7 +63,7 @@ input[type=submit]:hover {
         font-size: 1.4em;
     }
     article {
-        margin-top: 77px;
+        margin-top: 117px;
         max-width: 95%;
     }
 }
