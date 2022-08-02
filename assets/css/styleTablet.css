@@ -113,6 +113,8 @@
     }
 
     .contacts {
-        max-width: 65%;
+        max-width: 75%;
+        grid-template-columns: repeat(1, 2fr);
+        font-size: 24px;
     }
 }

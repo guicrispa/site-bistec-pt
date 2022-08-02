@@ -58,3 +58,15 @@ var btEnviarForm = document.getElementById('btEnviaForm')
 btEnviarForm.addEventListener('click', (event)=>{
     alert("Você receberá um email com os dados que foram preenchidos")
 })
+
+// localização
+
+function clickLocation() {
+    alert("Localização será definida em breve");
+}
+
+// Botão Loja
+
+function clickStore(){
+    alert("Loja em construção...");
+}
