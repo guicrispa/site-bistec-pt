@@ -481,12 +481,12 @@ footer ion-icon:hover{
 
 .contacts {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    text-align: left;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
     border-top: 2px solid #a0c8f9;
     font-size: 20px;
     font-weight: 100;
-    max-width: 60%;
+    max-width: 80%;
     margin-top: 25px; 
 }
 
