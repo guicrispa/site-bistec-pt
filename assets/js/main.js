@@ -60,13 +60,12 @@ btEnviarForm.addEventListener('click', (event)=>{
 })
 
 // localização
-
-function clickLocation() {
+var ClickLocation = document.getElementsByClassName('IconLocation');
+ClickLocation.addEventListener('click', (event)=>{
     alert("Localização será definida em breve");
-}
+})
 
 // Botão Loja
-
 function clickStore(){
     alert("Loja em construção...");
 }
