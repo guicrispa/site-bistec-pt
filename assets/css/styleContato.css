@@ -1,6 +1,7 @@
 
 body {
-    background: linear-gradient(135deg, #71b7ed, #9b59b6);
+    background: #07305f;
+   /* background: linear-gradient(135deg, #71b7ed, #9b59b6); */
 }
 
 article {
@@ -10,14 +11,13 @@ article {
 
 .formulario {
     border-radius: 1em;
-    background-color: rgb(0, 0, 0);
-    color: rgb(224, 224, 224);
-    border: rgb(224, 224, 224);
+    background-color:#F3FAFA;
+    color: #000;
     margin: 2.5em 0;
 }
 
 .campos {
-    padding: 2%;
+    padding: 1% 2%;
     text-align: center;
 }
 
@@ -30,9 +30,9 @@ input, textarea {
     padding: 2%;
     margin: 1.5% 0;
     width: 100%;
-    background: rgb(22, 22, 22);
-    color: rgb(224, 224, 224);
-    border: 1px solid rgb(224, 224, 224);
+    background: #F3FAFA;
+    color: #161616;
+    border: 1px solid #161616;
     border-radius: 10px;
 }
 
@@ -45,16 +45,19 @@ input, textarea {
 }
 
 input[type=submit] {
-    background: linear-gradient(135deg, #65ADE2, #BA83C0);
+    background: #161616;
+    /* background: linear-gradient(135deg, #65ADE2, #BA83C0); */
     border: transparent;
     font-size: 1.5em;
-    color: black;
+    color: #A0C8F9;
     font-weight: 900;
 }
 
 input[type=submit]:hover {
-    background: linear-gradient(135deg, #BA83C0, #65ADE2);
+/*    background: linear-gradient(135deg, #BA83C0, #65ADE2);*/
     cursor: pointer;
+    background-color: #A0C8F9;
+    color: #161616;
 }
 
 
