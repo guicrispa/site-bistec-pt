@@ -83,4 +83,11 @@
     footer ion-icon {
         margin: 0.3em auto;
     }
+
+    .bt-dialog-teamviewer {
+        max-width: 60%;
+    }
+    .bt-dialog-anydesk {
+        max-width: 60%;
+    }
 }
