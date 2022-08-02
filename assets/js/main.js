@@ -72,6 +72,7 @@ localizacao.addEventListener('click', ()=>{
 })
 let tagA = localizacao.parentElement
 tagA.removeAttribute('href')
+tagA.removeAttribute('onclick')
 
 // Botão Loja
 let loja = document.getElementsByClassName('button')[0].parentElement
@@ -79,3 +80,4 @@ loja.addEventListener('click', ()=>{
     alert("Loja em construção...");
 })
 loja.removeAttribute('href')
+loja.removeAttribute('onclick')
