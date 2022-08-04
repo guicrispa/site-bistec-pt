@@ -69,35 +69,31 @@
     <!-- CORPO -->
     <article>
         <div class="formulario">
-            <form action="https://formsubmit.co/bistec@bistec.com.br" method="POST" id="formContato">
-                <input type="hidden" name="_next" value="http://bistec.com.pt">
-                <input type="hidden" name="_autoresponse" value="Email Recebido. Obrigado e caso seja necessário, estaremos entrando em contato assim que possivel">
-                <input type="hidden" name="_subject" value="Email Site Bistec Portugal">
-
+            <form action="contato.php" method="POST" id="formContato">
                 <h1>Formulário para Contato</h1>
                 <div class="campos">
                     <label>Nome completo:</label><br>
-                    <input type="text" name="Seu e-mail:" placeholder="Digite seu nome aqui" required>
+                    <input type="text" name="nomeRemetente" placeholder="Digite seu nome aqui">
                 </div>
                 
                 <div class="campos">
                     <label>Seu endereço de e-mail:</label><br>
-                    <input type="email" name="Assunto do e-mail" required placeholder="Digite seu endereço de e-mail aqui">
+                    <input type="email" name="emailRemetente" placeholder="Digite seu endereço de e-mail aqui">
                 </div>            
                 
                 <div class="campos">
                     <label>Assunto do e-mail:</label><br>
-                    <input type="text" name="Assunto do e-mail" placeholder="Digite aqui do que seu e-mail se trata" required>
+                    <input type="text" name="assuntoEmail" placeholder="Digite aqui sobre o que seu e-mail se trata">
                 </div>
                 
                 <div class="campos">
                     <label> Seu comentário: </label><br>
-                    <textarea name="conteudo" placeholder="Deixe seu comentário"></textarea>
+                    <textarea name="conteudoEmail" placeholder="Deixe seu comentário"></textarea>
                 </div>
                 
     
                 <div class="campos">
-                    <input type="submit" value="Enviar" id="btEnviaForm">
+                    <input type="submit" name="enviarEmail" value="Enviar" id="btEnviaForm">
                 </div>
                 
             </form>
