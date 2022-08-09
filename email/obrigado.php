@@ -2,7 +2,7 @@
     session_start();
     $emailR = $_SESSION['emailRemetente'];
 
-    if(isset($emailR) && !empty($emailR)){
+    if(isset($emailR) && !empty($emailR) && !$_SESSION['falha']){
 ?>
 <!DOCTYPE html>
 <html lang="pt-PT">
