@@ -1,4 +1,5 @@
 <?php
+    session_start();
     if(isset($_POST['enviarEmail']) && isset($_POST['emailRemetente']) && !empty($_POST['emailRemetente'])){
         $nomeRemetente= ucwords(strtolower($_POST['nomeRemetente']));
         $assuntoEmail=$_POST['assuntoEmail'];
@@ -21,7 +22,6 @@
         "Obrigado pelo contato e, caso seja necessário, estaremos entrando em contato assim que possível pelo email: ".$emailRemetente."\n\n\n".
         "Segue o conteúdo que recebemos:\n\n".$conteudoEmail;
 
-        session_start();
         $_SESSION['emailRemetente']=$emailRemetente;
         $_SESSION['nomeRemetente']=$nomeRemetente;
 
