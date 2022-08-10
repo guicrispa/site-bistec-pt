@@ -15,7 +15,7 @@
         right: 0;
         top: 0;
         padding: 3% 8%;
-        border-bottom: 2px solid black;
+        border-bottom: 1px solid #b3b3b3;
     }
 
     .logo-bistec {
@@ -48,6 +48,10 @@
 
     .normal-menu li{
         width: fit-content;
+    }
+
+    .button_support {
+        margin-top: 6%;
     }
 
     /* banner */
@@ -109,6 +113,8 @@
     }
 
     .contacts {
-        max-width: 65%;
+        max-width: 75%;
+        grid-template-columns: repeat(1, 2fr);
+        font-size: 24px;
     }
 }

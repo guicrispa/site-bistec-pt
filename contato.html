@@ -5,27 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suporte Técnico - Bistec Portugal</title>
-    <link rel="stylesheet" href="./assets/css/styleSuporte.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/styleMobile.css">
     <link rel="stylesheet" href="./assets/css/styleTablet.css">
     <link rel="stylesheet" href="./assets/css/styleTelaQuadrada.css">
     <link rel="stylesheet" href="./assets/css/styleTv.css">
     <link rel="icon" href="assets/images/logo-bistec-favicon.png">
+    <link rel="stylesheet" href="assets/css/styleContato.css">
 </head>
 <body>
     <!-- cabeçalho -->
-    <header class="header-bistec" id="#first_section">
-        <a href="#first_section" class="logo-bistec">
+
+    <header class="header-bistec" id="header_first_section">
+        <a href="#header_first_section" class="logo-bistec">
             <img src="assets/images/logo-bistec.png" alt="Logo - Bistec">
         </a>
         <ul class="normal-menu">
             <li>
-                <a href="index.html" class=" normal" >HOME</a>
+                <a href="index.html" class="normal" >HOME</a>
             </li>
             <!--Portifólio-->
             <li>
-                <a href="index.html" class="normal">PORTFÓLIO <ion-icon name="chevron-down-outline"></ion-icon></a>  
+                <a href="suporte.html" class="normal">PORTFÓLIO <ion-icon name="chevron-down-outline"></ion-icon></a>  
                 <ul class="normal-submenu">
                     <li><a href="produtos/automacao.html"><ion-icon name="at-sharp"></ion-icon> BISTEC AUTOMAÇÃO</a></li>
                     <li><a href="produtos/cloud.html"> <ion-icon name="cloud-done-sharp"></ion-icon> BISTEC CLOUD</a></li>
@@ -66,27 +67,42 @@
     </header>
 
     <!-- CORPO -->
-    <article id="first_section">
-        <!-- banner -->
-        <section class="bistec-suporte">
-            <h1>Suporte Técnico</h1>
-            <p>Este canal é exclusivo para clientes de contrato.</p>
-            <!--<p>Helpdesk on-line aberto de <strong>segunda à sexta</strong>, das <strong>8:15h às 18:00h.</strong></p>-->
-            <p>Caso sua empresa não seja parceira ainda, fale conosco!</p>
-            <p>Faça Download do Anydesk!</p>
-            <div class="bt-dialog-anydesk">
-                <a href="https://download.anydesk.com/AnyDesk.exe" class="button_text">DOWNLOAD ANYDESK</a>                   
-            </div>
+    <article>
+        <div class="formulario">
+            <form action="https://formsubmit.co/bistec@bistec.com.br" method="POST" id="formContato">
+                <input type="hidden" name="_next" value="http://bistec.com.pt">
+                <input type="hidden" name="_autoresponse" value="Email Recebido. Obrigado e caso seja necessário, estaremos entrando em contato assim que possivel">
+                <input type="hidden" name="_subject" value="Email Site Bistec Portugal">
 
-            <p>Faça Download do TeamViewer!</p>
-            <div class="bt-dialog-teamviewer">
-                <a href="http://download.teamviewer.com/download/TeamViewerQS_pt.exe" class="button_text">DOWNLOAD TEAMVIEWER</a>                   
-            </div>
-
-            <p>Fale conosco também pelo <strong><a class="suporte-wpp" href="https://api.whatsapp.com/send?phone=5513992101945" target="_blank">WhatsApp Business no +55 13 4042-0777</a></strong> ou pelo <strong><a href="https://t.me/BISTEC_BOT" target="_blank" class="suporte-telegram">Telegram – Procure por Atendimento BISTEC.</a></strong> </p>
-        </section>
+                <h1>Formulário para Contato</h1>
+                <div class="campos">
+                    <label>Nome completo:</label><br>
+                    <input type="text" name="Seu e-mail:" placeholder="Digite seu nome aqui" required>
+                </div>
+                
+                <div class="campos">
+                    <label>Seu endereço de e-mail:</label><br>
+                    <input type="email" name="Assunto do e-mail" required placeholder="Digite seu endereço de e-mail aqui">
+                </div>            
+                
+                <div class="campos">
+                    <label>Assunto do e-mail:</label><br>
+                    <input type="text" name="Assunto do e-mail" placeholder="Digite aqui do que seu e-mail se trata" required>
+                </div>
+                
+                <div class="campos">
+                    <label> Seu comentário: </label><br>
+                    <textarea name="conteudo" placeholder="Deixe seu comentário"></textarea>
+                </div>
+                
+    
+                <div class="campos">
+                    <input type="submit" value="Enviar" id="btEnviaForm">
+                </div>
+                
+            </form>
+        </div>
     </article>
-
     <!-- rodapé -->
 
     <footer>
@@ -128,14 +144,15 @@
                     <a href="https://api.whatsapp.com/send?phone=5513992101945" target="_blank">+55 (13) 99210-1945</a>
                 </p>
             </div> 
-             <!--
+            <!--
             <div class="contact item4">
                 <p>
                     <img src="assets/images/clock.png" alt="Logo Horário"> Funcionamento 
                 </p> 
                 <p>Segunda à Sexta:</p> 
-                <p>08:15h - 18:00h</p>
-            </div> -->
+                <p>Horário a ser definido</p>
+            </div> 
+            -->
         </div>
     </footer>
     <div class="footer-copyright">
@@ -145,5 +162,5 @@
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
     <script src="./assets/js/main.js"></script>
     <script src="//code.jivosite.com/widget/3bZuUHkWaM" async></script>
-</body>
+<body>
 </html>

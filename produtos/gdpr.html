@@ -4,42 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suporte Técnico - Bistec Portugal</title>
-    <link rel="stylesheet" href="./assets/css/styleSuporte.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/styleMobile.css">
-    <link rel="stylesheet" href="./assets/css/styleTablet.css">
-    <link rel="stylesheet" href="./assets/css/styleTelaQuadrada.css">
-    <link rel="stylesheet" href="./assets/css/styleTv.css">
+    <title>Início - Bistec Portugal</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/styleMobile.css">
+    <link rel="stylesheet" href="../assets/css/styleTablet.css">
+    <link rel="stylesheet" href="../assets/css/styleTelaQuadrada.css">
+    <link rel="stylesheet" href="../assets/css/styleTv.css">
+    <link rel="stylesheet" href="../assets/css/styleProdutos.css">
     <link rel="icon" href="assets/images/logo-bistec-favicon.png">
 </head>
 <body>
     <!-- cabeçalho -->
     <header class="header-bistec" id="#first_section">
         <a href="#first_section" class="logo-bistec">
-            <img src="assets/images/logo-bistec.png" alt="Logo - Bistec">
+            <img src="../assets/images/logo-bistec.png" alt="Logo - Bistec">
         </a>
         <ul class="normal-menu">
             <li>
-                <a href="index.html" class=" normal" >HOME</a>
+                <a href="../index.html" class=" normal" >HOME</a>
             </li>
             <!--Portifólio-->
             <li>
                 <a href="index.html" class="normal">PORTFÓLIO <ion-icon name="chevron-down-outline"></ion-icon></a>  
                 <ul class="normal-submenu">
-                    <li><a href="produtos/automacao.html"><ion-icon name="at-sharp"></ion-icon> BISTEC AUTOMAÇÃO</a></li>
-                    <li><a href="produtos/cloud.html"> <ion-icon name="cloud-done-sharp"></ion-icon> BISTEC CLOUD</a></li>
-                    <li><a href="produtos/edu.html"> <ion-icon name="pencil-sharp"></ion-icon> BISTEC EDU</a></li>
-                    <li><a href="produtos/gdpr.html"><ion-icon name="shield-checkmark-sharp"></ion-icon> BISTEC GDPR</a></li>
-                    <li><a href="produtos/msp.html"> <ion-icon name="lock-closed"></ion-icon> BISTEC MSP</a></li>
-                    <li><a href="produtos/outsourcing.html"> <ion-icon name="settings-sharp"></ion-icon> BISTEC OUTSOURCING</a></li>
-                    <li><a href="produtos/renting.html"> <ion-icon name="reload-circle-sharp"></ion-icon> BISTEC RENTING</a></li>
-                    <li><a href="produtos/soft.html"><ion-icon name="disc-sharp"></ion-icon> BISTEC SOFT</a></li>
-                    <li><a href="produtos/wifi.html"> <ion-icon name="wifi-sharp"></ion-icon> BISTEC WIFI</a></li>
+                    <li><a href="automacao.html"><ion-icon name="at-sharp"></ion-icon> BISTEC AUTOMAÇÃO</a></li>
+                    <li><a href="cloud.html"> <ion-icon name="cloud-done-sharp"></ion-icon> BISTEC CLOUD</a></li>
+                    <li><a href="edu.html"> <ion-icon name="pencil-sharp"></ion-icon> BISTEC EDU</a></li>
+                    <li><a href="gdpr.html"><ion-icon name="shield-checkmark-sharp"></ion-icon> BISTEC GDPR</a></li>
+                    <li><a href="msp.html"> <ion-icon name="lock-closed"></ion-icon> BISTEC MSP</a></li>
+                    <li><a href="outsourcing.html"> <ion-icon name="settings-sharp"></ion-icon> BISTEC OUTSOURCING</a></li>
+                    <li><a href="renting.html"> <ion-icon name="reload-circle-sharp"></ion-icon> BISTEC RENTING</a></li>
+                    <li><a href="soft.html"><ion-icon name="disc-sharp"></ion-icon> BISTEC SOFT</a></li>
+                    <li><a href="wifi.html"> <ion-icon name="wifi-sharp"></ion-icon> BISTEC WIFI</a></li>
                 </ul> 
             </li>
             <li>
-                <a href="./contato.html" class="normal">CONTATO</a>
+                <a href="../contato.html" class="normal">CONTATO</a>
             </li>
             <li><!--Butão de Loja-->
                 <a href="#" onclick="clickStore()">
@@ -50,7 +50,7 @@
                 </a>
             </li>
             <li><!--Botão Suporte-->
-                <a href="suporte.html">
+                <a href="../suporte.html">
                     <div class="button_support">
                         <span class="button_icon support_icon"><ion-icon name="headset-outline"></ion-icon></span>
                         <span class="button_text">SUPORTE</span>
@@ -64,27 +64,36 @@
             </li>
         </ul>
     </header>
+    <!-- banner -->
 
-    <!-- CORPO -->
     <article id="first_section">
         <!-- banner -->
-        <section class="bistec-suporte">
-            <h1>Suporte Técnico</h1>
-            <p>Este canal é exclusivo para clientes de contrato.</p>
-            <!--<p>Helpdesk on-line aberto de <strong>segunda à sexta</strong>, das <strong>8:15h às 18:00h.</strong></p>-->
-            <p>Caso sua empresa não seja parceira ainda, fale conosco!</p>
-            <p>Faça Download do Anydesk!</p>
-            <div class="bt-dialog-anydesk">
-                <a href="https://download.anydesk.com/AnyDesk.exe" class="button_text">DOWNLOAD ANYDESK</a>                   
-            </div>
-
-            <p>Faça Download do TeamViewer!</p>
-            <div class="bt-dialog-teamviewer">
-                <a href="http://download.teamviewer.com/download/TeamViewerQS_pt.exe" class="button_text">DOWNLOAD TEAMVIEWER</a>                   
-            </div>
-
-            <p>Fale conosco também pelo <strong><a class="suporte-wpp" href="https://api.whatsapp.com/send?phone=5513992101945" target="_blank">WhatsApp Business no +55 13 4042-0777</a></strong> ou pelo <strong><a href="https://t.me/BISTEC_BOT" target="_blank" class="suporte-telegram">Telegram – Procure por Atendimento BISTEC.</a></strong> </p>
+        <section class="banner-bistec">
+            <img src="../assets/images/produtos/banner-bistec-gdpr.png" alt="Imagem de fundo do produto Bistec GDPR">
+            <!--<div class="banner-bistec-texto">
+                <h1>Bistec Portugal</h1>
+                <h2>Serviços em tecnologia para todas as empresas</h2>
+            </div>-->
         </section>
+
+        <section class="banner-bistec-mobile">
+            <img src="../assets/images/produtos/banner-gdpr-mobile.png" alt="Imagem de fundo do produto Bistec GDPR">
+            <!-- <div class="banner-bistec-texto">
+                <h1>Bistec Portugal</h1>
+                <h2>Serviços em tecnologia para todas as empresas</h2>
+            </div> -->
+        </section>
+
+    <!-- texto produto -->
+        <div class="produto-texto">
+            <h1>Bistec GDPR</h1>
+            <p>
+                A GDPR (General Data Protection Regulation) 2016/679 é um regulamento da legislação europeia sobre privacidade e proteção de dados pessoais, aplicável a todos os indivíduos da União Europeia e do Espaço Económico Europeu que foi implementado em 2018.
+            </p>
+            <p>
+                A GDPR define multas, sanções e processos cível aos controladores e operadores que não cumpram as suas bases legais, de acordo com o tipo de evento e gravidade.
+            </p>
+        </div>
     </article>
 
     <!-- rodapé -->
@@ -105,37 +114,38 @@
         <div class="contacts">
             <div class="contact item1">
                 <a href="#contacts_section" id="contacts_section">
-                    <img src="assets/images/portugal.png" alt="Portugal País"> Bistec Portugal
+                    <img src="../assets/images/portugal.png" alt="Portugal País"> Bistec Portugal
                 </a>
                 <p><a href="tel:+351308807114">+351 308 807 114</a></p>
             </div>
-    
+
             <div class="contact item2">
                 <a href="https://bistec.com.br">
-                    <img src="assets/images/brazil.png" alt="Brasil País"> Bistec Brasil 
+                    <img src="../assets/images/brazil.png" alt="Brasil País"> Bistec Brasil 
                 </a>  
                 <p>
                     <a href="tel:+55(13)3235-7735">+55 (13) 3235-7735</a>  
                 </p>
                 <p>
                     <a href="tel:+55(13)3522-8184">+55 (13) 3522-8184</a>
-                </p>                    
+                </p>
             </div>
-    
+
             <div class="contact item3">
-                <a href="https://api.whatsapp.com/send?phone=5513992101945" target="_blank"><img src="assets/images/whatsapp.png" alt="Logo Whatsapp Business"> Whatsapp Business </a>
+                    <a href="https://api.whatsapp.com/send?phone=5513992101945" target="_blank"><img src="../assets/images/whatsapp.png" alt="Logo Whatsapp Business"> Whatsapp Business </a>
                 <p>
                     <a href="https://api.whatsapp.com/send?phone=5513992101945" target="_blank">+55 (13) 99210-1945</a>
                 </p>
-            </div> 
-             <!--
+            </div>
+            <!--
             <div class="contact item4">
                 <p>
                     <img src="assets/images/clock.png" alt="Logo Horário"> Funcionamento 
                 </p> 
                 <p>Segunda à Sexta:</p> 
-                <p>08:15h - 18:00h</p>
-            </div> -->
+                <p>Horário a ser definido</p>
+            </div> 
+            -->
         </div>
     </footer>
     <div class="footer-copyright">
@@ -143,7 +153,7 @@
     </div>
 
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
     <script src="//code.jivosite.com/widget/3bZuUHkWaM" async></script>
 </body>
 </html>

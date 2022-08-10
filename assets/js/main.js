@@ -52,3 +52,32 @@ function menuResponsive(){
         menu.style.display = 'inherit'
     }
 }
+
+//CONTATO  ---------------------------------------------------------------------------------
+var link = window.location.href
+var pagina = link.split('/')
+
+if(pagina.includes('contato.html')){
+    let btEnviarForm = document.getElementById('btEnviaForm')
+    btEnviarForm.addEventListener('click', ()=>{
+        alert("Você receberá um email com os dados que foram preenchidos")
+    })
+}
+
+//PROVISÓRIO  ---------------------------------------------------------------------------------
+// localização
+var localizacao = document.getElementsByName('location')[0]
+localizacao.addEventListener('click', ()=>{
+    alert("Localização será definida em breve");
+})
+let tagA = localizacao.parentElement
+tagA.removeAttribute('href')
+tagA.removeAttribute('onclick')
+
+// Botão Loja
+let loja = document.getElementsByClassName('button')[0].parentElement
+loja.addEventListener('click', ()=>{
+    alert("Loja em construção...");
+})
+loja.removeAttribute('href')
+loja.removeAttribute('onclick')
