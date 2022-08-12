@@ -1,6 +1,9 @@
+//Adiciona a tag spam do menu em uma variável
 let menu=document.getElementsByClassName('menu-principal')[0]
+//Pega o caminho separando o conteudo do atributo 'src' do script
 let Caminho = document.getElementsByTagName('script')[0].attributes[0].textContent.split('/')[0]+'/'
 
+//insere conteudo html depois da tag spam de referência
 menu.insertAdjacentHTML('afterend',/*html*/`
     <header class="header-bistec" id="#first_section">
         <a href="#first_section" class="logo-bistec">
@@ -51,4 +54,5 @@ menu.insertAdjacentHTML('afterend',/*html*/`
         </ul>
     </header>
 `)
+//remove a tag spam de referencia
 menu.remove()
