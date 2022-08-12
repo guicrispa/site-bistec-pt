@@ -8,7 +8,7 @@ menu.insertAdjacentHTML('afterend',/*html*/`
         </a>
         <ul class="normal-menu">
             <li>
-                <a href="${Caminho}index.html" class="normal" >HOMEoi</a>
+                <a href="${Caminho}index.html" class="normal" >HOME</a>
             </li>
             <li>
                 <a href="#bistec-automaçao" class="normal">PORTFÓLIO <ion-icon name="chevron-down-outline"></ion-icon></a>
