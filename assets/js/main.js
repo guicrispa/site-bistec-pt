@@ -53,17 +53,6 @@ function menuResponsive(){
     }
 }
 
-//CONTATO  ---------------------------------------------------------------------------------
-var link = window.location.href
-var pagina = link.split('/')
-
-if(pagina.includes('contato.html')){
-    let btEnviarForm = document.getElementById('btEnviaForm')
-    btEnviarForm.addEventListener('click', ()=>{
-        alert("Você receberá um email com os dados que foram preenchidos")
-    })
-}
-
 //PROVISÓRIO  ---------------------------------------------------------------------------------
 // localização
 var localizacao = document.getElementsByName('location')[0]
