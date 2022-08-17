@@ -258,7 +258,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-42%, -50%);
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 4vw;
     font-weight: 300;
 }

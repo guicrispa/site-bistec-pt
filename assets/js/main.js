@@ -30,13 +30,13 @@ function controlaModal(numModal){
 //ajusta para o menu se adequar conforme a mudança da tela
 const verificaTela = () => {
     let menu = document.getElementsByClassName('normal-menu')[0]
-    let portifolio = document.getElementsByClassName('normal')[1]
+    let portifolio = document.getElementsByClassName('normal')[2]
     if(!window.matchMedia("(min-width: 951px)").matches){
         menu.style.display = 'none'
         portifolio.removeAttribute('href') //tira direcionamento no mobile
     }else{
         menu.style.display = 'inherit'
-        portifolio.setAttribute('href', '#bistec-automaçao')
+        portifolio.setAttribute('href')
     }
 }
 window.onresize = verificaTela
