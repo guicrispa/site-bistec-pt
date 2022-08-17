@@ -8,6 +8,7 @@
 
 .bistec-suporte h1 {
     font-size: 4vw;
+    padding-top: 8vh;
 }
 
 .bistec-suporte p {
@@ -72,11 +73,16 @@
 
     .bistec-suporte h1 {
         font-size: 7vw;
+        padding-top: 10vh;
     }
 
     .bistec-suporte p {
-        font-size: 4vw;
+        font-size: 4.8vw;
         padding: 1.75vh 0;
+    }
+
+    footer {
+        margin-top: 0;
     }
 
     footer ion-icon {

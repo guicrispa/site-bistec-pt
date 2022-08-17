@@ -14,7 +14,10 @@ menu.insertAdjacentHTML('afterend',/*html*/`
                 <a href="${Caminho}index.html" class="normal" >HOME</a>
             </li>
             <li>
-                <a href="#bistec-automaçao" class="normal">PORTFÓLIO <ion-icon name="chevron-down-outline"></ion-icon></a>
+                <a href="${Caminho}contato.html" class="normal" >CONTATO</a>
+            </li>
+            <li>
+                <a href="#" class="normal">PORTFÓLIO <ion-icon name="chevron-down-outline"></ion-icon></a>
                 <ul class="normal-submenu">
                     <li><a href="${Caminho}produtos/automacao.html"><ion-icon name="at-sharp"></ion-icon> BISTEC AUTOMAÇÃO</a></li>
                     <li><a href="${Caminho}produtos/cloud.html"> <ion-icon name="cloud-done-sharp"></ion-icon> BISTEC CLOUD</a></li>
@@ -26,9 +29,6 @@ menu.insertAdjacentHTML('afterend',/*html*/`
                     <li><a href="${Caminho}produtos/soft.html"><ion-icon name="disc-sharp"></ion-icon> BISTEC SOFT</a></li>
                     <li><a href="${Caminho}produtos/wifi.html"> <ion-icon name="wifi-sharp"></ion-icon> BISTEC WIFI</a></li>
                 </ul>
-            </li>
-            <li>
-                <a href="${Caminho}contato.html" class="normal">CONTATO</a>
             </li>
             <li>
                 <a href="#">

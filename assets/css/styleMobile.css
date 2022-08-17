@@ -112,6 +112,8 @@
     .button_support:hover {
       background: #141414;
     }
+
+    
     /* banner */
 
     .banner-bistec {
@@ -134,7 +136,7 @@
     .banner-bistec-texto {
         transform: translate(-45%, -50%);
     }
-
+    
     .banner-bistec-texto h1 {
         font-size: 6vw;
     }
