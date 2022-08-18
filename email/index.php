@@ -29,6 +29,7 @@
         if(mail($emailDestinatario, $assuntoEmail, $txtDestinatario, $headersR)
             && mail($emailRemetente, "Email entregue: ".$assuntoEmail, $txtRemetente, $headersD)
         ){
+            $_SESSION['falha']=false;
             header('location: ./obrigado.php');
         }
         else{
