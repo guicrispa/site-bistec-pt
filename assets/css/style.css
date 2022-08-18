@@ -60,7 +60,6 @@ header .normal-menu li{
 
 header .normal-menu li a {
     display: block;
-    padding: 0;
     margin: 0 8px;
     font-weight: 700;
 }
@@ -259,7 +258,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-42%, -50%);
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 4vw;
     font-weight: 300;
 }

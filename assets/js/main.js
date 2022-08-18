@@ -30,13 +30,13 @@ function controlaModal(numModal){
 //ajusta para o menu se adequar conforme a mudança da tela
 const verificaTela = () => {
     let menu = document.getElementsByClassName('normal-menu')[0]
-    let portifolio = document.getElementsByClassName('normal')[1]
+    let portifolio = document.getElementsByClassName('normal')[2]
     if(!window.matchMedia("(min-width: 951px)").matches){
         menu.style.display = 'none'
         portifolio.removeAttribute('href') //tira direcionamento no mobile
     }else{
         menu.style.display = 'inherit'
-        portifolio.setAttribute('href', '#bistec-automaçao')
+        portifolio.setAttribute('href')
     }
 }
 window.onresize = verificaTela
@@ -51,17 +51,6 @@ function menuResponsive(){
     }else{
         menu.style.display = 'inherit'
     }
-}
-
-//CONTATO  ---------------------------------------------------------------------------------
-var link = window.location.href
-var pagina = link.split('/')
-
-if(pagina.includes('contato.html')){
-    let btEnviarForm = document.getElementById('btEnviaForm')
-    btEnviarForm.addEventListener('click', ()=>{
-        alert("Você receberá um email com os dados que foram preenchidos")
-    })
 }
 
 //PROVISÓRIO  ---------------------------------------------------------------------------------
