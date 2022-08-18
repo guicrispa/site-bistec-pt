@@ -16,6 +16,12 @@
     padding: 1.75vh 0;
 }
 
+.email-enviado ion-icon {
+    font-size: 25vh;
+    color: rgb(46, 206, 81);
+    opacity: 0.3;
+}
+
 @media (max-width: 620px){
     .email-enviado{
         max-width: 75%;

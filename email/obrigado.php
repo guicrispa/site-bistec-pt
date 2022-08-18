@@ -28,7 +28,9 @@
             <section class="email-enviado">
                 <h1>Email Enviado</h1>
                 <p>Email enviado com sucesso para o endereço <b><?php echo $emailR?></b></p>
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
             </section>
+            
         </article>
 
         <!-- rodapé -->
