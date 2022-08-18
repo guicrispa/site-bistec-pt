@@ -6,23 +6,54 @@
         padding: 10px 0;
     }
 
+    header .normal-menu li a{
+        font-size: 16px;
+        margin: 0;
+        letter-spacing: 0.5px;
+        text-align: left;
+    }
+
     .normal-menu{
+        text-align: center;
         background-color: #F3FAFA;
         display: none;
         position: absolute;
         width: 100%;
         right: 0;
-        padding: 3% 8%;
-        border-bottom: 1px solid #b3b3b3;
+        font-size: 12px;
+        border-bottom: 1px solid #f3fafa;
     }
-    .normal-menu li{
-        width: fit-content;
+
+    .normal:hover{
+        border: none;
+        color: #0c407c;
+        transition: 0.2s;
+    } 
+
+    .normal ion-icon:hover {
+        color: #0c407c;
     }
+
+    header .normal-submenu li a:hover {
+        background: #141414;
+        color: white;
+        transition: 0.2s;
+    }
+
+    .normal-submenu ion-icon:hover {
+        font-size: 15px;
+        color: #141414;
+        margin-right: 5px;
+    }
+
+    /* 
+     */
 
     .logo-bistec {
         align-items: flex-start;
         margin: 0;
     }
+    
 
     .menu-cell {
         display: block;
@@ -36,17 +67,52 @@
         margin-top: 10px;
         font-size: 35px;
     }
+    .normal {
+        padding-left: 20px;
+    }
 
     .normal-submenu{
         /* width: 100%; */
-        z-index: 1;
+        display: block;
+        border: none;
+        width: 100%;
+        top: 30px;
         /* margin: 0;
         padding: 0; */
     }
 
-    .button_support {
-        margin-top: 6%;
+    header .normal-submenu li a {
+        width: 100%;
+    padding: 10px 20px;
+    font-size: 12px;
+    box-shadow: none;
+    text-align: left;
     }
+
+    .button {
+        display: none;
+    }
+
+    .support_icon {
+        background: none;
+        padding: 5px 0;
+        padding-left: 20px;
+    }
+
+    .button_support {
+        width: 100%;
+        margin-top: 340px;
+        display: block;
+        height: 45px;
+        font-size: 16px;
+        border-radius: 0;
+        background: #0c407c;
+    }
+
+    .button_support:hover {
+      background: #141414;
+    }
+
     
     /* banner */
 
@@ -70,7 +136,7 @@
     .banner-bistec-texto {
         transform: translate(-45%, -50%);
     }
-
+    
     .banner-bistec-texto h1 {
         font-size: 6vw;
     }
