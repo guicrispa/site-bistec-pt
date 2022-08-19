@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="../assets/css/styleTelaQuadrada.css">
         <link rel="stylesheet" href="../assets/css/styleTv.css">
         <link rel="stylesheet" href="../assets/css/styleEmail.css">
-        <link rel="icon" href="assets/images/logo-bistec-favicon.png">
+        <link rel="icon" href="../assets/images/logo-bistec-favicon.png">
     </head>
     <body>
         <!-- cabeçalho -->
@@ -27,7 +27,8 @@
         <article id="first_section">
             <section class="email-enviado">
                 <h1>Email Enviado</h1>
-                <p>Email enviado com sucesso para o endereço <b><?php echo $emailR?></b></p>
+                <p>Enviamos uma cópia para o endereço <b><?php echo $emailR?></b></p>
+                <p>Caso não tenha recebido, tente entrar em contato novamente</p>
                 <ion-icon name="checkmark-circle-outline"></ion-icon>
             </section>
             
