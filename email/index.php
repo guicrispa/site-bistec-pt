@@ -6,7 +6,7 @@
         $emailRemetente=$_POST['emailRemetente'];
         $conteudoEmail=$_POST['conteudoEmail'];
 
-        $emailDestinatario="mateus@bistec.com.br";
+        $emailDestinatario="contato@bistec.com.pt";
         $headersR="From: ".$emailRemetente;
         $headersD="From: ".$emailDestinatario;
 
