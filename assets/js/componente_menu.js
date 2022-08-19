@@ -14,7 +14,7 @@ menu.insertAdjacentHTML('afterend',/*html*/`
                 <a href="${Caminho}index.html" class="normal" >HOME</a>
             </li>
             <li>
-                <a href="${Caminho}contato.html" class="normal" >CONTATO</a>
+                <a href="${Caminho}contato.html" class="normal" >CONTACTO</a>
             </li>
             <li>
                 <a href="#" class="normal">PORTFÓLIO <ion-icon name="chevron-down-outline"></ion-icon></a>
