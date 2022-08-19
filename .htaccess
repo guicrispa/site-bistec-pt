@@ -1,4 +1,4 @@
-ErrorDocument 404 /404.shtml
+ErrorDocument 404 /erros/404.shtml
 RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
