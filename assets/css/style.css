@@ -259,6 +259,7 @@ a {
     left: 50%;
     transform: translate(-42%, -50%);
     color: rgb(255, 255, 255);
+    background-color: transparent;
     font-size: 4vw;
     font-weight: 300;
 }
@@ -292,7 +293,7 @@ a {
     font-size: 3vw;
     font-weight: 500;
 }
-.texto-produtos h4{
+.texto-produtos h3{
     font-size: 2.53vw;
     font-weight: 400;
 }
@@ -362,6 +363,7 @@ a {
   .modal-body {
     padding: 1.5em 1em;
     background-color: #ffffff;
+    color: black;
     border-top: 1px solid #080808;
     border-bottom: 1px solid #080808;
 }
@@ -528,4 +530,16 @@ footer .item3 p {
     border-style: solid;
     border-color: transparent;
     user-select: none;
+}
+
+/* jivo */
+
+.desktop_cc09 .title_da3a, .tablet_c420 .title_da3a {
+    color: rgba(0,0,0,.87)!important;
+    cursor: pointer;
+    background-color: transparent;
+    display: block;
+    font-size: 16px;
+    max-width: calc(100% - 38px);
+    text-decoration: none;
 }
