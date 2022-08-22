@@ -36,7 +36,7 @@ const verificaTela = () => {
         portifolio.removeAttribute('href') //tira direcionamento no mobile
     }else{
         menu.style.display = 'inherit'
-        portifolio.setAttribute('href')
+        portifolio.setAttribute('href', '#bistec-automacao')
     }
 }
 window.onresize = verificaTela
