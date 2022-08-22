@@ -17,7 +17,7 @@ menu.insertAdjacentHTML('afterend',/*html*/`
                 <a href="${Caminho}contato.html" class="normal" >CONTATO</a>
             </li>
             <li>
-                <a href="#" class="normal">PORTFÓLIO <ion-icon name="chevron-down-outline"></ion-icon></a>
+                <a href="#bistec-automacao" class="normal">PORTFÓLIO <ion-icon name="chevron-down-outline"></ion-icon></a>
                 <ul class="normal-submenu">
                     <li><a href="${Caminho}produtos/automacao.html"><ion-icon name="at-sharp"></ion-icon> BISTEC AUTOMAÇÃO</a></li>
                     <li><a href="${Caminho}produtos/cloud.html"> <ion-icon name="cloud-done-sharp"></ion-icon> BISTEC CLOUD</a></li>
