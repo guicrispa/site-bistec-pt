@@ -14,18 +14,21 @@
     text-decoration: underline;
     font-weight: 800;
     color: #5906A7;
+    background-color: transparent;
 }
 
 .produto-texto .link_msp {
     text-decoration: underline;
     font-weight: 800;
     color: #0e3d72;
+    background-color: transparent;
 }
 
 .produto-texto p.link_renting {
     text-decoration: underline;
     font-weight: 800;
     text-align: center;
+    background-color: transparent;
 }
 
 li {
@@ -63,6 +66,7 @@ li {
 }
 
 p .nice_button {
+    background-color: white;
     text-decoration: none;
     color: #141414;
     font-weight: 700;

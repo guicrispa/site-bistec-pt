@@ -9,11 +9,13 @@
 .bistec-suporte h1 {
     font-size: 4vw;
     padding-top: 8vh;
+    background-color: transparent;
 }
 
 .bistec-suporte p {
     font-size: 2vw;
     padding: 1.75vh 0;
+    background-color: transparent;
 }
 
 .bistec-suporte .button_text {
@@ -62,11 +64,13 @@
 .suporte-wpp {
     color: #006700;
     text-decoration: underline;
+    background-color: transparent;
 }
 
 .suporte-telegram {
     color: #08457a;
     text-decoration: underline;
+    background-color: transparent;
 }
 
 @media (max-width: 620px) {
