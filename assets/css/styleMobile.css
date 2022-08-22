@@ -166,7 +166,7 @@
       font-size: 5.2vw;
       font-weight: 500;
     }
-    .texto-produtos h4{
+    .texto-produtos h3{
         text-align: center;
         font-size: 4.2vw;
         font-weight: 400;
@@ -251,6 +251,6 @@
     }
 
     .footer-copyright p {
-        max-width: 70%;
+        max-width: 73%;
     }
 }
