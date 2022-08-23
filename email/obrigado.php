@@ -26,9 +26,9 @@
         <!-- corpo -->
         <article id="first_section">
             <section class="email-enviado">
-                <h1>Email Enviado</h1>
+                <h1>Formulário Processado</h1>
                 <p>Enviamos uma cópia para o endereço <b><?php echo $emailR?></b></p>
-                <p>Caso não tenha recebido, tente entrar em contato novamente</p>
+                <p>Caso não tenha recebido, pode ter ocorrigo algum problema no envio, tente enviar novame ou entre em contato por outro canal</p>
                 <ion-icon name="checkmark-circle-outline"></ion-icon>
             </section>
             
