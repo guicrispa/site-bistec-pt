@@ -21,6 +21,9 @@
     color: rgb(46, 206, 81);
     opacity: 0.3;
 }
+.email-enviado #ionicEmailFalhou{
+    color: rgb(244, 18, 18);
+}
 
 @media (max-width: 620px){
     .email-enviado{
