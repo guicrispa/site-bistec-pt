@@ -1,14 +1,17 @@
-ErrorDocument 404 /erros/404.shtml
+# ErrorDocument 404 /erros/404.shtml
+# RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# <IfModule mod_rewrite.c>
+#     Options +FollowSymLinks -MultiViews
+#     RewriteEngine On
+#     RewriteBase /
+#     RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
+#     RewriteRule ^ %1 [R,L]
+#     RewriteCond %{REQUEST_FILENAME} !-d
+#     RewriteCond %{REQUEST_FILENAME}.html -f
+#     RewriteRule ^(.*?)/?$ $1.html [L]
+# </IfModule>
+
 RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-<IfModule mod_rewrite.c>
-    Options +FollowSymLinks -MultiViews
-    RewriteEngine On
-    RewriteBase /
-    RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
-    RewriteRule ^ %1 [R,L]
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME}.html -f
-    RewriteRule ^(.*?)/?$ $1.html [L]
-</IfModule>
+RewriteRule ^home$ ./index.html [NC]
