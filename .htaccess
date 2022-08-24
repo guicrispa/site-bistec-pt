@@ -1,4 +1,3 @@
-# ErrorDocument 404 /erros/404.shtml
 # RewriteEngine On
 # RewriteCond %{HTTPS} off
 # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
@@ -12,6 +11,9 @@
 #     RewriteCond %{REQUEST_FILENAME}.html -f
 #     RewriteRule ^(.*?)/?$ $1.html [L]
 # </IfModule>
+Options -Indexes
+ErrorDocument 403 /erros/403.shtml
+ErrorDocument 404 /erros/404.shtml
 
 RewriteEngine On
 RewriteRule ^home$ ./index.html [NC]
