@@ -14,7 +14,8 @@ rodape.insertAdjacentHTML('afterend',/*html*/`
         <a href="https://www.flickr.com/bistec" target="_blank"><ion-icon name="logo-flickr"></ion-icon></a>
         <a href="https://soundcloud.com/bistecweb" target="_blank"><ion-icon name="logo-soundcloud"></ion-icon></a>
         <a href="https://linkedin.com/company/bistec" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-        <a href="#" target="_self"><ion-icon name="location" class="ionspecial"></ion-icon></a>
+        <button target="_self"><ion-icon name="location" class="ionspecial"></ion-icon></button>
+        <!-- <a href="#" target="_self"><ion-icon name="location" class="ionspecial"></ion-icon></a>-->
     </div>
 
     <div class="contacts">
