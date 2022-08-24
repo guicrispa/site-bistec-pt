@@ -28,7 +28,7 @@ function menuResponsive(){
 
 //PROVISÓRIO  ---------------------------------------------------------------------------------
 // localização
-var localizacao = document.getElementsByName('location')[0]
+var localizacao = document.getElementById('location_button')
 localizacao.addEventListener('click', ()=>{
     alert("Localização será definida em breve");
 })
