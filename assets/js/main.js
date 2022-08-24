@@ -1,30 +1,3 @@
-//Funções do Pop-up -----------------------------------------------------------------
-var btSaibaMais = document.getElementsByClassName('bt-dialog')
-//configura a função controlModal nos elementos com classes bt-dialog
-for (let i = 0; i < btSaibaMais.length; i++) {
-    btSaibaMais[i].addEventListener('click', ()=>{controlaModal(i)})
-}
-
-function controlaModal(numModal){
-    let modal = document.getElementsByClassName('modal')[numModal]
-    let btnCloseModal = document.getElementsByClassName('close')
-
-    //troca a propriedade display, fazendo a modal aparecer
-    modal.style.display = "block"
-    //fecha a modal ao clicar no "x"
-    btnCloseModal[numModal].onclick = () => {
-        modal.style.display = "none"        
-    }
-    //fecha a modal ao clicar fora
-    window.onclick = (event) => {
-        if (event.target == modal) {
-            document.getElementsByClassName('modal').forEach(
-                fechaModais => fechaModais.style.display = "none"
-            )
-        }
-    }   
-}
-
 //Menu mobile ---------------------------------------------------------------------------
 
 //ajusta para o menu se adequar conforme a mudança da tela

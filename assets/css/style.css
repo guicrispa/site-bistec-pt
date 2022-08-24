@@ -113,10 +113,10 @@ header ul :hover > ul{
 	padding: 0;
     margin: 0;
 	background: #BB0A0A;
-	border: none;
-	outline: none;
 	border-radius: 6px;
 	overflow: hidden;
+    border: none;
+    outline: none;
 	font-family: 'Inter', sans-serif;
 	font-size: 15px;
 	font-weight: 900;
@@ -129,6 +129,10 @@ header ul :hover > ul{
 
 .button:active{
 	background: #d12b2b;
+}
+
+.button:focus-within {
+    border: 2px solid #141414;
 }
 
 .button_text,
@@ -152,8 +156,6 @@ a {
 	padding: 0;
 	color: #141414;
     height: 100%;
-	border: none;
-	outline: none;
     background: none;
     cursor: pointer;
     font-size: 16px;
@@ -317,17 +319,20 @@ a {
     height: 30px;
     border-radius: 6px;
     cursor: pointer;
-	border: none;
-	outline: none;
     font-weight: 800;
 }
 
 .bt-dialog:hover {
-	background: #1f1f1f;
+	background-color: #1f1f1f;
 }
 
 .bt-dialog:active{
-	background: #2e2d2d;
+	background-color: #2e2d2d;
+}
+
+.bt-dialog:focus-within {
+    background-color: #13549E;
+    transition: 1s;
 }
 
 .bt-dialog .button_text,
@@ -542,4 +547,14 @@ footer .item3 p {
     font-size: 16px;
     max-width: calc(100% - 38px);
     text-decoration: none;
+}
+
+/* PROVISÓRIO*/
+footer button {
+    background: transparent;
+    border: none;
+}
+
+footer button:focus-within{
+    border: 1px solid white;
 }
