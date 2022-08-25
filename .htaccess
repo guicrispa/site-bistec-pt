@@ -14,8 +14,8 @@ RewriteEngine On
 # </IfModule>
 
 Options -Indexes
-ErrorDocument 403 https://%{HTTP_HOST}/erros/403.shtml
-ErrorDocument 404 https://%{HTTP_HOST}/erros/404.shtml
+ErrorDocument 403 https://%{HTTP_HOST}/erro/403.shtml
+ErrorDocument 404 https://%{HTTP_HOST}/erro/404.shtml
 RewriteRule ^home$ ./index.html [NC]
 # RewriteRule /index$ / [NC]
 
