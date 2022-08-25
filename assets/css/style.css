@@ -75,11 +75,13 @@ header .normal-submenu li a {
     box-shadow: 0.2px 0.2px 0.2px 0.2px rgba(0, 0, 0, 0.473);
 }
 
-header .normal-submenu li a:hover {
+header .normal-submenu li a:hover,
+header .normal-submenu li a:focus-within {
     background: #0c407c;
     color: white;
     transition: 0.2s;
 }
+
 
 .normal-submenu ion-icon {
     font-size: 15px;
@@ -99,7 +101,8 @@ header ul ul {
     display: none;
 }
 
-header .normal-submenu li a:hover > ion-icon {
+header .normal-submenu li a:hover > ion-icon,
+header .normal-submenu li a:focus-within > ion-icon {
     color: #fff;
 }
 
@@ -166,6 +169,10 @@ a {
 
 .normal ion-icon {
     color: black;
+}
+
+:focus-within > .normal-submenu {
+    display: block;
 }
 
 .normal:hover{
@@ -455,7 +462,14 @@ footer ion-icon{
     padding: 0.3em;
     margin: 0.3em auto;
 }
-footer ion-icon:hover{
+
+footer .redes-sociais a:focus-within > ion-icon {
+    cursor: pointer;
+    background-color: #D0CEC6;
+    color: #262525;
+    transition: 0.7s;
+}
+footer ion-icon:hover {
     cursor: pointer;
     background-color: #D0CEC6;
     color: #262525;
@@ -473,10 +487,18 @@ footer ion-icon:hover{
     max-width: 70%;
 }
 
-.ionspecial{
+.ionspecial {
     color: #A0C8F9;
     border: #A0C8F9 solid 2px;
     border-bottom: 3px solid #A0C8F9;
+}
+
+
+footer .redes-sociais a:focus-within > .ionspecial,
+footer .redes-sociais button:focus-within > .ionspecial {
+    background-color: #A0C8F9;
+    color: #262525;
+    transition: 0.5s;
 }
 
 .ionspecial:hover {
