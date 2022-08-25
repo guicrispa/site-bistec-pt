@@ -75,11 +75,13 @@ header .normal-submenu li a {
     box-shadow: 0.2px 0.2px 0.2px 0.2px rgba(0, 0, 0, 0.473);
 }
 
-header .normal-submenu li a:hover {
+header .normal-submenu li a:hover,
+header .normal-submenu li a:focus-within {
     background: #0c407c;
     color: white;
     transition: 0.2s;
 }
+
 
 .normal-submenu ion-icon {
     font-size: 15px;
@@ -99,7 +101,8 @@ header ul ul {
     display: none;
 }
 
-header .normal-submenu li a:hover > ion-icon {
+header .normal-submenu li a:hover > ion-icon,
+header .normal-submenu li a:focus-within > ion-icon {
     color: #fff;
 }
 
@@ -113,10 +116,10 @@ header ul :hover > ul{
 	padding: 0;
     margin: 0;
 	background: #BB0A0A;
-	border: none;
-	outline: none;
 	border-radius: 6px;
 	overflow: hidden;
+    border: none;
+    outline: none;
 	font-family: 'Inter', sans-serif;
 	font-size: 15px;
 	font-weight: 900;
@@ -129,6 +132,10 @@ header ul :hover > ul{
 
 .button:active{
 	background: #d12b2b;
+}
+
+.button:focus-within {
+    border: 2px solid #141414;
 }
 
 .button_text,
@@ -152,8 +159,6 @@ a {
 	padding: 0;
 	color: #141414;
     height: 100%;
-	border: none;
-	outline: none;
     background: none;
     cursor: pointer;
     font-size: 16px;
@@ -164,6 +169,10 @@ a {
 
 .normal ion-icon {
     color: black;
+}
+
+:focus-within > .normal-submenu {
+    display: block;
 }
 
 .normal:hover{
@@ -317,17 +326,20 @@ a {
     height: 30px;
     border-radius: 6px;
     cursor: pointer;
-	border: none;
-	outline: none;
     font-weight: 800;
 }
 
 .bt-dialog:hover {
-	background: #1f1f1f;
+	background-color: #1f1f1f;
 }
 
 .bt-dialog:active{
-	background: #2e2d2d;
+	background-color: #2e2d2d;
+}
+
+.bt-dialog:focus-within {
+    background-color: #13549E;
+    transition: 1s;
 }
 
 .bt-dialog .button_text,
@@ -450,7 +462,14 @@ footer ion-icon{
     padding: 0.3em;
     margin: 0.3em auto;
 }
-footer ion-icon:hover{
+
+footer .redes-sociais a:focus-within > ion-icon {
+    cursor: pointer;
+    background-color: #D0CEC6;
+    color: #262525;
+    transition: 0.7s;
+}
+footer ion-icon:hover {
     cursor: pointer;
     background-color: #D0CEC6;
     color: #262525;
@@ -468,10 +487,18 @@ footer ion-icon:hover{
     max-width: 70%;
 }
 
-.ionspecial{
+.ionspecial {
     color: #A0C8F9;
     border: #A0C8F9 solid 2px;
     border-bottom: 3px solid #A0C8F9;
+}
+
+
+footer .redes-sociais a:focus-within > .ionspecial,
+footer .redes-sociais button:focus-within > .ionspecial {
+    background-color: #A0C8F9;
+    color: #262525;
+    transition: 0.5s;
 }
 
 .ionspecial:hover {
@@ -542,4 +569,14 @@ footer .item3 p {
     font-size: 16px;
     max-width: calc(100% - 38px);
     text-decoration: none;
+}
+
+/* PROVISÓRIO*/
+footer button {
+    background: transparent;
+    border: none;
+}
+
+footer button:focus-within{
+    border: 1px solid white;
 }

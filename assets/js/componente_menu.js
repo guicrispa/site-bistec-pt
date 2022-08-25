@@ -17,25 +17,25 @@ menu.insertAdjacentHTML('afterend',/*html*/`
                 <a href="${Caminho}contato.html" class="normal" >CONTACTO</a>
             </li>
             <li>
-                <a href="#bistec-automacao" class="normal">PORTFÓLIO <ion-icon name="chevron-down-outline"></ion-icon></a>
+                <a href="#" class="normal">PORTEFÓLIO <ion-icon name="chevron-down-outline"></ion-icon></a>
                 <ul class="normal-submenu">
                     <li><a href="${Caminho}produtos/automacao.html"><ion-icon name="at-sharp"></ion-icon> BISTEC AUTOMAÇÃO</a></li>
                     <li><a href="${Caminho}produtos/cloud.html"> <ion-icon name="cloud-done-sharp"></ion-icon> BISTEC CLOUD</a></li>
                     <li><a href="${Caminho}produtos/edu.html"> <ion-icon name="pencil-sharp"></ion-icon> BISTEC EDU</a></li>
-                    <li><a href="${Caminho}produtos/gdpr.html"><ion-icon name="shield-checkmark-sharp"></ion-icon> BISTEC GDPR</a></li>
                     <li><a href="${Caminho}produtos/msp.html"> <ion-icon name="lock-closed"></ion-icon> BISTEC MSP</a></li>
                     <li><a href="${Caminho}produtos/outsourcing.html"> <ion-icon name="settings-sharp"></ion-icon> BISTEC OUTSOURCING</a></li>
                     <li><a href="${Caminho}produtos/renting.html"> <ion-icon name="reload-circle-sharp"></ion-icon> BISTEC RENTING</a></li>
+                    <li><a href="${Caminho}produtos/rgpd.html"><ion-icon name="shield-checkmark-sharp"></ion-icon> BISTEC RGPD</a></li>
                     <li><a href="${Caminho}produtos/soft.html"><ion-icon name="disc-sharp"></ion-icon> BISTEC SOFT</a></li>
                     <li><a href="${Caminho}produtos/wifi.html"> <ion-icon name="wifi-sharp"></ion-icon> BISTEC WIFI</a></li>
                 </ul>
             </li>
             <li>
                 <a href="#">
-                    <div class="button">
+                    <button class="button">
                         <span class="button_icon"><ion-icon name="cart-outline"></ion-icon></span>
                         <span class="button_text">LOJA</span>
-                    </div>
+                    </button>
                 </a>
             </li>
             <li>
