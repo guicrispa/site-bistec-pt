@@ -1,0 +1,163 @@
+@media (prefers-color-scheme: dark) {
+    
+    #logo_normal {
+        display: none;
+    }
+    #logo_branca {
+        display: block;
+    }
+    .header-bistec {
+        background-color: #141414;
+    }
+
+    .button, 
+    .button_support {
+        background: #a0c8f9;
+    }
+
+    .button:hover,
+    .button_support:hover {
+        background: #add1fd;
+    }
+    
+    .button:active,
+    .button_support:active{
+        background: #c5dfff;
+    }
+    
+    .support_icon {
+        background: #f3fafa;
+        color: #141414;
+    }
+
+    .button_text,
+    .button_icon {
+    	color: #141414;
+    }
+
+    .button_icon {
+        background-color: #f3fafa;
+    }
+
+    
+    .button:focus-within {
+        border: 2px solid blue;
+    }
+
+    .normal, 
+    .normal ion-icon {
+        color: #f3fafa;
+    }
+    .normal:hover{
+        border-bottom: 3px solid #f3fafa;
+    } 
+
+    header .normal-submenu li a {
+        color: #F3FAFA;
+        background: #141414;
+    }
+    
+    header .normal-submenu li a:hover {
+        background: #0c407c;
+        color: white;
+    }
+    
+    .normal-submenu ion-icon {
+        color: #f3fafa;
+    }
+
+    /* produtos */
+
+    article {
+        background-color: #141414;
+    }
+    
+    .bistec-produtos {
+        background-color: #141414;
+        color: #f3fafa;
+    }
+
+    .bt-dialog {
+        background-color: #A0C8F9;
+        color: #141414;
+    }
+
+    .bt-dialog:hover,
+    .bt-dialog:focus-within {
+        background-color: #f3fafa;
+    }
+
+    /*footer*/
+
+    footer {
+        margin-top: 0;
+    }
+
+    /* pág contato */
+
+    .article_contact {
+        border-radius: 1em;
+    }
+    
+    
+    .formulario {
+        border-radius: 1em;
+        background-color:#000;
+        color: #F3FAFA;
+    }
+
+    input, textarea {
+        background: rgb(0, 0, 0);
+        color: rgb(224, 224, 224);
+        border: 1px solid #65ADE2;
+    }
+
+    input[type=submit]{
+        background: linear-gradient(135deg, #65ADE2, #BA83C0);
+        border: transparent;
+        color: black;
+    }
+
+    input[type=submit]:hover {
+        background: linear-gradient(135deg, #BA83C0, #65ADE2);
+        color: black;
+    }
+
+    /* pág suporte */
+    
+    .bistec-suporte {
+        color: #f3fafa;
+    }
+
+    .bistec-suporte .button_text {
+        color: #000;
+    }
+
+    .bt-dialog-anydesk {
+        background-color: #FF8277;
+    }
+
+    .bt-dialog-teamviewer {
+        background-color: #8bc2f1;
+    }
+
+    .suporte-wpp {
+        color: #8deb8d;
+    }
+
+    .suporte-telegram {
+        color: #8bc2f1;
+    }
+
+    /* páginas de portefólio */
+
+    .produto-texto {
+        background-color: #141414;
+        color: #f3fafa;        
+    }
+
+    .produto-texto .link_msp {
+        color: #8bc2f1;
+    }
+
+}

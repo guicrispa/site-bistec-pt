@@ -7,7 +7,8 @@ let Caminho = document.getElementsByTagName('script')[0].attributes[0].textConte
 menu.insertAdjacentHTML('afterend',/*html*/`
     <header class="header-bistec" id="#first_section">
         <a href="#first_section" class="logo-bistec">
-            <img src="${Caminho}assets/images/logo-bistec.png" alt="Logo - Bistec">
+            <img id="logo_normal" src="${Caminho}assets/images/logo-bistec.png" alt="Logo - Bistec">
+            <img id="logo_branca" src="${Caminho}assets/images/logo_bistec_branco.png" alt="Logo Branca - Bistec" >
         </a>
         <ul class="normal-menu">
             <li>
