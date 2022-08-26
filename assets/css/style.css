@@ -36,6 +36,10 @@ header {
     align-items: center;
 }
 
+#logo_branca {
+    display: none;
+}
+
 .logo-bistec img {
     margin-left: 15px;
 }
