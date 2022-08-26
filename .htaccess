@@ -1,14 +1,43 @@
-ErrorDocument 404 /erros/404.shtml
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#Bloqueia acesso à pastas sem index
+Options -Indexes
+
+#Redireciona caso ocorra os sequintes erros
+ErrorDocument 403 https://%{HTTP_HOST}/erro/403
+ErrorDocument 404 https://%{HTTP_HOST}/erro/404
+
 <IfModule mod_rewrite.c>
-    Options +FollowSymLinks -MultiViews
+    # Options +FollowSymLinks -MultiViews
     RewriteEngine On
+
+    #Troca o protocolo de http para https
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    RewriteRule ^home$ ./index.html [NC]
+
+    #Remove a extenção da url sem precisar mexer no código
     RewriteBase /
-    RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html|php|shtml [NC]
     RewriteRule ^ %1 [R,L]
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME}.html -f
-    RewriteRule ^(.*?)/?$ $1.html [L]
+    RewriteCond %{REQUEST_FILENAME}\.html|php|shtml -f
+    RewriteRule ^(.*?)\/?$ $1\.html|php|shtml [L]
 </IfModule>
+
+
+
+
+
+#TESTES
+# <FilesMatch ".+\.(js|css)$">
+# #     Deny from all
+#     <Limit POST>
+#         Deny from all
+#     </Limit>
+# </FilesMatch>
+
+# RewriteBase /
+# RewriteCond %{REQUEST_FILENAME} "\.js"
+# RewriteRule .* index.html
+
+# ErrorDocument 500 /erros/404.shtml
+# RewriteRule ^(.*?)$ ./index.html
