@@ -28,6 +28,7 @@ ErrorDocument 404 https://%{HTTP_HOST}/erro/404
 
 
 #TESTES
+# https://helpcenter.websitex5.com/de/post/210462
 # <FilesMatch ".+\.(js|css)$">
 # #     Deny from all
 #     <Limit POST>
