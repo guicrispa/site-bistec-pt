@@ -36,12 +36,13 @@ header {
     align-items: center;
 }
 
-#logo_branca {
-    display: none;
-}
-
 .logo-bistec img {
     margin-left: 15px;
+}
+
+/* trocando imagens logo - dark mode*/
+header .logo-bistec img:nth-child(2){
+    display: none;
 }
 
 header ul {
