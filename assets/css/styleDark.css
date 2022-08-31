@@ -74,6 +74,29 @@
 
     /* produtos */
 
+    #bistec-automacao img:nth-child(1),
+    #bistec-cloud img:nth-child(1),
+    #bistec-edu img:nth-child(1),
+    #bistec-outsourcing img:nth-child(1),
+    #bistec-msp img:nth-child(1),
+    #bistec-renting img:nth-child(1),
+    #bistec-gpdr img:nth-child(1),
+    #bistec-soft img:nth-child(1),
+    #bistec-wifi img:nth-child(1){
+        display: none;
+    }
+
+    #bistec-automacao img:nth-child(2),
+    #bistec-cloud img:nth-child(2),
+    #bistec-edu img:nth-child(2),
+    #bistec-outsourcing img:nth-child(2),
+    #bistec-msp img:nth-child(2),
+    #bistec-renting img:nth-child(2),
+    #bistec-gpdr img:nth-child(2),
+    #bistec-soft img:nth-child(2),
+    #bistec-wifi img:nth-child(2){
+        display: inherit;
+    }
     article {
         background-color: #141414;
     }

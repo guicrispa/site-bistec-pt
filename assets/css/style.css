@@ -294,6 +294,19 @@ a {
     justify-content: center;
     max-width: 90%;
 }
+
+#bistec-automacao img:nth-child(2),
+#bistec-cloud img:nth-child(2),
+#bistec-edu img:nth-child(2),
+#bistec-outsourcing img:nth-child(2),
+#bistec-msp img:nth-child(2),
+#bistec-renting img:nth-child(2),
+#bistec-gpdr img:nth-child(2),
+#bistec-soft img:nth-child(2),
+#bistec-wifi img:nth-child(2){
+    display: none;
+}
+
 .texto-produtos{
     margin-left: 2.5vw;
     font-weight: 300;
