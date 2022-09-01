@@ -1,11 +1,13 @@
 @media (prefers-color-scheme: dark) {
     
-    #logo_normal {
+    header .logo-bistec img:nth-child(1){
         display: none;
     }
-    #logo_branca {
-        display: block;
+
+    header .logo-bistec img:nth-child(2){
+        display: inherit;
     }
+
     .header-bistec {
         background-color: #141414;
     }
@@ -66,8 +68,35 @@
         color: #f3fafa;
     }
 
+    .menu-cell {
+        color: #fff;
+    }
+
     /* produtos */
 
+    #bistec-automacao img:nth-child(1),
+    #bistec-cloud img:nth-child(1),
+    #bistec-edu img:nth-child(1),
+    #bistec-outsourcing img:nth-child(1),
+    #bistec-msp img:nth-child(1),
+    #bistec-renting img:nth-child(1),
+    #bistec-gpdr img:nth-child(1),
+    #bistec-soft img:nth-child(1),
+    #bistec-wifi img:nth-child(1){
+        display: none;
+    }
+
+    #bistec-automacao img:nth-child(2),
+    #bistec-cloud img:nth-child(2),
+    #bistec-edu img:nth-child(2),
+    #bistec-outsourcing img:nth-child(2),
+    #bistec-msp img:nth-child(2),
+    #bistec-renting img:nth-child(2),
+    #bistec-gpdr img:nth-child(2),
+    #bistec-soft img:nth-child(2),
+    #bistec-wifi img:nth-child(2){
+        display: inherit;
+    }
     article {
         background-color: #141414;
     }
@@ -79,8 +108,11 @@
 
     .bt-dialog {
         background-color: #A0C8F9;
-        color: #141414;
     }
+
+    .texto-produtos .button_text {
+        color: #141414;
+      }
 
     .bt-dialog:hover,
     .bt-dialog:focus-within {
@@ -159,5 +191,42 @@
     .produto-texto .link_msp {
         color: #8bc2f1;
     }
+}
 
+@media (prefers-color-scheme: dark) and (max-width: 620px) {
+
+    .menu-cell {
+        display: block;
+        color: #fff;
+    }
+
+    .menu-cell li ion-icon {
+        color: #f3fafa;
+    }
+    
+    .normal-menu {
+        text-align: center;
+        background-color: #141414;
+        color: #f3fafa;
+    }
+
+    .normal:hover{
+        border: none;
+        color: #A0C8F9;
+        transition: 0.2s;
+    } 
+
+    .button_support,
+    .support_icon {
+        background: #0c407c;
+        color: #f3fafa;
+    }
+
+    .button_support .button_text {
+        color: #f3fafa;
+    }
+
+    .texto-produtos .button_text {
+        color: #141414;
+    }
 }
