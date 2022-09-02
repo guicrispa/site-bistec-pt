@@ -1,4 +1,8 @@
 @media (prefers-color-scheme: dark) {
+
+    header {
+        border-bottom: 3px solid #a0c8f9;
+    }
     
     header .logo-bistec img:nth-child(1){
         display: none;
@@ -28,7 +32,7 @@
     }
     
     .support_icon {
-        background: #f3fafa;
+        background: #a0c8f9;
         color: #141414;
     }
 
@@ -38,20 +42,21 @@
     }
 
     .button_icon {
-        background-color: #f3fafa;
+        border-right: 1px solid #141414;
+        background-color: #a0c8f9;
     }
 
     
     .button:focus-within {
-        border: 2px solid blue;
+        border: 2px solid rgb(218, 218, 218);
     }
 
     .normal, 
     .normal ion-icon {
-        color: #f3fafa;
+        color: #a0c8f9;
     }
-    .normal:hover{
-        border-bottom: 3px solid #f3fafa;
+    .normal:hover{ 
+        border-bottom: 3px solid #a0c8f9;
     } 
 
     header .normal-submenu li a {
@@ -114,7 +119,11 @@
         color: #141414;
       }
 
-    .bt-dialog:hover,
+    .bt-dialog:hover {
+        background: #add1fd;
+        transition: 0.4s;
+    }
+
     .bt-dialog:focus-within {
         background-color: #f3fafa;
     }
@@ -208,6 +217,7 @@
         text-align: center;
         background-color: #141414;
         color: #f3fafa;
+        border-bottom: none;
     }
 
     .normal:hover{

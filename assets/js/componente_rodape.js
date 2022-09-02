@@ -6,14 +6,14 @@ let rodape=document.getElementsByClassName('rodape')[0]
 rodape.insertAdjacentHTML('afterend',/*html*/`
     <footer>
     <div class="redes-sociais">
-        <a href="mailto:bistec@bistec.com.br" target="_blank"><ion-icon name="mail" class="ionspecial"></ion-icon></a>
-        <a href="https://facebook.com/bistecweb" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
-        <a href="https://instagram.com/bistecweb" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-        <a href="https://youtube.com/bistecweb" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
-        <a href="https://www.twitter.com/bistecweb" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
-        <a href="https://www.flickr.com/bistec" target="_blank"><ion-icon name="logo-flickr"></ion-icon></a>
-        <a href="https://soundcloud.com/bistecweb" target="_blank"><ion-icon name="logo-soundcloud"></ion-icon></a>
-        <a href="https://linkedin.com/company/bistec" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="mailto:bistec@bistec.com.br" title="Bistec E-mail" target="_blank"><ion-icon name="mail" class="ionspecial"></ion-icon></a>
+        <a href="https://facebook.com/bistecweb" title="Bistec Facebook" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="https://instagram.com/bistecweb" title="Bistec Instagram" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="https://youtube.com/bistecweb" title="Bistec Youtube" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+        <a href="https://www.twitter.com/bistecweb" title="Bistec Twitter" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="https://www.flickr.com/bistec" title="Bistec Flickr" target="_blank"><ion-icon name="logo-flickr"></ion-icon></a>
+        <a href="https://soundcloud.com/bistecweb" title="Bistec Soundcloud" target="_blank"><ion-icon name="logo-soundcloud"></ion-icon></a>
+        <a href="https://linkedin.com/company/bistec" title="Bistec Linkedin" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
         <button id="location_button" target="_self"><ion-icon name="location" class="ionspecial"></ion-icon></button>
         <!-- <a href="#" target="_self"><ion-icon name="location" class="ionspecial"></ion-icon></a>-->
     </div>
