@@ -210,8 +210,9 @@
     }
 
     /*pág bistec edu*/
-    .bistec-edu-plataformas a img:nth-child(2),
-    .bistec-edu-plataformas a img:nth-child(4) {
+    .bistec-edu-plataformas a:nth-child(2), 
+    .bistec-edu-plataformas a:nth-child(4) {
+        display: inherit;
         width: 16em;
         padding: 0 1em;
     }
