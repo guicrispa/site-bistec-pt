@@ -256,16 +256,16 @@ a {
 
 .banner-bistec img{
     display: block;
-    width: 100%;
-    height: 92vh;
-    margin-top: 56px;
+    /* width: 100%;
+    height: 92vh; 
+    margin-top: 56px;*/
 }
 
-.banner-bistec-mobile {
+/* .banner-bistec-mobile {
     width: auto;
     margin: auto;
     display: none;
-}
+} */
 
 .banner-bistec-texto{
     position: absolute;

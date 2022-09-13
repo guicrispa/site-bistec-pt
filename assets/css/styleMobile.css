@@ -116,16 +116,16 @@
     
     /* banner */
 
-    .banner-bistec {
+    /* .banner-bistec {
         display: none;
-    }
+    } */
     
-    .banner-bistec-mobile {
+    /* .banner-bistec-mobile {
         display: block;
         width: auto;
         margin: auto;
         position: relative;
-    }
+    } */
 
     .banner-bistec-mobile img{
         width: 100%;
