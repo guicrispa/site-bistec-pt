@@ -21,14 +21,14 @@ rodape.insertAdjacentHTML('afterend',/*html*/`
     <div class="contacts">
         <div class="contact item1">
             <a href="#first_section">
-                <img src="${Caminho}assets/images/portugal.png" alt="Portugal País"> Bistec Portugal
+                <img src="https://ik.imagekit.io/bistecpt/imagens/portugal_QoWCmflVD.png" alt="Portugal País"> Bistec Portugal
             </a>
             <p><a href="tel:+351308807114">+351 308 807 114</a></p>
         </div>
 
         <div class="contact item2">
             <a href="https://bistec.com.br">
-                <img src="${Caminho}assets/images/brazil.png" alt="Brasil País"> Bistec Brasil 
+                <img src="https://ik.imagekit.io/bistecpt/imagens/brazil_WcP0w91cK.png" alt="Brasil País"> Bistec Brasil 
             </a>  
             <p>
                 <a href="tel:+55(13)3235-7735">+55 (13) 3235-7735</a>  
@@ -39,7 +39,7 @@ rodape.insertAdjacentHTML('afterend',/*html*/`
         </div>
 
         <div class="contact item3">
-            <a href="https://api.whatsapp.com/send?phone=5513992101945" target="_blank"><img src="${Caminho}assets/images/whatsapp.png" alt="Logo Whatsapp Business"> Whatsapp Business </a>
+            <a href="https://api.whatsapp.com/send?phone=5513992101945" target="_blank"><img src="https://ik.imagekit.io/bistecpt/imagens/whatsapp_qW0AZyxp4j.png" alt="Logo Whatsapp Business"> Whatsapp Business </a>
             <p>
                 <a href="https://api.whatsapp.com/send?phone=5513992101945" target="_blank">+55 (13) 99210-1945</a>
             </p>
@@ -47,7 +47,7 @@ rodape.insertAdjacentHTML('afterend',/*html*/`
         <!--
         <div class="contact item4">
             <p>
-                <img src="${Caminho}assets/images/clock.png" alt="Logo Horário"> Funcionamento 
+                <img src="https://ik.imagekit.io/bistecpt/imagens/clock_bnfCtvwxt.png" alt="Logo Horário"> Funcionamento 
             </p> 
             <p>Segunda à Sexta:</p> 
             <p>Horário a ser definido</p>
