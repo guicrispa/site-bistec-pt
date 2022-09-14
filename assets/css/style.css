@@ -37,7 +37,8 @@ header {
 }
 
 .logo-bistec img {
-    margin-left: 15px;
+    margin-bottom: 1vh;
+    width: 16vw;
 }
 
 /* trocando imagens logo - dark mode*/
