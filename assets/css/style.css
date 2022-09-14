@@ -256,6 +256,7 @@ a {
 
 .banner-bistec img{
     display: block;
+    width: 100%;
 }
 
 .banner-bistec-texto{

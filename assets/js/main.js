@@ -6,7 +6,7 @@ const verificaTela = () => {
     y = w.innerHeight|| e.clientHeight|| g.clientHeight; 
     //IMAGENS
     document.getElementById('img-banner').removeAttribute('src')
-    document.getElementById('img-banner').setAttribute('src',`https://ik.imagekit.io/bistecpt/imagens/banner-moliceiro_lQJqvFZuv.png?tr=w-${x-20},h-${y}`)
+    document.getElementById('img-banner').setAttribute('src',`https://ik.imagekit.io/bistecpt/imagens/banner-moliceiro_lQJqvFZuv.png?tr=w-${(x-20)*2},h-${y*2}`)
 
     let menu = document.getElementsByClassName('normal-menu')[0]
     let portifolio = document.getElementsByClassName('normal')[2]
