@@ -115,28 +115,9 @@
 
     
     /* banner */
-
-    .banner-bistec {
-        display: none;
-    }
-    
-    .banner-bistec-mobile {
-        display: block;
-        width: auto;
-        margin: auto;
-        position: relative;
-    }
-
-    .banner-bistec-mobile img{
-        width: 100%;
-        height: 85vh;
-        margin-top: 75px;
-    }
-
     .banner-bistec-texto {
         transform: translate(-45%, -50%);
-    }
-    
+    }  
     .banner-bistec-texto h1 {
         font-size: 6vw;
     }
