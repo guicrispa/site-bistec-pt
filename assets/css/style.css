@@ -259,6 +259,12 @@ a {
     display: block;
     width: 100%;
 }
+/*PROVISÓRIO PARA CORREÇÃO DE DUPLICIDADE DE IMAGENS NAS OUTRAS PÁGINAS*/
+.banner-bistec-mobile {
+    width: auto;
+    margin: auto;
+    display: none;
+}
 
 .banner-bistec-texto{
     position: absolute;
