@@ -13,10 +13,8 @@ const verificaTela = () => {
   
     if(!window.matchMedia("(min-width: 951px)").matches){
         menu.style.display = 'none'
-        portifolio.removeAttribute('href') //tira direcionamento no mobile
     }else{
         menu.style.display = 'inherit'
-        portifolio.setAttribute('href', '#bistec-automacao')
     }
 }
 window.onresize = verificaTela
@@ -39,14 +37,9 @@ var localizacao = document.getElementById('location_button')
 localizacao.addEventListener('click', ()=>{
     alert("Localização será definida em breve");
 })
-let tagA = localizacao.parentElement
-tagA.removeAttribute('href')
-tagA.removeAttribute('onclick')
 
 // Botão Loja
 let loja = document.getElementsByClassName('button')[0].parentElement
 loja.addEventListener('click', ()=>{
     alert("Loja em construção...");
 })
-loja.removeAttribute('href')
-loja.removeAttribute('onclick')
