@@ -455,9 +455,14 @@ footer .item4 {
 footer .contact p,
 footer .contact a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     color: white;
     text-align: left;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+footer .contact img{
+    width: 24px;
 }
 
 footer .item1 p,
