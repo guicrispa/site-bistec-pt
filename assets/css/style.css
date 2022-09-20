@@ -39,6 +39,8 @@ header {
 .logo-bistec img {
     margin-bottom: 1vh;
     width: 16vw;
+    height: auto;
+    aspect-ratio: attr(width) / attr(height);
 }
 
 /* trocando imagens logo - dark mode*/
@@ -258,6 +260,8 @@ a {
 .banner-bistec img{
     display: block;
     width: 100%;
+    height: auto;
+    aspect-ratio: attr(width) / attr(height);
 }
 /*PROVISÓRIO PARA CORREÇÃO DE DUPLICIDADE DE IMAGENS NAS OUTRAS PÁGINAS*/
 .banner-bistec-mobile {
@@ -292,6 +296,11 @@ a {
     align-items: center;
     justify-content: center;
     max-width: 90%;
+}
+.bistec-produtos img{
+    aspect-ratio: attr(width) / attr(height);
+    width: auto;
+    height: auto;
 }
 
 #bistec-automacao img:nth-child(2),
@@ -462,7 +471,9 @@ footer .contact a {
     margin-bottom: 12px;
 }
 footer .contact img{
-    width: 24px;
+    aspect-ratio: attr(width) / attr(height);
+    width: auto;
+    height: auto;
 }
 
 footer .item1 p,
