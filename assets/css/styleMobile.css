@@ -253,7 +253,7 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         font-size: 26px;
-        max-width: 55%;
+        max-width: 65%;
     }
 
     .footer-copyright p {
