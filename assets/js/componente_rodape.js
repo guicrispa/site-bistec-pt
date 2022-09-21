@@ -62,3 +62,10 @@ rodape.insertAdjacentHTML('afterend',/*html*/`
 `)
 //remove a tag spam de referencia
 rodape.remove()
+
+//PROVISÓRIO  ---------------------------------------------------------------------------------
+// localização
+var localizacao = document.getElementById('location_button')
+localizacao.addEventListener('click', ()=>{
+    alert("Localização será definida em breve");
+})
