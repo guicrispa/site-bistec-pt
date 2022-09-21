@@ -14,8 +14,7 @@ rodape.insertAdjacentHTML('afterend',/*html*/`
         <a href="https://www.flickr.com/bistec" title="Bistec Flickr" target="_blank"><ion-icon name="logo-flickr"></ion-icon></a>
         <a href="https://soundcloud.com/bistecweb" title="Bistec Soundcloud" target="_blank"><ion-icon name="logo-soundcloud"></ion-icon></a>
         <a href="https://linkedin.com/company/bistec" title="Bistec Linkedin" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-        <button id="location_button" target="_self"><ion-icon name="location" class="ionspecial"></ion-icon></button>
-        <!-- <a href="#" target="_self"><ion-icon name="location" class="ionspecial"></ion-icon></a>-->
+        <a href="https://www.google.com/maps/place/BISTEC+PT+-+Servi%C3%A7os+de+tecnologia+para+todas+as+empresas/@40.6404794,-8.6534868,17z/data=!3m1!4b1!4m5!3m4!1s0xd2399dba4bcb0ad:0x74340dfb6ecc8e8d!8m2!3d40.6404794!4d-8.6534868?hl=pt" title="Bistec Linkedin" target="_blank"><ion-icon name="location" class="ionspecial"></ion-icon></a>
     </div>
 
     <div class="contacts">
@@ -62,10 +61,3 @@ rodape.insertAdjacentHTML('afterend',/*html*/`
 `)
 //remove a tag spam de referencia
 rodape.remove()
-
-//PROVISÓRIO  ---------------------------------------------------------------------------------
-// localização
-var localizacao = document.getElementById('location_button')
-localizacao.addEventListener('click', ()=>{
-    alert("Localização será definida em breve");
-})
