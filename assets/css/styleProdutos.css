@@ -50,9 +50,15 @@ li {
     align-items: center;
 }
 
-.bistec-edu-plataformas img {
+.bistec-edu-plataformas a img:nth-child(1),
+.bistec-edu-plataformas a img:nth-child(3) {
     width: 16em;
     padding: 0 1em;
+}
+
+.bistec-edu-plataformas a:nth-child(2),
+.bistec-edu-plataformas a:nth-child(4) {
+    display: none;
 }
 
 .nice_button {
