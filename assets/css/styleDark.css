@@ -230,6 +230,7 @@
     .support_icon {
         background: #0c407c;
         color: #f3fafa;
+        border-right: none;
     }
 
     .button_support .button_text {
