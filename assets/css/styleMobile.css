@@ -49,8 +49,8 @@
     /* 
      */
 
-    .logo-bistec {
-        margin: 0;
+    .logo-bistec img {
+        margin: 0; 
         width: 32vw;
         margin-left: 5px;
     }
@@ -138,8 +138,9 @@
         margin-top: 75px;
     }
 
-    .banner-bistec-texto {
-        transform: translate(-45%, -50%);
+    .banner-bistec-texto {    
+        transform: translate(-30%, -50%);
+        left: 42%;
     }  
     .banner-bistec-texto h1 {
         font-size: 6vw;
