@@ -37,7 +37,6 @@ header {
 }
 
 .logo-bistec img {
-    margin-bottom: 1vh;
     width: 16vw;
     height: auto;
     aspect-ratio: attr(width) / attr(height);
