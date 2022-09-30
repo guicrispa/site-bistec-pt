@@ -9,40 +9,26 @@
 }
 
 /*--- HEADER ---*/
-
-header {
-    background-color: #F3FAFA;
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #b3b3b3;
-    top: 0;
-}
-
 .header-bistec {
     top: 0;
     left: 0;
     width: 100%;
+    display: flex;
     position: fixed;
     padding: 2px 100px;
-    display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
+    border-bottom: 1px solid #b3b3b3;
+    background-color: #F3FAFA;
     z-index: 1;
-}
-.logo-bistec {
-    align-items: center;
 }
 
 .logo-bistec img {
-    margin-bottom: 1vh;
     width: 16vw;
     height: auto;
+    margin-bottom: 1vh;
     aspect-ratio: attr(width) / attr(height);
 }
-
 /* trocando imagens logo - dark mode*/
 header .logo-bistec img:nth-child(2){
     display: none;
@@ -60,10 +46,10 @@ header ul li {
 header .normal-menu {
     margin-left: 60px;
 }
-
-header .normal-menu li{
+.normal-menu li{
     position: relative;
     list-style: none;
+    display: block;
 }
 
 header .normal-menu li a {
@@ -72,36 +58,27 @@ header .normal-menu li a {
     font-weight: 700;
 }
 
-header .normal-submenu li a {
+.normal-submenu li a {
     width: 200px;
     padding: 12px;
-    text-decoration: none;
     color: #141414;
     background: #F3FAFA;
+    text-decoration: none;
     font-size: 12px;
     font-weight: 700;
     box-shadow: 0.2px 0.2px 0.2px 0.2px rgba(0, 0, 0, 0.473);
 }
-
-header .normal-submenu li a:hover,
-header .normal-submenu li a:focus-within {
+.normal-submenu li a:hover,
+.normal-submenu li a:focus-within {
     background: #0c407c;
     color: white;
     transition: 0.2s;
 }
-
-
 .normal-submenu ion-icon {
     font-size: 15px;
     color: #141414;
     margin-right: 5px;
 }
-
-/*
-.normal-submenu ion-icon:hover {
-    color: #fff;
-}
-*/
 
 header ul ul {
     position: absolute;
@@ -109,8 +86,8 @@ header ul ul {
     display: none;
 }
 
-header .normal-submenu li a:hover > ion-icon,
-header .normal-submenu li a:focus-within > ion-icon {
+.normal-submenu li a:hover > ion-icon,
+.normal-submenu li a:focus-within > ion-icon {
     color: #fff;
 }
 
@@ -218,31 +195,6 @@ a {
 
 .support_icon {
     background: #07305f;
-}
-
-.menu {
-    display: flex;
-    gap: 2px;
-  }
-
-.menu li {
-  list-style: none;
-  width: 150px;
-  height: 30px;
-}
-
-.menu a {
-    display: block;
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    transition: all .2s linear;
-    padding: 10px 0;
 }
 
 .menu-cell {
