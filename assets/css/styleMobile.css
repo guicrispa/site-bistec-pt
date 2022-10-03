@@ -23,6 +23,11 @@
         font-size: 12px;
         border-bottom: 1px solid #f3fafa;
     }
+    
+    .logo-bistec img {
+        width: 32vw;
+        margin-left: 5px;
+    }
 
     .normal:hover{
         border: none;
