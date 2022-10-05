@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
+@font-face {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    src: local('Arial');
+    font-display: swap;
+  }
 *{
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 	font-family: 'Inter', sans-serif;
 }
-
 /*--- HEADER ---*/
-
 header {
     background-color: #F3FAFA;
     width: 100%;
@@ -18,7 +22,6 @@ header {
     border-bottom: 1px solid #b3b3b3;
     top: 0;
 }
-
 .header-bistec {
     width: 100%;
     display: flex;
@@ -27,39 +30,32 @@ header {
     display: flex;
     z-index: 1;
 }
-
 .logo-bistec img {
     width: 16vw;
     height: auto;
-    margin-bottom: 1vh;
     aspect-ratio: attr(width) / attr(height);
 }
 /* trocando imagens logo - dark mode*/
 header .logo-bistec img:nth-child(2){
     display: none;
 }
-
 header ul {
 	display: inline-flex;
 }
-
 header ul li {
     list-style: none;
     display: block;
 }
-
 header .normal-menu {
     margin-left: 60px;
 }
 .normal-menu li{
     position: relative;
 }
-
 header .normal-menu li a {
     display: block;
     margin: 0 8px;
 }
-
 .normal-submenu li a {
     width: 200px;
     padding: 12px;
@@ -81,22 +77,18 @@ header .normal-menu li a {
     color: #141414;
     margin-right: 5px;
 }
-
 header ul ul {
     position: absolute;
     top: 34px;
     display: none;
 }
-
 .normal-submenu li a:hover > ion-icon,
 .normal-submenu li a:focus-within > ion-icon {
     color: #fff;
 }
-
 header ul :hover > ul{
     display: block;
 }
-
 .button {
 	display: inline-flex;
     height: 30px;
@@ -112,19 +104,15 @@ header ul :hover > ul{
 	font-weight: 900;
 	cursor: pointer;
 }
-
 .button:hover {
 	background: #c91818;
 }
-
 .button:active{
 	background: #d12b2b;
 }
-
 .button:focus-within {
     border: 2px solid #141414;
 }
-
 .button_text,
 .button_icon {
 	display: inline-flex;
@@ -133,11 +121,9 @@ header ul :hover > ul{
 	color: #fff;
     height: 100%;
 }
-
 a {
     text-decoration: none;
 }
-
 .normal {
 	display: inline-flex;
     height: 30px;
@@ -149,24 +135,18 @@ a {
 	font-weight: 700;
     line-height: 2;
 }
-
 .normal ion-icon {
     color: black;
 }
-
 :focus-within > .normal-submenu {
     display: block;
 }
-
 .normal:hover{
     border-bottom: 3px solid #141414;
-} 
-
-
+}
 .button_icon {
 	background: #056006;
 }
-
 .button_support {
 	display: inline-flex;
     height: 30px;
@@ -182,23 +162,18 @@ a {
 	cursor: pointer;
     background: #0c407c;
 }
-
 .button_support:hover {
     background: #10498a;
 }
-
 .button_support:active{
     background: #18559b;
 }
-
 .support_icon {
     background: #07305f;
 }
-
 .menu-cell {
     display: none;
 }
-
 /*----BANNER---------------------------------------------------------*/
 .banner-bistec{
     width: auto;
@@ -206,7 +181,6 @@ a {
     position: relative;
     border-bottom: 2px solid #141414;
 }
-
 .banner-bistec img{
     display: block;
     width: 100%;
@@ -219,7 +193,6 @@ a {
     margin: auto;
     display: none;
 }
-
 .banner-bistec-texto{
     position: absolute;
     top: 50%;
@@ -230,15 +203,12 @@ a {
     font-size: 4vw;
     font-weight: 300;
 }
-
 .banner-bistec-texto h1{
     font-size: 5.2vw;
 }
-
 .banner-bistec-texto h2{
     font-size: 3.7vw;
 }
-
 /*---PRODUTOS------------------------------------*/
 .bistec-produtos{
     padding: 5vw 2.5vw 2.5vw 2.5vw;
@@ -252,7 +222,6 @@ a {
     width: auto;
     height: auto;
 }
-
 #bistec-automacao img:nth-child(2),
 #bistec-cloud img:nth-child(2),
 #bistec-edu img:nth-child(2),
@@ -264,7 +233,6 @@ a {
 #bistec-wifi img:nth-child(2){
     display: none;
 }
-
 .texto-produtos{
     margin-left: 2.5vw;
     font-weight: 300;
@@ -289,7 +257,6 @@ a {
     font-size: 1.5vw;
     font-weight: 400;
 }
-
 .bt-dialog{
 	background-color: #141414;
     margin: 1vw 0vw 0vw 0vw;
@@ -301,33 +268,27 @@ a {
     cursor: pointer;
     font-weight: 800;
 }
-
 .bt-dialog:hover {
 	background-color: #1f1f1f;
 }
-
 .bt-dialog:active{
 	background-color: #2e2d2d;
 }
-
 .bt-dialog:focus-within {
     background-color: #13549E;
     transition: 1s;
 }
-
 .bt-dialog .button_text,
 .bt-dialog ion-icon {
 	color: rgb(255, 255, 255);
     font-size: 1.6vw;
 }
-
 dialog span {
     background-color: #10498a;
     color: #F3FAFA;
     width: 100%;
     padding: 10px;
 }
-
 /*--RODAPÉ---------------------------------------------*/
 footer{
     background-color: #262525;
@@ -343,7 +304,6 @@ footer ion-icon{
     padding: 0.3em;
     margin: 0.3em auto;
 }
-
 footer .redes-sociais a:focus-within > ion-icon {
     cursor: pointer;
     background-color: #D0CEC6;
@@ -367,27 +327,22 @@ footer ion-icon:hover {
     margin: 0 auto;
     max-width: 70%;
 }
-
 .ionspecial {
     color: #A0C8F9;
     border: #A0C8F9 solid 2px;
     border-bottom: 3px solid #A0C8F9;
 }
-
-
 footer .redes-sociais a:focus-within > .ionspecial,
 footer .redes-sociais button:focus-within > .ionspecial {
     background-color: #A0C8F9;
     color: #262525;
     transition: 0.5s;
 }
-
 .ionspecial:hover {
     background-color: #A0C8F9;
     color: #262525;
     transition: 0.5s;
 }
-
 .contacts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -398,19 +353,16 @@ footer .redes-sociais button:focus-within > .ionspecial {
     max-width: 80%;
     margin-top: 25px; 
 }
-
 footer .item1,
 footer .item2 {
     margin-top: 25px;
     padding: 0 5px;
 }
-
 footer .item3,
 footer .item4 {
     margin-top: 25px;
     font-size: 20px;
 }
-
 footer .contact p,
 footer .contact a {
     text-decoration: none;
@@ -425,15 +377,12 @@ footer .contact img{
     width: auto;
     height: auto;
 }
-
 footer .item1 p,
 footer .item2 p,
 footer .item3 p {
     text-decoration: underline;
 }
-
 /* footer - copyright*/
-
 .footer-copyright {
     background-color: #141414;
     padding: 8px 0;
@@ -447,17 +396,6 @@ footer .item3 p {
     user-select: none;
 }
 
-/* jivo */
-
-.desktop_cc09 .title_da3a, .tablet_c420 .title_da3a {
-    color: rgba(0,0,0,.87)!important;
-    cursor: pointer;
-    background-color: transparent;
-    display: block;
-    font-size: 16px;
-    max-width: calc(100% - 38px);
-    text-decoration: none;
-}
 
 /* PROVISÓRIO*/
 footer button {
