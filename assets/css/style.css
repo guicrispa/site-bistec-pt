@@ -132,18 +132,33 @@ a {
     cursor: pointer;
     font-size: 16px;
     font-family: 'Inter', sans-serif;
-	font-weight: 700;
-    line-height: 2;
+	font-weight: 700;line-height: 2;
+    position: relative;
+    
 }
+
 .normal ion-icon {
     color: black;
 }
+
 :focus-within > .normal-submenu {
     display: block;
 }
-.normal:hover{
-    border-bottom: 3px solid #141414;
-}
+
+.normal::after{
+    content: '';
+    bottom: 0;
+    position: absolute;
+    left: 50%;
+    width: 0%;
+    height: 2.5px;
+    background-color: #141414;
+    transition: 0.2s;
+} 
+.normal:hover::after{
+    left: 0;
+    width: 100%;
+} 
 .button_icon {
 	background: #056006;
 }
