@@ -1,0 +1,237 @@
+@media (prefers-color-scheme: dark) {
+    
+    header .logo-bistec img:nth-child(1){
+        display: none;
+    }
+
+    header .logo-bistec img:nth-child(2){
+        display: inherit;
+    }
+
+    .header-bistec {
+        background-color: #141414;
+    }
+
+    .button, 
+    .button_support {
+        background: #a0c8f9;
+    }
+
+    .button:hover,
+    .button_support:hover {
+        background: #add1fd;
+    }
+    
+    .button:active,
+    .button_support:active{
+        background: #c5dfff;
+    }
+    
+    .support_icon {
+        background: #a0c8f9;
+        color: #141414;
+    }
+
+    .button_text,
+    .button_icon {
+    	color: #141414;
+    }
+
+    .button_icon {
+        border-right: 1px solid #141414;
+        background-color: #a0c8f9;
+    }
+
+    
+    .button:focus-within {
+        border: 2px solid blue;
+    }
+
+    .normal, 
+    .normal ion-icon {
+        color: #a0c8f9;
+    }
+    .normal:hover{ 
+        border-bottom: 3px solid #a0c8f9;
+    } 
+
+    header .normal-submenu li a {
+        color: #F3FAFA;
+        background: #141414;
+    }
+    
+    header .normal-submenu li a:hover {
+        background: #0c407c;
+        color: white;
+    }
+    
+    .normal-submenu ion-icon {
+        color: #f3fafa;
+    }
+
+    .menu-cell {
+        color: #fff;
+    }
+
+    /* produtos */
+
+    #bistec-automacao img:nth-child(1),
+    #bistec-cloud img:nth-child(1),
+    #bistec-edu img:nth-child(1),
+    #bistec-outsourcing img:nth-child(1),
+    #bistec-msp img:nth-child(1),
+    #bistec-renting img:nth-child(1),
+    #bistec-gpdr img:nth-child(1),
+    #bistec-soft img:nth-child(1),
+    #bistec-wifi img:nth-child(1){
+        display: none;
+    }
+
+    #bistec-automacao img:nth-child(2),
+    #bistec-cloud img:nth-child(2),
+    #bistec-edu img:nth-child(2),
+    #bistec-outsourcing img:nth-child(2),
+    #bistec-msp img:nth-child(2),
+    #bistec-renting img:nth-child(2),
+    #bistec-gpdr img:nth-child(2),
+    #bistec-soft img:nth-child(2),
+    #bistec-wifi img:nth-child(2){
+        display: inherit;
+    }
+    article {
+        background-color: #141414;
+    }
+    
+    .bistec-produtos {
+        background-color: #141414;
+        color: #f3fafa;
+    }
+
+    .bt-dialog {
+        background-color: #A0C8F9;
+    }
+
+    .texto-produtos .button_text {
+        color: #141414;
+      }
+
+    .bt-dialog:hover {
+        background: #add1fd;
+        transition: 0.4s;
+    }
+
+    .bt-dialog:focus-within {
+        background-color: #f3fafa;
+    }
+
+    /*footer*/
+
+    footer {
+        margin-top: 0;
+    }
+
+    /* pág contato */
+
+    .article_contact {
+        border-radius: 1em;
+    }
+    
+    
+    .formulario {
+        border-radius: 1em;
+        background-color:#000;
+        color: #F3FAFA;
+    }
+
+    input, textarea {
+        background: rgb(0, 0, 0);
+        color: rgb(224, 224, 224);
+        border: 1px solid #65ADE2;
+    }
+
+    input[type=submit]{
+        background: linear-gradient(135deg, #65ADE2, #BA83C0);
+        border: transparent;
+        color: black;
+    }
+
+    input[type=submit]:hover {
+        background: linear-gradient(135deg, #BA83C0, #65ADE2);
+        color: black;
+    }
+
+    /* pág suporte */
+    
+    .bistec-suporte {
+        color: #f3fafa;
+    }
+
+    .bistec-suporte .button_text {
+        color: #000;
+    }
+
+    .bt-dialog-anydesk {
+        background-color: #FF8277;
+    }
+
+    .bt-dialog-teamviewer {
+        background-color: #8bc2f1;
+    }
+
+    .suporte-wpp {
+        color: #8deb8d;
+    }
+
+    .suporte-telegram {
+        color: #8bc2f1;
+    }
+
+    /* páginas de portefólio */
+
+    .produto-texto {
+        background-color: #141414;
+        color: #f3fafa;        
+    }
+
+    .produto-texto .link_msp {
+        color: #8bc2f1;
+    }
+}
+
+@media (prefers-color-scheme: dark) and (max-width: 620px) {
+
+    .menu-cell {
+        display: block;
+        color: #fff;
+    }
+
+    .menu-cell li ion-icon {
+        color: #f3fafa;
+    }
+    
+    .normal-menu {
+        text-align: center;
+        background-color: #141414;
+        color: #f3fafa;
+    }
+
+    .normal:hover{
+        border: none;
+        color: #A0C8F9;
+        transition: 0.2s;
+    } 
+
+    .button_support,
+    .support_icon {
+        background: #0c407c;
+        color: #f3fafa;
+    }
+
+    .button_support .button_text {
+        color: #f3fafa;
+    }
+
+    .texto-produtos .button_text {
+        color: #141414;
+    }
+}

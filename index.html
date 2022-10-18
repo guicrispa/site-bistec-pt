@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
 <head>
+    <meta property="og:locale" content="pt_PT" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bistec.com.pt/" />
+    <meta property="og:locale" content="pt_PT" />
+    <meta property="og:title" content="Bistec PT - Automação Comercial" />
+    <meta property="og:site_name" content="Bistec PT" />
+    <meta property="og:description" content="Bistec Consultoria de TI. Desde 1999 fornecendo produtos e serviços de Automação Comercial e Informática. Aproveite o melhor da tecnologia para seu negócio." />
+
+    <meta property="og:image" content="https://bistec.com.pt/assets/images/tagline-vertical.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Logo Bistec" />
+    <meta property="og:image:width" content="250" />
+    <meta property="og:image:height" content="250" />
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +24,7 @@
     <link rel="stylesheet" href="./assets/css/styleTablet.css">
     <link rel="stylesheet" href="./assets/css/styleTelaQuadrada.css">
     <link rel="stylesheet" href="./assets/css/styleTv.css">
+    <link rel="stylesheet" href="./assets/css/styleDark.css">
     <link rel="icon" href="assets/images/logo-bistec-favicon.png">
 </head>
 <body>
@@ -20,7 +35,7 @@
     <article id="first_section">
         <!-- banner -->
         <section class="banner-bistec">
-            <img src="assets/images/banner-moliceiro.png" alt="Imagem de fundo com o moliceiro da cidade de Aveiro">
+            <img src="assets/images/moliceiro-banner-bistecportugal2.png" alt="Imagem de fundo com o moliceiro da cidade de Aveiro">
             <div class="banner-bistec-texto">
                 <h1>Bistec Portugal</h1>
                 <h2>Serviços em tecnologia para todas as empresas</h2>
@@ -37,385 +52,116 @@
 
 
         <!-- PRODUTOS -->
-        <section class="bistec-produtos">
+        <section class="bistec-produtos" id="bistec-automacao">
                 <img src="assets/images/img-lg-bistec-automacao.png" alt="Bistec Automação"> 
+                <img src="assets/images/img-lg-bistec-automacao-branco.png" alt="Bistec Automação">
                 <div class="texto-produtos">
                     <h2>Troque a anotação pela automação</h2>
-                    <h4>Facilite a sua gestão e o consumo dos seus clientes. Automatize!</h4>
+                    <h3>Facilite a sua gestão e o consumo dos seus clientes. Automatize!</h3>
 
-                    <button class="bt-dialog" title="Bistec Automação">
-                        <span class="button_text">Saiba Mais</span>                   
-                    </button>
-                    
-                    <div id="modal-automacao" class="modal">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button class="close">&times;</button>
-                                <h2>Bistec Automação</h2>
-                            </div>
-                            <div class="modal-body">
-                                <p>
-                                    A Bistec, consolidada no mercado de tecnologia para o comércio e serviços, oferece o kit completo para montar seu PDV e automatizar suas vendas.
-                                </p>
-                                <p>
-                                    Adquira conosco a Solução SAT Fiscal, facilite sua gestão e as transações com seus clientes e esteja em dia com a legislação fiscal. Os kits podem conter terminais de venda (teclados inteligentes), leitores de código de barras, relógios de pontos digitais, computadores, etc. Temos também softwares para a automação comercial da sua empresa.
-                                </p>
-                            </div>
-                            <div class="modal-footer">
-                                <p>©2022 Bistec · Consultoria de T I · Todos os direitos reservados.</p>
-                            </div>
-                        </div>
-                    </div>
-
+                    <a href="produtos/automacao.html" class="button_text bt-dialog">Saiba Mais</a>     
                 </div>
         </section>
 
         <section class="bistec-produtos" id="bistec-cloud">
             <img src="assets/images/img-lg-bistec-cloud.png" alt="Bistec Cloud">
+            <img src="assets/images/img-lg-bistec-cloud-branco.png" alt="Bistec Cloud">
                 <div class="texto-produtos">
                     <h2>Backup corporativo na nuvem</h2>
-                    <h4>Guarde o que é importante com segurança, sem ocupar espaço algum!</h4>
+                    <h3>Guarde o que é importante com segurança, sem ocupar espaço algum!</h3>
 
-                    <button class="bt-dialog" title="Bistec Cloud">
-                        <span class="button_text">Saiba Mais</span>                   
-                    </button>
-
-                    <div id="modal-cloud" class="modal">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button class="close">&times;</button>
-                                <h2>Bistec Cloud</h2>
-                            </div>
-                            <div class="modal-body">
-                                <p>
-                                    As informações corporativas estão cada vez mais digitalizadas e online, por isso as empresas devem se prevenir contra a perda de informações importantes. Com essa solução você ajuda a proteger os arquivos que a sua empresa precisa e os restaura rapidamente após uma falha do sistema ou perda de dados.
-                                </p>
-                                <p>
-                                    O Bistec Cloud é a solução ideal de backup em nuvem, seguro e elástico, sem custos de investimentos em infraestrutura e de acordo com o Regulamento Geral de Proteção de Dados (GDPR).
-                                </p>
-                            </div>
-                            <div class="modal-footer">
-                                <p>©2022 Bistec · Consultoria de T I · Todos os direitos reservados.</p>
-                            </div>
-                        </div>
-                    </div>
-
+                    <a href="produtos/cloud.html" class="button_text bt-dialog">Saiba Mais</a>
                 </div>
         </section>
 
         <section class="bistec-produtos" id="bistec-edu">
             <img src="assets/images/img-lg-bistec-edu.png" alt="Bistec Edu">
+            <img src="assets/images/img-lg-bistec-edu-branco.png" alt="Bistec Edu">
                 <div class="texto-produtos">
                     <h2>Treinamentos: use a tecnologia com capacidade máxima.</h2>
-                    <h4>Faça o treinamento com toda a sua equipe e explore 100% da capacidade das soluções adquiridas.</h4>
-                    <button class="bt-dialog" title="Bistec Edu">
-                        <span class="button_text">Saiba Mais</span>                   
-                    </button>
-
-                    <div id="modal-edu" class="modal">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button class="close">&times;</button>
-                                <h2>Bistec Edu</h2>
-                            </div>
-                            <div class="modal-body">
-                                <p>
-                                    Constantemente, a implementação de um software de gestão acaba por falhar, porque não é dada a atenção necessária a esse profissional que utilizará a ferramenta no dia-a-dia. Para evitar este tipo de situação, o Bistec Edu fornece formação para toda a sua equipa explorar 100% da capacidade das soluções adquiridas.
-                                </p>
-                                <p>
-                                    Temos profissionais com mais de 25 anos de experiência académica e educadores certificados do Google nível 1.
-                                </p>
-                            </div>
-                            <div class="modal-footer">
-                                <p>©2022 Bistec · Consultoria de T I · Todos os direitos reservados.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-        </section>
-
-        <section class="bistec-produtos" id="bistec-gpdr">
-            <img src="assets/images/img-lg-GPDR.png" alt="Bistec GDPR">
-            <div class="texto-produtos">
-                <h2>Adeque sua empresa ao GDPR</h2>
-                <h4>
-                    Estar preparado para cumprir o Regulamento Geral de Proteção de Dados e proteger contra multas e fugas de informações de terceiros
-                </h4>
-                
-                <button class="bt-dialog" title="Bistec GDPR">
-                    <span class="button_text">Saiba Mais</span>                   
-                </button>
-                
-                <div id="modal-gpdr" class="modal">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button class="close">&times;</button>
-                            <h2>Bistec GPDR</h2>
-                        </div>
-                        <div class="modal-body">
-                            <p>
-                                A GDPR (General Data Protection Regulation) 2016/679 é um regulamento da legislação europeia sobre privacidade e proteção de dados pessoais, aplicável a todos os indivíduos da União Europeia e do Espaço Económico Europeu que foi implementado em 2018.
-                            </p>
-                            <p>
-                                A GDPR define multas, sanções e processos cível aos controladores e operadores que não cumpram as suas bases legais, de acordo com o tipo de evento e gravidade.
-                            </p>
-                        </div>
-                        <div class="modal-footer">
-                            <p>©2022 Bistec · Consultoria de T I · Todos os direitos reservados.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="bistec-produtos" id="bistec-outsourcing">
-            <img src="assets/images/img-lg-bistec-outsourcing.png" alt="Bistec OutSourcing">
-                <div class="texto-produtos">
-                    <h2>Contrate outsourcing de TI</h2><p>
-                    <h4>Contrate técnicos preparados para cuidar de sua empresa.</h4>
-                    
-                    <button class="bt-dialog" title="Bistec Outsourcing">
-                        <span class="button_text">Saiba Mais</span>                   
-                    </button>
-                    
-                    <div id="modal-outsourcing" class="modal">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button class="close">&times;</button>
-                                <h2>Bistec Outsourcing</h2>
-                            </div>
-                            <div class="modal-body">
-                                <p>
-                                    Por uma mensalidade, a sua empresa pode contar com suporte técnico telefónico e online, bem como visitas técnicas preventivas e corretivas. Realizamos a manutenção periódica e resolvemos problemas mais graves, sejam eles equipamentos ou software, com o serviço dos nossos técnicos, treinados para servir a sua empresa de forma rápida e eficaz.
-                                </p>
-                                <p>
-                                    Ao contratar os nossos serviços e optar pelo atendimento de final de semana e feriados, a sua empresa não fica na mão quando você mais precisa.
-                                </p>
-                            </div>
-                            <div class="modal-footer">
-                                <p>©2022 Bistec · Consultoria de T I · Todos os direitos reservados.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-        </section>
-
-        <section class="bistec-produtos" id="bistec-renting">
-            <img src="assets/images/img-lg-bistec-renting.png" alt="Bistec Renting">
-                <div class="texto-produtos">
-                    <h2>Renting de TI</h2>
-                    <h4>Faça a locação de equipamentos, e mantenha a liquidez de sua empresa</h4>
-                    
-                    <button class="bt-dialog" title="Bistec Renting">
-                        <span class="button_text">Saiba Mais</span>                   
-                    </button>
-                    
-                    <div id="modal-renting" class="modal">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button class="close">&times;</button>
-                                <h2>Bistec Renting</h2>
-                            </div>
-                            <div class="modal-body">
-                                <p>
-                                    Mantenha a sua liquidez adquirindo os sistemas de gestão e TI através da locação de equipamentos. Esta solução permite que você preserve as suas linhas de crédito junto aos bancos e assim faça um investimento rentável durante o ciclo de vida dos seus equipamentos, assim melhorando a sua classificação de crédito.
-                                </p>
-                                <p>
-                                    Tenha acesso à tecnologia de ponta e, quando o contrato acabar, você pode fazer upgrade nos equipamentos.
-                                </p>
-                            </div>
-                            <div class="modal-footer">
-                                <p>©2022 Bistec · Consultoria de T I · Todos os direitos reservados.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-        </section>
-
-        <section class="bistec-produtos" id="bistec-soft">
-            <img src="assets/images/img-lg-bistec-soft.png" alt="Bistec Soft">
-                <div class="texto-produtos">
-                    <h2>Todo tipo de software</h2><p>
-                    <h4>O Bistec soft agora cuida do seu site e contas de e-mail!</h4>
-                    
-                    <button class="bt-dialog" title="Bistec Soft">
-                        <span class="button_text">Saiba Mais</span>                   
-                    </button>
-                    
-                    <div id="modal-soft" class="modal">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button class="close">&times;</button>
-                                <h2>Bistec Soft</h2>
-                            </div>
-                            <div class="modal-body">
-                                <h3>Crie já o seu site institucional conosco!</h3>
-                                <p>
-                                    Tenha um site institucional hospedado em servidor com alta disponibilidade e contas de e-mail profissionais para sua empresa .
-                                </p>
-                                <p>Contrate agora e obtenha:</p>
-                                <ul>
-                                    <li> - 1 site com domínio .com.br</li>
-                                    <li> - 100 GB de armazenamento</li>
-                                    <li> - SSL Grátis</li>
-                                    <li> - Contas de e-mail ilimitadas</li>
-                                </ul>
-                                <p>Possuímos também outras soluções para diversos segmentos, como:</p>
-                                <ul>
-                                    <li> - Desenvolvimento de e-commerce + domínio + hospedagem + manutenção + suporte;</li>
-                                    <li> - Solução de chat online para sites; <!-- Clique <a href="https://www.jivochat.com.br/?partner_id=23677&amp;pricelist_id=114&amp;lang=pt" target="_blank" rel="noopener noreferrer"><strong>aqui</strong></a> e teste por 14 dias --></li>
-                                    <li> - Software de roteirização (logística);</li>
-                                    <li> - Antivírus;</li>
-                                    <li> - Realidade Aumentada.</li>
-                                </ul>                               
-                            </div>
-                            <div class="modal-footer">
-                                <p>©2022 Bistec · Consultoria de T I · Todos os direitos reservados.</p>
-                            </div>
-                        </div>
-                    </div>
-
+                    <h3>Faça o treinamento com toda a sua equipe e explore 100% da capacidade das soluções adquiridas.</h3>
+                    <a href="produtos/edu.html" class="button_text bt-dialog">Saiba Mais</a>
                 </div>
         </section>
 
         <section class="bistec-produtos" id="bistec-msp">
             <img src="assets/images/img-lg-bistec-msp.png" alt="Bistec MSP">
+            <img src="assets/images/img-lg-bistec-msp-branco.png" alt="Bistec MSP">
                 <div class="texto-produtos">
                     <h2>Você sabe o que é um MSP?</h2>
-                    <h4>
+                    <h3>
                         A Bistec atua utilizando ferramentas gerenciais para analisar em tempo real o que esta acontecendo com seu sistemas.
-                    </h4>
+                    </h3>
                     
-                    <button class="bt-dialog" title="Bistec MSP">
-                        <span class="button_text">Saiba Mais</span>                   
-                    </button>
-                    
-                    <div id="modal-msp" class="modal">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button class="close">&times;</button>
-                                <h2>Bistec MSP</h2>
-                            </div>
-                            <div class="modal-body">
-                                <p>
-                                    Quando se trata de atendimento técnico para a sua empresa atualmente existem dois modelos, o break-fix (quebrou-consertou) e o MSP (Provedores de Serviços Gerenciados).
-                                </p>
-                                <p>
-                                    No modelo break-fix o suporte técnico é acionado após o problema acontecer e até que ele seja resolvido você fica com seu equipamento/sistema inoperante.
-                                </p>
-                                <p>
-                                    Já no modelo MSP, a Bistec atua ativamente, utilizando ferramentas gerenciais, para analisar em tempo real o que está acontecendo com seu computador e sistemas. Dessa forma é possível sanar seus problemas mesmo que eles aconteçam.
-                                </p>
-                            </div>
-                            <div class="modal-footer">
-                                <p>©2022 Bistec · Consultoria de T I · Todos os direitos reservados.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <a href="produtos/msp.html" class="button_text bt-dialog">Saiba Mais</a>
 
+                </div>
+        </section>
+
+        <section class="bistec-produtos" id="bistec-outsourcing">
+            <img src="assets/images/img-lg-bistec-outsourcing.png" alt="Bistec OutSourcing">
+            <img src="assets/images/img-lg-bistec-outsourcing-branco.png" alt="Bistec OutSourcing">
+                <div class="texto-produtos">
+                    <h2>Contrate outsourcing de TI</h2><p>
+                    <h3>Contrate técnicos preparados para cuidar de sua empresa.</h3>
+                    
+                    <a href="produtos/outsourcing.html" class="button_text bt-dialog">Saiba Mais</a>
+                </div>
+        </section>
+
+        <section class="bistec-produtos" id="bistec-renting">
+            <img src="assets/images/img-lg-bistec-renting.png" alt="Bistec Renting">
+            <img src="assets/images/img-lg-bistec-renting-branco.png" alt="Bistec Renting">
+                <div class="texto-produtos">
+                    <h2>Renting de TI</h2>
+                    <h3>Faça a locação de equipamentos, e mantenha a liquidez de sua empresa</h3>
+                    
+                    <a href="produtos/renting.html" class="button_text bt-dialog">Saiba Mais</a>
+                </div>
+        </section>
+
+        <section class="bistec-produtos" id="bistec-gpdr">
+            <img src="assets/images/img-lg-bistec-rgpd.png" alt="Bistec RGPD">
+            <img src="assets/images/img-lg-bistec-rgpd-branco.png" alt="Bistec RGPD">
+            <div class="texto-produtos">
+                <h2>Adeque sua empresa ao RGPD</h2>
+                <h3>
+                    Estar preparado para cumprir o Regulamento Geral de Proteção de Dados e proteger contra multas e fugas de informações de terceiros
+                </h3>
+                
+                <a href="produtos/rgpd.html" class="button_text bt-dialog">Saiba Mais</a>
+            </div>
+        </section>
+
+        <section class="bistec-produtos" id="bistec-soft">
+            <img src="assets/images/img-lg-bistec-soft.png" alt="Bistec Soft">
+            <img src="assets/images/img-lg-bistec-soft-branco.png" alt="Bistec Soft">
+                <div class="texto-produtos">
+                    <h2>Todo tipo de software</h2><p>
+                    <h3>O Bistec soft agora cuida do seu site e contas de e-mail!</h3>
+                    
+                    <a href="produtos/soft.html" class="button_text bt-dialog">Saiba Mais</a>
                 </div>
         </section>
 
         <section class="bistec-produtos" id="bistec-wifi">
             <img src="assets/images/img-lg-bistec-wifi.png" alt="Bistec wifi">
+            <img src="assets/images/img-lg-bistec-wifi-branco.png" alt="Bistec wifi">
             <div class="texto-produtos">
                 <h2>Conheça a nossa solução WAAS: Wi-Fi as a service.</h2>
-                <h4>
+                <h3>
                     Tudo que a sua empresa precisa para ter uma rede wi-Fi com alto desempenho e de qualidade.
-                </h4>
+                </h3>
                 
-                <button class="bt-dialog" title="Bistec Wi-Fi">
-                    <span class="button_text">Saiba Mais</span>                   
-                </button>
-                
-                <div id="modal-wifi" class="modal">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button class="close">&times;</button>
-                            <h2>Bistec Wi-fi</h2>
-                        </div>
-                        <div class="modal-body">
-                            <h3>Chega de sinal fraco, Bistec Wi-fi é a solução que o seu negócio precisa!</h3>
-                            <p>
-                                Esta solução é tudo que a sua empresa precisa para ter uma rede wi-fi com alto desempenho e qualidade, assim obtendo uma ótima experiência de navegação. Temos soluções para projetos de baixa e média complexidade:
-                            </p>
-                            <ul>
-                                <li> - Gerenciamento Cloud;</li>
-                                <li> - Splash Pages – Anúncios e propagandas;</li>
-                                <li> - Dashboard Analytics.</li>
-                                <li> - Login Social – Liberado por meio do check-in nas principais redes sociais, Linkedin, Facebook, Instagram, etc;</li>
-                            </ul>
-                        </div>
-                        <div class="modal-footer">
-                            <p>©2022 Bistec · Consultoria de T I · Todos os direitos reservados.</p>
-                        </div>
-                    </div>
-                </div>
-
+                <a href="produtos/wifi.html" class="button_text bt-dialog">Saiba Mais</a>
             </div>
         </section>
     </article>
 
-    <!-- rodapé -->
-    <footer>
-        <div class="redes-sociais">
-            <a href="mailto:bistec@bistec.com.br" target="_blank"><ion-icon name="mail" class="ionspecial"></ion-icon></a>
-            <a href="https://facebook.com/bistecweb" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
-            <a href="https://instagram.com/bistecweb" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-            <a href="https://youtube.com/bistecweb" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
-            <a href="https://www.twitter.com/bistecweb" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
-            <a href="https://www.flickr.com/bistec" target="_blank"><ion-icon name="logo-flickr"></ion-icon></a>
-            <a href="https://soundcloud.com/bistecweb" target="_blank"><ion-icon name="logo-soundcloud"></ion-icon></a>
-            <a href="https://linkedin.com/company/bistec" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-            <a href="#" target="_self"><ion-icon name="location" class="ionspecial"></ion-icon></a>
-        </div>
-
-        <div class="contacts">
-            <div class="contact item1">
-                <a href="#contacts_section" id="contacts_section">
-                    <img src="assets/images/portugal.png" alt="Portugal País"> Bistec Portugal
-                </a>
-                <p><a href="tel:+351308807114">+351 308 807 114</a></p>
-            </div>
-    
-            <div class="contact item2">
-                <a href="https://bistec.com.br">
-                    <img src="assets/images/brazil.png" alt="Brasil País"> Bistec Brasil 
-                </a>  
-                <p>
-                    <a href="tel:+55(13)3235-7735">+55 (13) 3235-7735</a>  
-                </p>
-                <p>
-                    <a href="tel:+55(13)3522-8184">+55 (13) 3522-8184</a>
-                </p>                    
-            </div>
-    
-            <div class="contact item3">
-                <a href="https://api.whatsapp.com/send?phone=5513992101945" target="_blank"><img src="assets/images/whatsapp.png" alt="Logo Whatsapp Business"> Whatsapp Business </a>
-                <p>
-                    <a href="https://api.whatsapp.com/send?phone=5513992101945" target="_blank">+55 (13) 99210-1945</a>
-                </p>
-            </div> 
-            <!--
-            <div class="contact item4">
-                <p>
-                    <img src="assets/images/clock.png" alt="Logo Horário"> Funcionamento 
-                </p> 
-                <p>Segunda à Sexta:</p> 
-                <p>Horário a ser definido</p>
-            </div> 
-            -->
-        </div>
-    </footer>
-    <div class="footer-copyright">
-        <p>©2022 Bistec · Consultoria de T I · Todos os direitos reservados.</p>
-    </div>
+    <span class="rodape"></span>
 
     <script src="./assets/js/componente_menu.js"></script>
+    <script src="./assets/js/componente_rodape.js"></script>
     <script src="./assets/js/main.js" defer></script>
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
     <script src="//code.jivosite.com/widget/3bZuUHkWaM" async></script>
