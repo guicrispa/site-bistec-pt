@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="../assets/css/styleTelaQuadrada.css">
         <link rel="stylesheet" href="../assets/css/styleTv.css">
         <link rel="stylesheet" href="../assets/css/styleEmail.css">
+        <link rel="stylesheet" href="../assets/css/styleDark.css">
         <link rel="icon" href="../assets/images/logo-bistec-favicon.png">
     </head>
     <body>

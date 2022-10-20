@@ -116,10 +116,14 @@
     
     /* banner */
 
+   /*PROVISÓRIO PARA CORREÇÃO DE DUPLICIDADE DE IMAGENS NAS OUTRAS PÁGINAS*/
     .banner-bistec {
         display: none;
     }
-    
+    /*para ignorar a index, provisório tbm*/
+    #imagemUnica{
+        display: block;
+    }
     .banner-bistec-mobile {
         display: block;
         width: auto;
@@ -135,8 +139,7 @@
 
     .banner-bistec-texto {
         transform: translate(-45%, -50%);
-    }
-    
+    }  
     .banner-bistec-texto h1 {
         font-size: 6vw;
     }
@@ -160,6 +163,7 @@
       flex-direction: column;
       margin: auto;
       max-width: 85%;
+      font-size: 0.8em;
     }
     .texto-produtos h2{
       text-align: center;
@@ -173,9 +177,11 @@
     }
     
     .bt-dialog {
-        padding: 0 10px;
+        padding: 10px 10px;
         margin: auto;
         margin-top: 2vh;
+        height: auto;
+        text-align: center;
     }
     
     .bt-dialog .button_text {
@@ -247,7 +253,7 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         font-size: 26px;
-        max-width: 55%;
+        max-width: 65%;
     }
 
     .footer-copyright p {

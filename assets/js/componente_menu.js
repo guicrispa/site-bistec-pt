@@ -7,8 +7,8 @@ let Caminho = document.getElementsByTagName('script')[0].attributes[0].textConte
 menu.insertAdjacentHTML('afterend',/*html*/`
     <header class="header-bistec" id="#first_section">
         <a href="#first_section" class="logo-bistec">
-            <img src="${Caminho}assets/images/logo-bistec.png" alt="Logo - Bistec">
-            <img src="${Caminho}assets/images/logo_bistec_branco.png" alt="Logo Branca - Bistec" >
+            <img src="https://ik.imagekit.io/bistecpt/imagens/logo-bistec.png?tr=w-300,h-102" alt="Logo - Bistec" width="90.666" height="84.375">
+            <img src="https://ik.imagekit.io/bistecpt/imagens/logo_bistec_branco.png?tr=w-300,h-102" alt="Logo Branca - Bistec" width="300" height="102">
         </a>
         <ul class="normal-menu">
             <li>
@@ -57,3 +57,21 @@ menu.insertAdjacentHTML('afterend',/*html*/`
 `)
 //remove a tag spam de referencia
 menu.remove()
+
+//abre e fecha menu mobile
+document.getElementsByName('menu-outline')[0].addEventListener('click', menuResponsive)
+function menuResponsive(){
+    let menu = document.getElementsByClassName('normal-menu')[0]
+    if(menu.style.display == 'inherit'){
+        menu.style.display = 'none'
+    }else{
+        menu.style.display = 'inherit'
+    }
+}
+
+//PROVISÓRIO  ---------------------------------------------------------------------------------
+// Botão Loja
+let loja = document.getElementsByClassName('button')[0].parentElement
+loja.addEventListener('click', ()=>{
+    alert("Loja em construção...");
+})

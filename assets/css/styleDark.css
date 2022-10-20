@@ -1,4 +1,8 @@
 @media (prefers-color-scheme: dark) {
+
+    header {
+        border-bottom: 3px solid #a0c8f9;
+    }
     
     header .logo-bistec img:nth-child(1){
         display: none;
@@ -44,7 +48,7 @@
 
     
     .button:focus-within {
-        border: 2px solid blue;
+        border: 2px solid rgb(218, 218, 218);
     }
 
     .normal, 
@@ -175,7 +179,15 @@
     }
 
     .bt-dialog-teamviewer {
-        background-color: #8bc2f1;
+        background-color: #a0c8f9;
+    }
+
+    .bt-dialog-anydesk:hover {
+        background-color: #ffa79f;
+    }
+
+    .bt-dialog-teamviewer:hover {
+        background-color: #b3dbff;
     }
 
     .suporte-wpp {
@@ -196,6 +208,46 @@
     .produto-texto .link_msp {
         color: #8bc2f1;
     }
+
+    /*pág bistec edu*/
+    .bistec-edu-plataformas a:nth-child(2), 
+    .bistec-edu-plataformas a:nth-child(4) {
+        display: inherit;
+        width: 16em;
+        padding: 0 1em;
+    }
+
+    .bistec-edu-plataformas a:nth-child(1),
+    .bistec-edu-plataformas a:nth-child(3) {
+        display: none;
+    }
+
+    /*páginas de email enviado*/
+
+    .email-enviado{
+        color: #f3fafa;
+        background: #141414;
+    }
+
+    .email-enviado h1 {
+        color: #f3fafa;
+        background: #141414;
+    }
+    
+    .email-enviado p {
+        background: #141414;
+        color: #f3fafa;
+    }
+
+    .email-enviado ion-icon {
+        color: rgb(7, 236, 57);
+        opacity: 0.8;
+    }
+
+    .email-enviado #ionicEmailFalhou{
+        color: rgb(255, 81, 81);
+        opacity: 0.8;
+    }
 }
 
 @media (prefers-color-scheme: dark) and (max-width: 620px) {
@@ -213,6 +265,7 @@
         text-align: center;
         background-color: #141414;
         color: #f3fafa;
+        border-bottom: none;
     }
 
     .normal:hover{
