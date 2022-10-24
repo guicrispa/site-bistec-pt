@@ -2,7 +2,7 @@ on:
   push:
     branches:
       main
-name: Deploy com push na main
+name: deploy - push na main
 jobs:
   web-deploy:
     name: Deploy
