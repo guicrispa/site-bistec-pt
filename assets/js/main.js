@@ -6,7 +6,7 @@ const verificaTela = () => {
     y = w.innerHeight|| e.clientHeight|| g.clientHeight; 
     //IMAGENS
     document.getElementById('img-banner').removeAttribute('src')
-    document.getElementById('img-banner').setAttribute('src',`https://ik.imagekit.io/bistecpt/imagens/banner-moliceiro_lQJqvFZuv.png?tr=w-${(x-20)*2},h-${y*2}`)
+    document.getElementById('img-banner').setAttribute('src',`https://ik.imagekit.io/bistecbr/banner-moliceiro.png?tr=w-${(x-20)*2},h-${y*2}`)
 
     //RECOMPOE MENU AO ELTERAR TAMANHO DA TELA ENTRE MOBILE E OUTRO
     let menu = document.getElementsByClassName('normal-menu')[0]

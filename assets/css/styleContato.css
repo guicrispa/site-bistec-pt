@@ -5,7 +5,7 @@ body {
 }
 
 article {
-    margin-top: 77px;
+    margin-top: 97px;
     max-width: 60%;
 }
 
@@ -69,7 +69,7 @@ input[type=submit]:focus-within {
 
 @media (max-width: 620px) {
     .formulario h1 {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     .formulario form h3 {
         font-size: 1.4em;

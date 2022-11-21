@@ -13,7 +13,7 @@
     }
 
     .header-bistec {
-        background-color: #141414;
+        background-color: #191a1b;
     }
 
     .button, 
@@ -55,9 +55,27 @@
     .normal ion-icon {
         color: #a0c8f9;
     }
-    .normal:hover{ 
-        border-bottom: 3px solid #a0c8f9;
+    
+    .normal::after{
+        content: '';
+        bottom: 0;
+        position: absolute;
+        left: 50%;
+        width: 0%;
+        height: 4px;
+        background-color: #a0c8f9;
+        transition: 0.2s;
     } 
+    
+    .normal:hover::after{
+        left: 0;
+        width: 100%;
+    } 
+
+    header .normal-submenu li a {
+        color: #F3FAFA;
+        background: #222222;
+    }
 
     header .normal-submenu li a {
         color: #F3FAFA;
@@ -103,11 +121,11 @@
         display: inherit;
     }
     article {
-        background-color: #141414;
+        background-color: #202124;
     }
     
     .bistec-produtos {
-        background-color: #141414;
+        background-color: #202124;
         color: #f3fafa;
     }
 
@@ -201,7 +219,7 @@
     /* páginas de portefólio */
 
     .produto-texto {
-        background-color: #141414;
+        background-color: #202124;
         color: #f3fafa;        
     }
 
@@ -278,6 +296,7 @@
     .support_icon {
         background: #0c407c;
         color: #f3fafa;
+        border-right: none;
     }
 
     .button_support .button_text {
