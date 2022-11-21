@@ -21,7 +21,6 @@
         width: 100%;
         right: 0;
         font-size: 12px;
-        border-bottom: 1px solid #f3fafa;
     }
     
     .logo-bistec img {
@@ -140,7 +139,7 @@
     .banner-bistec-mobile img{
         width: 100%;
         height: 85vh;
-        margin-top: 75px;
+        margin-top: 65px;
     }
 
     .banner-bistec-texto {    

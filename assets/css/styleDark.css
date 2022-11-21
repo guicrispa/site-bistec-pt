@@ -62,7 +62,7 @@
         position: absolute;
         left: 50%;
         width: 0%;
-        height: 2.5px;
+        height: 4px;
         background-color: #a0c8f9;
         transition: 0.2s;
     } 

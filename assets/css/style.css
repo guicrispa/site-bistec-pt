@@ -151,7 +151,7 @@ a {
     position: absolute;
     left: 50%;
     width: 0%;
-    height: 2.5px;
+    height: 4px;
     background-color: #141414;
     transition: 0.2s;
 } 
@@ -282,7 +282,6 @@ a {
     border-radius: 6px;
     font-weight: 800;
     position: relative;
-    min-width: 200px;
     cursor: pointer;
     transition: color 0.4s linear;
 }
