@@ -194,10 +194,12 @@
 
     .bt-dialog-anydesk {
         background-color: #FF8277;
+        color: #141414;
     }
 
     .bt-dialog-teamviewer {
         background-color: #a0c8f9;
+        color: #141414;
     }
 
     .bt-dialog-anydesk:hover {

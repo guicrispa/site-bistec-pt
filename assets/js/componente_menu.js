@@ -8,7 +8,7 @@ menu.insertAdjacentHTML('afterend',/*html*/`
     <header class="header-bistec" id="#first_section">
         <a href="#first_section" class="logo-bistec">
             <img src="https://ik.imagekit.io/bistecbr/logo-bistec.png?tr=w-300,h-102" alt="Logo - Bistec" width="90.666" height="84.375">
-            <img src="https://ik.imagekit.io/bistecbr/logo_bistec_branco.png?tr=w-300,h-102" alt="Logo Branca - Bistec" width="300" height="102">
+            <img src="https://ik.imagekit.io/bistecbr/bistec_logobranco.png?tr=w-300,h-102" alt="Logo Branca - Bistec" width="300" height="102">
         </a>
         <ul class="normal-menu">
             <li>

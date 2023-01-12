@@ -14,7 +14,7 @@
 
 .bistec-suporte p {
     font-size: 2vw;
-    padding: 1.75vh 0;
+    padding: 2.75vh 0;
     background-color: transparent;
 }
 
@@ -29,7 +29,7 @@
 .bt-dialog-anydesk {    
 	background-color: #A62923;
     align-items: center;
-    padding: 2vw 2vw;
+    padding: 1.2vw;
     color: #fff;
     border-radius: 6px;
     cursor: pointer;
@@ -39,25 +39,30 @@
     max-width: 40%;
 }
 
-.bt-dialog-anydesk:hover {
+.bistec-suporte p:last-child {
+    margin-top: 4vh;
+}
+
+.bt-dialog-anydesk:hover,
+.bt-dialog-anydesk:focus-within {
 	background-color: #9b1d16;
 }
 
 .bt-dialog-teamviewer {    
 	background-color: #0859A1;
     align-items: center;
-    padding: 2vw 2vw;
+    padding: 1.2vw;
     color: #fff;
     border-radius: 6px;
     cursor: pointer;
 	border: none;
 	outline: none;
     font-weight: 700;
-    margin-bottom: 1vw;
     max-width: 40%;
 }
 
-.bt-dialog-teamviewer:hover {
+.bt-dialog-teamviewer:hover,
+.bt-dialog-teamviewer:focus-within {
 	background-color: #095191;
 }
 

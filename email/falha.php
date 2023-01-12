@@ -7,6 +7,20 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
     <head>
+        <meta property="og:locale" content="pt_PT" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bistec.com.pt/" />
+        <meta property="og:locale" content="pt_PT" />
+        <meta property="og:title" content="Bistec PT - Automação Comercial" />
+        <meta property="og:site_name" content="Bistec PT" />
+        <meta property="og:description" content="Bistec Consultoria de TI. Desde 1999 fornecendo produtos e serviços de Automação Comercial e Informática. Aproveite o melhor da tecnologia para seu negócio." />
+
+        <meta property="og:image" content="https://ik.imagekit.io/bistecbr/bistec_metatag.jpg" />
+        <meta property="og:image:type" content="image/jpg" />
+        <meta property="og:image:alt" content="Logo Bistec" />
+        <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="400" />
+
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
