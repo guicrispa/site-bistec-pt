@@ -26,7 +26,7 @@ header {
     width: 100%;
     display: flex;
     position: fixed;
-    padding: 2px 100px;
+    padding: 5px 100px;
     display: flex;
     z-index: 1;
 }
@@ -79,7 +79,7 @@ header .normal-menu li a {
 }
 header ul ul {
     position: absolute;
-    top: 34px;
+    top: 32px;
     display: none;
 }
 .normal-submenu li a:hover > ion-icon,

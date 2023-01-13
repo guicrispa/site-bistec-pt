@@ -158,5 +158,18 @@
     <script src="./assets/js/main.js" defer async></script>
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
     <script src="//code.jivosite.com/widget/3bZuUHkWaM" async></script>
+    <script>
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            if(window.matchMedia("(min-width: 621px").matches){
+                header.classList.toggle("sticky", window.scrollY >= 0)
+                if(window.scrollY >= 0){
+                    let imageLogo = document.querySelector('.logoImg')
+                    imageLogo.removeAttribute('src');
+                    imageLogo.setAttribute('src',`https://ik.imagekit.io/bistecbr/logo-bistec.png`);
+                }
+            }            
+        })
+    </script>
 </body>
 </html>

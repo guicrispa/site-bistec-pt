@@ -140,7 +140,7 @@
     .banner-bistec-mobile img{
         width: 100%;
         height: 85vh;
-        margin-top: 75px;
+        margin-top: 56px;
     }
 
     .banner-bistec-texto {    
@@ -162,14 +162,14 @@
     }
 
     .bistec-produtos img {
-      width: 65%;
+      width: 85%;
     }
 
     .texto-produtos {
       display: flex;
       flex-direction: column;
       margin: auto;
-      max-width: 85%;
+      max-width: 90%;
       font-size: 0.8em;
     }
     .texto-produtos h2{
@@ -178,7 +178,7 @@
       font-weight: 500;
     }
     .texto-produtos h3{
-        text-align: center;
+        text-align: justify;
         font-size: 4.2vw;
         font-weight: 400;
     }
@@ -189,6 +189,7 @@
         margin-top: 2vh;
         height: auto;
         text-align: center;
+        min-width: 0;
     }
     
     .bt-dialog .button_text {
