@@ -45,20 +45,21 @@ input, textarea {
 }
 
 input[type=submit] {
-    background: #161616;
+    background: linear-gradient(135deg, #10588c, #07305f);
     /* background: linear-gradient(135deg, #65ADE2, #BA83C0); */
     border: transparent;
     font-size: 1.5em;
-    color: #A0C8F9;
+    color: #fff;
     font-weight: 900;
 }
 
 input[type=submit]:hover {
 /*    background: linear-gradient(135deg, #BA83C0, #65ADE2);*/
     cursor: pointer;
-    background-color: #A0C8F9;
-    color: #161616;
+    background: linear-gradient(135deg, #07305f, #10588c);
+    color: #fff;
 }
+
 
 input[type=submit]:focus-within {
     cursor: pointer;

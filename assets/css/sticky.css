@@ -1,8 +1,19 @@
-/* .sticky header {
-    background-color: #F3FAFA;
+.sticky {
+    background: #F3FAFA;
     border-bottom: 1px solid #b3b3b3;
+    transition: 0.2s;
 }
 
 .sticky .button {
+    background: #BB0A0A;
+}
+.sticky .button:hover {
+	background: #c91818;
+}
+.sticky .button:active{
+	background: #d12b2b;
+}
 
-} */
+.sticky .normal {
+color: #030303;
+}

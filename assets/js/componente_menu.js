@@ -7,8 +7,9 @@ let Caminho = document.getElementsByTagName('script')[0].attributes[0].textConte
 menu.insertAdjacentHTML('afterend',/*html*/`
     <header class="header-bistec" id="#first_section">
         <a href="#first_section" class="logo-bistec">
-            <img src="https://ik.imagekit.io/bistecbr/logo-bistec.png?tr=w-300,h-102" alt="Logo - Bistec" width="90.666" height="84.375">
-            <img src="https://ik.imagekit.io/bistecbr/bistec_logobranco.png?tr=w-300,h-102" alt="Logo Branca - Bistec" width="300" height="102">
+            <img class="logoImg" src="https://ik.imagekit.io/bistecbr/bistec_logobranco.png" alt="Logo Branca - Bistec" width="300" height="102">
+            <img src="https://ik.imagekit.io/bistecbr/bistec_logobranco.png" alt="Logo Branca - Bistec" width="300" height="102">
+            <img src="https://ik.imagekit.io/bistecbr/logo-bistec.png" alt="Logo - Bistec" width="300" height="102">
         </a>
         <ul class="normal-menu">
             <li>
@@ -74,4 +75,18 @@ function menuResponsive(){
 let loja = document.getElementsByClassName('button')[0].parentElement
 loja.addEventListener('click', ()=>{
     alert("Loja em construção...");
+})
+
+// teste sticky
+
+window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    if(window.matchMedia("(min-width: 621px").matches){
+        header.classList.toggle("sticky", window.scrollY >= 0)
+        if(window.scrollY >= 0){
+            let imageLogo = document.querySelector('.logoImg')
+            imageLogo.removeAttribute('src');
+            imageLogo.setAttribute('src',`https://ik.imagekit.io/bistecbr/logo-bistec.png`);
+        }
+    }            
 })
