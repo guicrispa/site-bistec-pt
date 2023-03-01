@@ -34,7 +34,7 @@ menu.insertAdjacentHTML('afterend',/*html*/`
             </li>
             <li>
                 <a href="#">
-                    <button class="button">
+                    <button class="button button_store">
                         <span class="button_icon"><ion-icon name="cart-outline"></ion-icon></span>
                         <span class="button_text">LOJA</span>
                     </button>

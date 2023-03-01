@@ -91,6 +91,11 @@ header ul ul {
 header ul :hover > ul{
     display: block;
 }
+
+.button_icon{
+    border-right: 1px solid #141414;
+}
+
 .button {
 	display: inline-flex;
     height: 30px;
@@ -105,12 +110,14 @@ header ul :hover > ul{
 	font-weight: 900;
 	cursor: pointer;
 }
-.button:hover {
+
+/* .button:hover {
 	background: #c91818;
 }
 .button:active{
 	background: #d12b2b;
-}
+} */
+
 .button:focus-within {
     border: 2px solid #141414;
 }
@@ -119,7 +126,7 @@ header ul :hover > ul{
 	display: inline-flex;
 	align-items: center;
 	padding: 0 10px;
-	color: #fff;
+	color: #141414;
     height: 100%;
 }
 a {
@@ -139,7 +146,7 @@ a {
 }
 
 .normal ion-icon {
-    color: black;
+    color: #a0c8f9;
 }
 
 :focus-within > .normal-submenu {
@@ -152,17 +159,17 @@ a {
     position: absolute;
     left: 50%;
     width: 0%;
-    height: 2.5px;
-    background-color: #141414;
+    height: 4px;
+    background-color: #a0c8f9;
     transition: 0.2s;
 } 
 .normal:hover::after{
     left: 0;
     width: 100%;
 } 
-.button_icon {
+/* .button_icon {
 	background: #056006;
-}
+} */
 .button_support {
 	display: inline-flex;
     height: 30px;
@@ -176,16 +183,19 @@ a {
 	font-size: 15px;
 	font-weight: 800;
 	cursor: pointer;
-    background: #0c407c;
+    background: #f3fafa;
+    color: #141414;
 }
-.button_support:hover {
-    background: #10498a;
+.button_store:hover {
+    background: #e7f0f0;
 }
-.button_support:active{
-    background: #18559b;
+
+.button_store:active{
+    background: #dce9e9 ;
 }
+
 .support_icon {
-    background: #07305f;
+    background: #f3fafa;
 }
 .menu-cell {
     display: none;

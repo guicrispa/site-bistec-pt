@@ -14,6 +14,47 @@
 	background: #d12b2b;
 }
 
-.sticky .normal {
-color: #030303;
+.sticky .normal,
+.sticky .normal ion-icon {
+    color: #030303;
+}
+
+.sticky .normal::after {
+    background-color: #030303;
+}
+
+.sticky .button_icon {
+    background-color: #056006;
+}
+
+.sticky .button_support {
+    background: #0c407c;
+}
+
+.sticky .button_support:hover {
+    background: #10498a;
+}
+
+.sticky .button_support:active{
+    background: #18559b ;
+}
+.sticky .support_icon {
+    background: #07305f;
+}
+
+.sticky .button_icon {
+    border: none;
+}
+
+.sticky .button_text,
+.sticky .button_icon {
+    color: #fff;
+}
+
+.sticky .button_store:hover{
+	background: #c91818;
+}
+
+.sticky .button_store:active{
+	background: #d12b2b;
 }
