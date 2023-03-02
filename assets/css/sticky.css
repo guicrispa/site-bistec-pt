@@ -58,3 +58,30 @@
 .sticky .button_store:active{
 	background: #d12b2b;
 }
+
+@media (max-width: 768px){
+    .sticky .normal {
+        display: block;
+    }
+    
+    .sticky .button_support,
+    .sticky .support_icon {
+        background: #0c407c;
+        color: #fff;
+    }
+
+    .sticky .store_icon, 
+    .sticky .support_icon {
+        padding-left: 22px;
+        background: none;
+    }
+
+    .sticky .button_store:hover, .sticky .button_store:hover > .store_icon {
+        background: #141414;
+        color: #FFEF8F;
+    }
+
+    .sticky .button_support:hover{
+        background: #141414;
+    }
+}

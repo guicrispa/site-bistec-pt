@@ -4,6 +4,16 @@
         width: 100%;
         display: block;
         padding: 10px 0;
+        background: #f3fafa;
+    }
+
+    .logoImg {
+        display: none;
+    }
+
+    
+    header .logo-bistec img:nth-child(3) {
+        display: inherit;
     }
 
     header .normal-menu li a{
@@ -11,6 +21,7 @@
         margin: 0;
         letter-spacing: 0.5px;
         text-align: left;
+        color: #141414;
     }
 
     .normal-menu{
@@ -101,6 +112,8 @@
 
     .support_icon {
         background: none;
+        border: none;
+        color: white;
         padding: 5px 0;
         padding-left: 20px;
     }
@@ -113,6 +126,10 @@
         font-size: 16px;
         border-radius: 0;
         background: #0c407c;
+    }
+
+    .button_text {
+        color: white;
     }
 
     .button_support:hover {
@@ -187,6 +204,7 @@
         padding: 10px 10px;
         margin: auto;
         margin-top: 2vh;
+        font-size: 1.4em;
         height: auto;
         text-align: center;
         min-width: 0;
