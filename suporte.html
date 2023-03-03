@@ -19,6 +19,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suporte Técnico - Bistec Portugal</title>
+    <link rel="stylesheet" href="./assets/css/sticky.css">
     <link rel="stylesheet" href="./assets/css/styleSuporte.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/styleMobile.css">
@@ -58,5 +59,17 @@
     <script src="./assets/js/main.js" defer></script>
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
     <script src="//code.jivosite.com/widget/3bZuUHkWaM" async></script>
+    <script>
+        function headerDone() {
+            var header = document.querySelector("header");
+            if(window.matchMedia("(min-width: 769px").matches){
+            	header.classList.toggle("sticky");
+            	let imageLogo = document.querySelector('.logoImg')
+            	imageLogo.removeAttribute('src');
+            	imageLogo.setAttribute('src',`https://ik.imagekit.io/bistecbr/logo-bistec.png`);
+		    }
+        }
+        headerDone();
+    </script>
 </body>
 </html>

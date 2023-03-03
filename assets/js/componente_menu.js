@@ -81,7 +81,7 @@ loja.addEventListener('click', ()=>{
 
 window.addEventListener("scroll", function(){
     var header = document.querySelector("header");
-    if(window.matchMedia("(min-width: 621px").matches){
+    if(window.matchMedia("(min-width: 769px").matches){
         header.classList.toggle("sticky", window.scrollY >= 0)
         if(window.scrollY >= 0){
             let imageLogo = document.querySelector('.logoImg')

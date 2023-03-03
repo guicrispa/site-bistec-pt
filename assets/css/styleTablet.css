@@ -1,6 +1,11 @@
 
 /* tablet */
 @media (min-width: 621px) and (max-width:950px){
+    .logo-bistec img {
+        width: 16vw;
+    }
+}
+/* @media (min-width: 621px) and (max-width:950px){
     .header-bistec {
         width: 100%;
         display: block;
@@ -44,11 +49,11 @@
         font-size: 15px;
         color: #141414;
         margin-right: 5px;
-    }
+    } */
 
     /* 
      */
-
+/* 
     .logo-bistec {
         align-items: flex-start;
         margin: 0;
@@ -68,16 +73,13 @@
     }
     .normal {
         padding-left: 20px;
-    }
+    } */
 
-    .normal-submenu{
-        /* width: 100%; */
+    /* .normal-submenu{
         display: block;
         border: none;
         width: 100%;
         top: 30px;
-        /* margin: 0;
-        padding: 0; */
     }
 
     header .normal-submenu li a {
@@ -110,11 +112,11 @@
 
     .button_support:hover {
       background: #141414;
-    }
+    } */
 
     /* produtos */
 
-    .bistec-produtos {
+    /* .bistec-produtos {
         flex-direction: column;
         margin-top: 5em;
     }
@@ -147,11 +149,11 @@
     
     .bt-dialog .button_text {
         font-size: 25px;
-    }
+    } */
 
     /* rodapé */
 
-    footer {
+    /* footer {
         margin-top: 4vh;
     }
 
@@ -169,4 +171,4 @@
         grid-template-columns: repeat(1, 2fr);
         font-size: 24px;
     }
-}
+} */
