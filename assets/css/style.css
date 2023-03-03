@@ -15,6 +15,24 @@
     font-family: 'Inter', sans-serif;
 }
 
+/* SKIP TO MAIN CONTENT LINK*/
+
+.skip-to-main-content-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    opacity: 0;
+  }
+  .skip-to-main-content-link:focus {
+    left: 0;
+    transform: translateX(0);
+    transform: translateY(150%);
+    opacity: 0.5;
+  }
+
 /*--- HEADER ---*/
 header {
     background: transparent;

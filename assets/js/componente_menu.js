@@ -6,7 +6,8 @@ let Caminho = document.getElementsByTagName('script')[0].attributes[0].textConte
 //insere conteudo html depois da tag spam de referência
 menu.insertAdjacentHTML('afterend',/*html*/`
     <header class="header-bistec" id="#first_section">
-        <a href="#first_section" class="logo-bistec">
+        <a href="#first_section" class="skip-to-main-content-link">Saltar para o conteúdo principal</a>
+        <a href="${Caminho}index.html" class="logo-bistec">
             <img class="logoImg" src="https://ik.imagekit.io/bistecbr/bistec_logobranco.png" alt="Logo Branca - Bistec" width="300" height="102">
             <img src="https://ik.imagekit.io/bistecbr/bistec_logobranco.png" alt="Logo Branca - Bistec" width="300" height="102">
             <img src="https://ik.imagekit.io/bistecbr/logo-bistec.png" alt="Logo - Bistec" width="300" height="102">
