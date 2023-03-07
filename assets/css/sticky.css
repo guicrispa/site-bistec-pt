@@ -1,3 +1,4 @@
+
 .sticky {
     background: #F3FAFA;
     border-bottom: 1px solid #b3b3b3;
@@ -60,49 +61,52 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    .sticky {
-        background: #141414;
-        border-bottom: 1px solid #FFEF8F;
-        transition: 0.5s;
-    }
-
-    .sticky .button, 
-    .sticky .button_support {
-        background: #a0c8f9;
-    }
-
-    .sticky .button:hover,
-    .sticky .button_support:hover {
-        background: #add1fd;
-    }
     
-    .sticky .button:active,
-    .sticky .button_support:active{
-        background: #c5dfff;
-    }
+    @media (min-width: 769px) {
+        .sticky {
+            background: #141414;
+            border-bottom: 1px solid #FFEF8F;
+            transition: 0.5s;
+        }
     
-    .sticky .support_icon {
-        background: #a0c8f9;
-        color: #141414;
-    }
-
-    .sticky .button_text,
-    .sticky .button_icon {
-    	color: #141414;
-    }
-
-    .sticky .button_icon {
-        border-right: 1px solid #141414;
-        background-color: #a0c8f9;
-    }
-
-    .sticky .normal, 
-    .sticky .normal ion-icon {
-        color: #fff;
-    }
+        .sticky .button, 
+        .sticky .button_support {
+            background: #a0c8f9;
+        }
     
-    .sticky .normal::after {
-        background-color: #a0c8f9;    
+        .sticky .button:hover,
+        .sticky .button_support:hover {
+            background: #add1fd;
+        }
+        
+        .sticky .button:active,
+        .sticky .button_support:active{
+            background: #c5dfff;
+        }
+        
+        .sticky .support_icon {
+            background: #a0c8f9;
+            color: #141414;
+        }
+    
+        .sticky .button_text,
+        .sticky .button_icon {
+            color: #141414;
+        }
+    
+        .sticky .button_icon {
+            border-right: 1px solid #141414;
+            background-color: #a0c8f9;
+        }
+    
+        .sticky .normal, 
+        .sticky .normal ion-icon {
+            color: #fff;
+        }
+        
+        .sticky .normal::after {
+            background-color: #a0c8f9;    
+        }
     }
 }
 

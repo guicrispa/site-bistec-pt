@@ -214,7 +214,7 @@
     /* páginas de portefólio */
 
     .produto-texto {
-        background-color: #202124;
+        background: transparent;
         color: #f3fafa;        
     }
 
@@ -262,7 +262,22 @@
         opacity: 0.8;
     }
 
-    @media (max-width: 620px) {
+    @media (max-width: 768px) {     
+        header .logo-bistec img:nth-child(2){
+            display: none;
+        }
+
+        header .logo-bistec img:nth-child(1){
+            display: inherit;
+        }
+
+        header .logo-bistec img:nth-child(3){
+            display: none;
+        }
+
+        .header-bistec {
+            background-color: #141414;
+        }
 
         .menu-cell {
             display: block;
@@ -271,6 +286,10 @@
     
         .menu-cell li ion-icon {
             color: #f3fafa;
+        }
+
+        header .normal-menu li a {
+            color: #fff;
         }
         
         .normal-menu {
