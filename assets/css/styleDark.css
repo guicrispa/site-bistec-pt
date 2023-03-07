@@ -1,8 +1,4 @@
 @media (prefers-color-scheme: dark) {
-
-    header {
-        border-bottom: 1px solid #FFEF8F;
-    }
     
     header .logo-bistec img:nth-child(1){
         display: none;
@@ -11,41 +7,6 @@
     header .logo-bistec img:nth-child(2){
         display: inherit;
     }
-
-    .header-bistec {
-        background-color: #141414;
-    }
-
-    .button, 
-    .button_support {
-        background: #a0c8f9;
-    }
-
-    .button:hover,
-    .button_support:hover {
-        background: #add1fd;
-    }
-    
-    .button:active,
-    .button_support:active{
-        background: #c5dfff;
-    }
-    
-    .support_icon {
-        background: #a0c8f9;
-        color: #141414;
-    }
-
-    .button_text,
-    .button_icon {
-    	color: #141414;
-    }
-
-    .button_icon {
-        border-right: 1px solid #141414;
-        background-color: #a0c8f9;
-    }
-
     
     .button:focus-within {
         border: 2px solid rgb(218, 218, 218);
