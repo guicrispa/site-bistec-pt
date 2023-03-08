@@ -60,8 +60,7 @@
 	background: #d12b2b;
 }
 
-@media (prefers-color-scheme: dark) {
-    
+@media (prefers-color-scheme: dark) {    
     @media (min-width: 769px) {
         .sticky {
             background: #141414;
@@ -127,17 +126,7 @@
         background: none;
     }
 
-    .sticky .button_store:hover, .sticky .button_store:hover > .store_icon {
-        background: #141414;
-        color: #FFEF8F;
-    }
-
     .sticky .button_support:hover{
         background: #141414;
-    }
-
-    
-    @media (prefers-color-scheme: dark) {
-        
     }
 }

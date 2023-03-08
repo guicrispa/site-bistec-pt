@@ -7,14 +7,14 @@ let Caminho = document.getElementsByTagName('script')[0].attributes[0].textConte
 menu.insertAdjacentHTML('afterend',/*html*/`
     <header class="header-bistec" id="#first_section">
         <a href="#first_section" class="skip-to-main-content-link">Saltar para o conteúdo principal</a>
-        <a href="${Caminho}index.html" class="logo-bistec">
+        <a href="${Caminho}index.html" class="logo-bistec" title="Bistec - Portugal">
             <img class="logoImg" src="https://ik.imagekit.io/bistecbr/bistec_logobranco.png" alt="Logo Branca - Bistec" width="300" height="102">
             <img src="https://ik.imagekit.io/bistecbr/bistec_logobranco.png" alt="Logo Branca - Bistec" width="300" height="102">
             <img src="https://ik.imagekit.io/bistecbr/logo-bistec.png" alt="Logo - Bistec" width="300" height="102">
         </a>
         <ul class="normal-menu">
             <li>
-                <a href="${Caminho}index.html" class="normal" >HOME</a>
+                <a href="${Caminho}index.html" class="normal">HOME</a>
             </li>
             <li>
                 <a href="${Caminho}contato.html" class="normal" >CONTACTO</a>
@@ -22,27 +22,27 @@ menu.insertAdjacentHTML('afterend',/*html*/`
             <li>
                 <a href="#" class="normal">PORTEFÓLIO <ion-icon name="chevron-down-outline"></ion-icon></a>
                 <ul class="normal-submenu">
-                    <li><a href="${Caminho}produtos/automacao.html"><ion-icon name="at-sharp"></ion-icon> BISTEC AUTOMAÇÃO</a></li>
-                    <li><a href="${Caminho}produtos/cloud.html"> <ion-icon name="cloud-done-sharp"></ion-icon> BISTEC CLOUD</a></li>
-                    <li><a href="${Caminho}produtos/edu.html"> <ion-icon name="pencil-sharp"></ion-icon> BISTEC EDU</a></li>
-                    <li><a href="${Caminho}produtos/msp.html"> <ion-icon name="lock-closed"></ion-icon> BISTEC MSP</a></li>
-                    <li><a href="${Caminho}produtos/outsourcing.html"> <ion-icon name="settings-sharp"></ion-icon> BISTEC OUTSOURCING</a></li>
-                    <li><a href="${Caminho}produtos/renting.html"> <ion-icon name="reload-circle-sharp"></ion-icon> BISTEC RENTING</a></li>
-                    <li><a href="${Caminho}produtos/rgpd.html"><ion-icon name="shield-checkmark-sharp"></ion-icon> BISTEC RGPD</a></li>
-                    <li><a href="${Caminho}produtos/soft.html"><ion-icon name="disc-sharp"></ion-icon> BISTEC SOFT</a></li>
-                    <li><a href="${Caminho}produtos/wifi.html"> <ion-icon name="wifi-sharp"></ion-icon> BISTEC WIFI</a></li>
+                    <li><a href="${Caminho}produtos/automacao.html" title="Bistec Automação"><ion-icon name="at-sharp"></ion-icon> BISTEC AUTOMAÇÃO</a></li>
+                    <li><a href="${Caminho}produtos/cloud.html" title="Bistec Cloud"> <ion-icon name="cloud-done-sharp"></ion-icon> BISTEC CLOUD</a></li>
+                    <li><a href="${Caminho}produtos/edu.html" title="Bistec Edu"> <ion-icon name="pencil-sharp"></ion-icon> BISTEC EDU</a></li>
+                    <li><a href="${Caminho}produtos/msp.html" title="Bistec MSP"> <ion-icon name="lock-closed"></ion-icon> BISTEC MSP</a></li>
+                    <li><a href="${Caminho}produtos/outsourcing.html" title="Bistec Outsourcing"> <ion-icon name="settings-sharp"></ion-icon> BISTEC OUTSOURCING</a></li>
+                    <li><a href="${Caminho}produtos/renting.html" title="Bistec Renting"> <ion-icon name="reload-circle-sharp"></ion-icon> BISTEC RENTING</a></li>
+                    <li><a href="${Caminho}produtos/rgpd.html" title="Bistec RGPD"><ion-icon name="shield-checkmark-sharp"></ion-icon> BISTEC RGPD</a></li>
+                    <li><a href="${Caminho}produtos/soft.html" title="Bistec Soft"><ion-icon name="disc-sharp"></ion-icon> BISTEC SOFT</a></li>
+                    <li><a href="${Caminho}produtos/wifi.html" title="Bistec Wifi"> <ion-icon name="wifi-sharp"></ion-icon> BISTEC WIFI</a></li>
                 </ul>
             </li>
             <li>
                 <a href="#">
-                    <button class="button button_store">
+                    <button class="button button_store" title="Loja - Em breve...">
                         <span class="button_icon"><ion-icon name="cart-outline"></ion-icon></span>
                         <span class="button_text">LOJA</span>
                     </button>
                 </a>
             </li>
             <li>
-                <a href="${Caminho}suporte.html">
+                <a href="${Caminho}suporte.html" title="Suporte Técnico">
                     <div class="button_support">
                         <span class="button_icon support_icon"><ion-icon name="headset-outline"></ion-icon></span>
                         <span class="button_text">SUPORTE</span>
