@@ -262,7 +262,7 @@
         opacity: 0.8;
     }
 
-    @media (max-width: 768px) {     
+    @media (max-width: 951px) {     
         header .logo-bistec img:nth-child(2){
             display: none;
         }
@@ -312,9 +312,12 @@
             border-right: none;
         }
 
+        .support_icon {
+            background: none;
+        }
         
         .button_support:hover {
-            background: #0c407c;
+            background: #0b0b0b;
         }
     
         .button_support .button_text {

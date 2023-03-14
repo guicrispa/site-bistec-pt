@@ -1,6 +1,6 @@
 
 /* tablet */
-@media (min-width: 621px) and (max-width:950px){
+@media (min-width: 621px) and (max-width:1023px){
     .logo-bistec img {
         width: 16vw;
     }

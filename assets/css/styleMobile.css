@@ -1,5 +1,5 @@
 
-@media (max-width: 768px) {
+@media (max-width: 951px){
     .header-bistec {
         width: 100%;
         display: block;
@@ -60,6 +60,14 @@
         font-size: 15px;
         color: #141414;
         margin-right: 5px;
+    }
+
+    .support_icon {
+        background: none;
+    }
+    
+    .button_support:hover {
+        background: #0b0b0b;
     }
 
     /* 
@@ -136,6 +144,9 @@
       background: #141414;
     }
 
+}
+
+@media (max-width: 768px) {
     
     /* banner */
 
