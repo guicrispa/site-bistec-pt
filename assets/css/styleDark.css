@@ -264,11 +264,11 @@
 
     @media (max-width: 951px) {     
         header .logo-bistec img:nth-child(2){
-            display: none;
+            display: inherit;
         }
 
         header .logo-bistec img:nth-child(1){
-            display: inherit;
+            display: none;
         }
 
         header .logo-bistec img:nth-child(3){
@@ -277,6 +277,7 @@
 
         .header-bistec {
             background-color: #141414;
+            border-bottom: 1px solid rgb(255, 239, 143);
         }
 
         .menu-cell {
