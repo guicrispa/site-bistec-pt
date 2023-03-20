@@ -95,6 +95,7 @@ header .normal-menu li a {
     color: #141414;
     background: #F3FAFA;
     text-decoration: none;
+    transition: 0.8s;
     font-size: 12px;
     font-weight: 700;
     box-shadow: 0.2px 0.2px 0.2px 0.2px rgba(0, 0, 0, 0.473);
@@ -229,12 +230,14 @@ a {
     color: #141414;
 }
 
-.button_store:hover {
+.button_store:hover, .button_support:hover {
     background: #e7f0f0;
+    transition: 0.2s;
 }
 
-.button_store:active {
-    background: #dce9e9;
+.button_store:active, .button_support:active {
+    background: #c6d4d4;
+    transition: 0.5s;
 }
 
 .support_icon {
