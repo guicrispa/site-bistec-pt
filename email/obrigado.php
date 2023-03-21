@@ -58,6 +58,18 @@
         <script src="//code.jivosite.com/widget/3bZuUHkWaM" async></script>
     </body>
 </html>
+<script>
+        function headerDone() {
+            var header = document.querySelector("header");
+            if(window.matchMedia("(min-width: 769px").matches){
+            	header.classList.toggle("sticky");
+            	let imageLogo = document.querySelector('.logoImg')
+            	imageLogo.removeAttribute('src');
+            	imageLogo.setAttribute('src',`https://ik.imagekit.io/bistecbr/logo-bistec.png`);
+		    }
+        }
+        headerDone();
+    </script>
 <?php
     // Manter comentado para testes de layout, tirar comentário em produção, para cancelar a sessão ao recarregar a página
     // session_destroy();
