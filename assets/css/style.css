@@ -1,214 +1,276 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @font-face {
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 600;
     src: local('Arial');
     font-display: swap;
-  }
-*{
+}
+
+* {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-	font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
+
+/* SKIP TO MAIN CONTENT LINK*/
+
+.skip-to-main-content-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    opacity: 0;
+  }
+  .skip-to-main-content-link:focus {
+    left: 0;
+    transform: translateX(0);
+    transform: translateY(150%);
+    opacity: 0.5;
+  }
+
 /*--- HEADER ---*/
 header {
-    background-color: #F3FAFA;
+    background: transparent;
     width: 100%;
     position: relative;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #b3b3b3;
     top: 0;
 }
+
 .header-bistec {
     width: 100%;
     display: flex;
     position: fixed;
-    padding: 2px 100px;
+    padding: 5px 100px;
     display: flex;
     z-index: 1;
 }
+
 .logo-bistec img {
     width: 16vw;
     height: auto;
     aspect-ratio: attr(width) / attr(height);
 }
+
 /* trocando imagens logo - dark mode*/
-header .logo-bistec img:nth-child(2){
+header .logo-bistec img:nth-child(2) {
     display: none;
 }
-header ul {
-	display: inline-flex;
+
+header .logo-bistec img:nth-child(3) {
+    display: none;
 }
+
+header ul {
+    display: inline-flex;
+}
+
 header ul li {
     list-style: none;
     display: block;
 }
+
 header .normal-menu {
     margin-left: 60px;
 }
-.normal-menu li{
+
+.normal-menu li {
     position: relative;
 }
+
 header .normal-menu li a {
     display: block;
     margin: 0 8px;
 }
+
 .normal-submenu li a {
     width: 200px;
     padding: 12px;
     color: #141414;
     background: #F3FAFA;
     text-decoration: none;
+    transition: 0.8s;
     font-size: 12px;
     font-weight: 700;
     box-shadow: 0.2px 0.2px 0.2px 0.2px rgba(0, 0, 0, 0.473);
 }
+
 .normal-submenu li a:hover,
 .normal-submenu li a:focus-within {
     background: #0c407c;
     color: white;
     transition: 0.2s;
 }
+
 .normal-submenu ion-icon {
     font-size: 15px;
     color: #141414;
     margin-right: 5px;
 }
+
 header ul ul {
     position: absolute;
-    top: 34px;
+    top: 31.5px;
     display: none;
 }
-.normal-submenu li a:hover > ion-icon,
-.normal-submenu li a:focus-within > ion-icon {
+
+.normal-submenu li a:hover>ion-icon,
+.normal-submenu li a:focus-within>ion-icon {
     color: #fff;
 }
-header ul :hover > ul{
+
+header ul :hover>ul {
     display: block;
 }
+
+.button_icon {
+    border-right: 1px solid #141414;
+}
+
 .button {
-	display: inline-flex;
+    display: inline-flex;
     height: 30px;
-	padding: 0;
+    padding: 0;
     margin: 0;
-	background: #BB0A0A;
-	border-radius: 6px;
-	overflow: hidden;
+    border-radius: 6px;
+    overflow: hidden;
     border: none;
     outline: none;
-	font-family: 'Inter', sans-serif;
-	font-size: 15px;
-	font-weight: 900;
-	cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
 }
-.button:hover {
+
+/* .button:hover {
 	background: #c91818;
 }
 .button:active{
 	background: #d12b2b;
-}
+} */
+
 .button:focus-within {
     border: 2px solid #141414;
 }
+
 .button_text,
 .button_icon {
-	display: inline-flex;
-	align-items: center;
-	padding: 0 10px;
-	color: #fff;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 10px;
+    color: #141414;
     height: 100%;
 }
+
 a {
     text-decoration: none;
 }
+
 .normal {
-	display: inline-flex;
+    display: inline-flex;
     height: 30px;
     margin: 0 10px;
-	color: #141414;
+    color: #fff;
     cursor: pointer;
     font-size: 16px;
     font-family: 'Inter', sans-serif;
-	font-weight: 700;line-height: 2;
+    font-weight: 700;
+    line-height: 2;
     position: relative;
-    
+
 }
 
 .normal ion-icon {
-    color: black;
+    color: #a0c8f9;
 }
 
-:focus-within > .normal-submenu {
+:focus-within>.normal-submenu {
     display: block;
 }
 
-.normal::after{
+.normal::after {
     content: '';
     bottom: 0;
     position: absolute;
     left: 50%;
     width: 0%;
     height: 4px;
-    background-color: #141414;
+    background-color: #a0c8f9;
     transition: 0.2s;
-} 
-.normal:hover::after{
+}
+
+.normal:hover::after {
     left: 0;
     width: 100%;
-} 
-.button_icon {
+}
+
+/* .button_icon {
 	background: #056006;
-}
+} */
 .button_support {
-	display: inline-flex;
+    display: inline-flex;
     height: 30px;
-	padding: 0;
+    padding: 0;
     margin: 0;
-	border: none;
-	outline: none;
-	border-radius: 6px;
-	overflow: hidden;
-	font-family: 'Inter', sans-serif;
-	font-size: 15px;
-	font-weight: 800;
-	cursor: pointer;
-    background: #0c407c;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    background: #f3fafa;
+    color: #141414;
 }
-.button_support:hover {
-    background: #10498a;
+
+.button_store:hover, .button_support:hover {
+    background: #e7f0f0;
+    transition: 0.2s;
 }
-.button_support:active{
-    background: #18559b;
+
+.button_store:active, .button_support:active {
+    background: #c6d4d4;
+    transition: 0.5s;
 }
+
 .support_icon {
-    background: #07305f;
+    background: #f3fafa;
 }
+
 .menu-cell {
     display: none;
 }
+
 /*----BANNER---------------------------------------------------------*/
-.banner-bistec{
+.banner-bistec {
     width: auto;
     margin: auto;
     position: relative;
     border-bottom: 2px solid #141414;
 }
-.banner-bistec img{
+
+.banner-bistec img {
     display: block;
     width: 100%;
     height: auto;
     aspect-ratio: attr(width) / attr(height);
 }
+
 /*PROVISÓRIO PARA CORREÇÃO DE DUPLICIDADE DE IMAGENS NAS OUTRAS PÁGINAS*/
 .banner-bistec-mobile {
     width: auto;
     margin: auto;
     display: none;
 }
-.banner-bistec-texto{
+
+.banner-bistec-texto {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -218,25 +280,30 @@ a {
     font-size: 4vw;
     font-weight: 300;
 }
-.banner-bistec-texto h1{
+
+.banner-bistec-texto h1 {
     font-size: 5.2vw;
 }
-.banner-bistec-texto h2{
+
+.banner-bistec-texto h2 {
     font-size: 3.7vw;
 }
+
 /*---PRODUTOS------------------------------------*/
-.bistec-produtos{
+.bistec-produtos {
     padding: 5vw 2.5vw 2.5vw 2.5vw;
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 90%;
 }
-.bistec-produtos img{
+
+.bistec-produtos img {
     aspect-ratio: attr(width) / attr(height);
     width: auto;
     height: auto;
 }
+
 #bistec-automacao img:nth-child(2),
 #bistec-cloud img:nth-child(2),
 #bistec-edu img:nth-child(2),
@@ -245,35 +312,41 @@ a {
 #bistec-renting img:nth-child(2),
 #bistec-gpdr img:nth-child(2),
 #bistec-soft img:nth-child(2),
-#bistec-wifi img:nth-child(2){
+#bistec-wifi img:nth-child(2) {
     display: none;
 }
-.texto-produtos{
+
+.texto-produtos {
     margin-left: 2.5vw;
     font-weight: 300;
     padding: 0;
     margin: 0;
     font-size: 20px;
 }
-.bistec-produtos img{
+
+.bistec-produtos img {
     width: 35vw;
     margin: 1vw;
     margin-right: 2.5vw;
 }
-.texto-produtos h2{
+
+.texto-produtos h2 {
     font-size: 2.5vw;
     font-weight: 500;
 }
-.texto-produtos h3{
+
+.texto-produtos h3 {
     font-size: 2vw;
     font-weight: 400;
 }
-.texto-produtos p{
+
+.texto-produtos p {
     font-size: 1.5vw;
     font-weight: 400;
 }
-.bt-dialog{
-	background-color: #141414;
+
+.bt-dialog {
+    background-color: #141414;
     margin: 1vw 0vw 0vw 0vw;
     align-items: center;
     padding: 0 10px;
@@ -282,6 +355,7 @@ a {
     border-radius: 6px;
     font-weight: 800;
     position: relative;
+    min-width: 200px;
     cursor: pointer;
     transition: color 0.4s linear;
 }
@@ -291,7 +365,7 @@ a {
     background: none;
 }
 
-.bt-dialog::before{
+.bt-dialog::before {
     content: "";
     position: absolute;
     left: 0;
@@ -304,38 +378,46 @@ a {
     z-index: -1;
     transition: transform 0.8s;
     transform-origin: 0 0;
-    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
 }
-.bt-dialog:hover::before{
+
+.bt-dialog:hover::before {
     transform: scaleY(1);
     border-radius: 6px;
 }
-.bt-dialog:active{
-	background-color: #2e2d2d;
+
+.bt-dialog:active {
+    background-color: #2e2d2d;
 }
+
 .bt-dialog:focus-within {
     background-color: #13549E;
     transition: 1s;
 }
+
 .bt-dialog .button_text,
 .bt-dialog ion-icon {
-	color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     font-size: 1.6vw;
 }
+
 dialog span {
     background-color: #10498a;
     color: #F3FAFA;
     width: 100%;
     padding: 10px;
 }
+
 /*--RODAPÉ---------------------------------------------*/
-footer{
+footer {
     background-color: #262525;
-    padding-top: 25px; padding-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     border-bottom: 1px solid #A0C8F9;
     border-top: 5px solid #A0C8F9;
 }
-footer ion-icon{
+
+footer ion-icon {
     color: #D0CEC6;
     font-size: 5vh;
     border: #D0CEC6 solid 2px;
@@ -343,19 +425,22 @@ footer ion-icon{
     padding: 0.3em;
     margin: 0.3em auto;
 }
-footer .redes-sociais a:focus-within > ion-icon {
+
+footer .redes-sociais a:focus-within>ion-icon {
     cursor: pointer;
     background-color: #D0CEC6;
     color: #262525;
     transition: 0.7s;
 }
+
 footer ion-icon:hover {
     cursor: pointer;
     background-color: #D0CEC6;
     color: #262525;
     transition: 0.7s;
 }
-.redes-sociais{
+
+.redes-sociais {
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -366,22 +451,26 @@ footer ion-icon:hover {
     margin: 0 auto;
     max-width: 70%;
 }
+
 .ionspecial {
     color: #A0C8F9;
     border: #A0C8F9 solid 2px;
     border-bottom: 3px solid #A0C8F9;
 }
-footer .redes-sociais a:focus-within > .ionspecial,
-footer .redes-sociais button:focus-within > .ionspecial {
+
+footer .redes-sociais a:focus-within>.ionspecial,
+footer .redes-sociais button:focus-within>.ionspecial {
     background-color: #A0C8F9;
     color: #262525;
     transition: 0.5s;
 }
+
 .ionspecial:hover {
     background-color: #A0C8F9;
     color: #262525;
     transition: 0.5s;
 }
+
 .contacts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -390,18 +479,21 @@ footer .redes-sociais button:focus-within > .ionspecial {
     font-size: 20px;
     font-weight: 100;
     max-width: 80%;
-    margin-top: 25px; 
+    margin-top: 25px;
 }
+
 footer .item1,
 footer .item2 {
     margin-top: 25px;
     padding: 0 5px;
 }
+
 footer .item3,
 footer .item4 {
     margin-top: 25px;
     font-size: 20px;
 }
+
 footer .contact p,
 footer .contact a {
     text-decoration: none;
@@ -411,16 +503,19 @@ footer .contact a {
     margin-top: 12px;
     margin-bottom: 12px;
 }
-footer .contact img{
+
+footer .contact img {
     aspect-ratio: attr(width) / attr(height);
     width: auto;
     height: auto;
 }
+
 footer .item1 p,
 footer .item2 p,
 footer .item3 p {
     text-decoration: underline;
 }
+
 /* footer - copyright*/
 .footer-copyright {
     background-color: #141414;
@@ -442,6 +537,6 @@ footer button {
     border: none;
 }
 
-footer button:focus-within{
+footer button:focus-within {
     border: 1px solid white;
 }
