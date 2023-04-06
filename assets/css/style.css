@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @font-face {
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -87,6 +88,7 @@ header .normal-menu li a {
     display: block;
     margin: 0 8px;
 }
+
 .normal-submenu li a {
     width: 200px;
     padding: 12px;
@@ -98,12 +100,14 @@ header .normal-menu li a {
     font-weight: 700;
     box-shadow: 0.2px 0.2px 0.2px 0.2px rgba(0, 0, 0, 0.473);
 }
+
 .normal-submenu li a:hover,
 .normal-submenu li a:focus-within {
     background: #0c407c;
     color: white;
     transition: 0.2s;
 }
+
 .normal-submenu ion-icon {
     font-size: 15px;
     color: #141414;
@@ -258,6 +262,7 @@ a {
     height: auto;
     aspect-ratio: attr(width) / attr(height);
 }
+
 /*PROVISÓRIO PARA CORREÇÃO DE DUPLICIDADE DE IMAGENS NAS OUTRAS PÁGINAS*/
 .banner-bistec-mobile {
     width: auto;
@@ -298,6 +303,7 @@ a {
     width: auto;
     height: auto;
 }
+
 #bistec-automacao img:nth-child(2),
 #bistec-cloud img:nth-child(2),
 #bistec-edu img:nth-child(2),
@@ -426,6 +432,7 @@ footer .redes-sociais a:focus-within>ion-icon {
     color: #262525;
     transition: 0.7s;
 }
+
 footer ion-icon:hover {
     cursor: pointer;
     background-color: #D0CEC6;
@@ -444,6 +451,7 @@ footer ion-icon:hover {
     margin: 0 auto;
     max-width: 70%;
 }
+
 .ionspecial {
     color: #A0C8F9;
     border: #A0C8F9 solid 2px;
@@ -456,11 +464,13 @@ footer .redes-sociais button:focus-within>.ionspecial {
     color: #262525;
     transition: 0.5s;
 }
+
 .ionspecial:hover {
     background-color: #A0C8F9;
     color: #262525;
     transition: 0.5s;
 }
+
 .contacts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -477,11 +487,13 @@ footer .item2 {
     margin-top: 25px;
     padding: 0 5px;
 }
+
 footer .item3,
 footer .item4 {
     margin-top: 25px;
     font-size: 20px;
 }
+
 footer .contact p,
 footer .contact a {
     text-decoration: none;
@@ -497,11 +509,13 @@ footer .contact img {
     width: auto;
     height: auto;
 }
+
 footer .item1 p,
 footer .item2 p,
 footer .item3 p {
     text-decoration: underline;
 }
+
 /* footer - copyright*/
 .footer-copyright {
     background-color: #141414;
