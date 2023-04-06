@@ -1,0 +1,47 @@
+/*main*/
+
+.bistec-error404 {
+    max-width: 75%;
+    color: #141414;
+    margin: auto;
+    margin-top: 62px;
+    text-align: center;
+    padding: 20vh 0;
+}
+
+.bistec-error404 h1 {
+    font-size: 4vw;
+}
+
+.bistec-error404 p {
+    font-size: 2vw;
+    padding: 1.75vh 0;
+}
+
+.menu_principal_link {
+    font-size: 2vw;
+    color: #141414;
+    text-decoration: underline;
+}
+
+@media (max-width: 620px) {
+
+    .bistec-error404 h1 {
+        font-size: 7vw;
+    }
+
+    .bistec-error404 p {
+        font-size: 3vw;
+        padding: 1.75vh 0;
+    }
+
+    footer ion-icon {
+        margin: 0.3em auto;
+    }
+
+    .menu_principal_link {
+        font-size: 3vw;
+        color: #141414;
+        text-decoration: underline;
+    }
+}

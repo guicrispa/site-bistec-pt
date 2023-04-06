@@ -1,0 +1,107 @@
+.bistec-suporte {
+    max-width: 70%;
+    color: #141414;
+    margin: auto;
+    text-align: center;
+    padding: 5vh 0;
+}
+
+.bistec-suporte h1 {
+    font-size: 4vw;
+    padding-top: 8vh;
+    background-color: transparent;
+}
+
+.bistec-suporte p {
+    font-size: 2vw;
+    padding: 2.75vh 0;
+    background-color: transparent;
+}
+
+.bistec-suporte .button_text {
+	display: inline-flex;
+	align-items: center;
+	padding: 0 10px;
+    color: #fff;
+    height: 100%;
+}
+
+.bt-dialog-anydesk {    
+	background-color: #A62923;
+    align-items: center;
+    padding: 1.2vw;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+	border: none;
+	outline: none;
+    font-weight: 700;
+    max-width: 40%;
+}
+
+.bistec-suporte p:last-child {
+    margin-top: 4vh;
+}
+
+.bt-dialog-anydesk:hover,
+.bt-dialog-anydesk:focus-within {
+	background-color: #9b1d16;
+}
+
+.bt-dialog-teamviewer {    
+	background-color: #0859A1;
+    align-items: center;
+    padding: 1.2vw;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+	border: none;
+	outline: none;
+    font-weight: 700;
+    max-width: 40%;
+}
+
+.bt-dialog-teamviewer:hover,
+.bt-dialog-teamviewer:focus-within {
+	background-color: #095191;
+}
+
+.suporte-wpp {
+    color: #006700;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.suporte-telegram {
+    color: #08457a;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+@media (max-width: 620px) {
+
+    .bistec-suporte h1 {
+        font-size: 7vw;
+        padding-top: 10vh;
+    }
+
+    .bistec-suporte p {
+        font-size: 4.8vw;
+        padding: 1.75vh 0;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+
+    footer ion-icon {
+        margin: 0.3em auto;
+    }
+
+    .bt-dialog-teamviewer {
+        max-width: 60%;
+    }
+    .bt-dialog-anydesk {
+        max-width: 60%;
+    }
+}

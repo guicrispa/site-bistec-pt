@@ -1,0 +1,132 @@
+
+.sticky {
+    background: #F3FAFA;
+    border-bottom: 1px solid #b3b3b3;
+    transition: 0.2s;
+}
+
+.sticky .button {
+    background: #BB0A0A;
+}
+.sticky .button:hover {
+	background: #c91818;
+}
+.sticky .button:active{
+	background: #d12b2b;
+}
+
+.sticky .normal,
+.sticky .normal ion-icon {
+    color: #030303;
+}
+
+.sticky .normal::after {
+    background-color: #030303;
+}
+
+.sticky .button_icon {
+    background-color: #056006;
+}
+
+.sticky .button_support {
+    background: #0c407c;
+}
+
+.sticky .button_support:hover {
+    background: #10498a;
+}
+
+.sticky .button_support:active{
+    background: #18559b ;
+}
+.sticky .support_icon {
+    background: #07305f;
+}
+
+.sticky .button_icon {
+    border: none;
+}
+
+.sticky .button_text,
+.sticky .button_icon {
+    color: #fff;
+}
+
+.sticky .button_store:hover{
+	background: #c91818;
+}
+
+.sticky .button_store:active{
+	background: #d12b2b;
+}
+
+@media (prefers-color-scheme: dark) {    
+    @media (min-width: 769px) {
+        .sticky {
+            background: #141414;
+            border-bottom: 1px solid #FFEF8F;
+            transition: 0.5s;
+        }
+    
+        .sticky .button, 
+        .sticky .button_support {
+            background: #a0c8f9;
+        }
+    
+        .sticky .button:hover,
+        .sticky .button_support:hover {
+            background: #add1fd;
+        }
+        
+        .sticky .button:active,
+        .sticky .button_support:active{
+            background: #c5dfff;
+        }
+        
+        .sticky .support_icon {
+            background: #a0c8f9;
+            color: #141414;
+        }
+    
+        .sticky .button_text,
+        .sticky .button_icon {
+            color: #141414;
+        }
+    
+        .sticky .button_icon {
+            border-right: 1px solid #141414;
+            background-color: #a0c8f9;
+        }
+    
+        .sticky .normal, 
+        .sticky .normal ion-icon {
+            color: #fff;
+        }
+        
+        .sticky .normal::after {
+            background-color: #a0c8f9;    
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .sticky .normal {
+        display: block;
+    }
+    
+    .sticky .button_support,
+    .sticky .support_icon {
+        background: #0c407c;
+        color: #fff;
+    }
+
+    .sticky .store_icon, 
+    .sticky .support_icon {
+        padding-left: 22px;
+        background: none;
+    }
+
+    .sticky .button_support:hover{
+        background: #141414;
+    }
+}

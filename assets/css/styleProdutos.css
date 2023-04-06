@@ -1,0 +1,114 @@
+/* corpo - página de produtos */
+
+.produto-texto {
+    max-width: 75%;
+    padding: 1%;
+}
+
+.produto-texto p {
+    padding: 2% 0;
+    font-size: 1.2em;
+}
+
+.produto-texto .link_automaçao {
+    text-decoration: underline;
+    font-weight: 800;
+    color: #5906A7;
+    background-color: transparent;
+}
+
+.produto-texto .link_msp {
+    text-decoration: underline;
+    font-weight: 800;
+    color: #0e3d72;
+    background-color: transparent;
+}
+
+.produto-texto p.link_renting {
+    text-decoration: underline;
+    font-weight: 800;
+    text-align: center;
+    background-color: transparent;
+}
+
+li {
+    font-size: 1em;
+    list-style: none;
+    font-weight: 500;
+}
+
+.produto-texto h1 {
+    font-size: 3em;
+    text-align: center;
+    padding: 3% 0;
+}
+
+.bistec-edu-plataformas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 25px; 
+    align-items: center;
+}
+
+.bistec-edu-plataformas a img:nth-child(1),
+.bistec-edu-plataformas a img:nth-child(3) {
+    width: 16em;
+    padding: 0 1em;
+}
+
+.bistec-edu-plataformas a:nth-child(2),
+.bistec-edu-plataformas a:nth-child(4) {
+    display: none;
+}
+
+.nice_button {
+    border: 3px solid #141414;
+    padding: 1em;
+    display: flex;
+    width: 40%;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20em;
+}
+
+p .nice_button {
+    background-color: white;
+    text-decoration: none;
+    color: #141414;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.nice_button:hover {
+    background-color: #141414;
+    color: white;
+    transition: 0.8s;
+    border: 3px solid #fff;
+}
+
+@media (max-width: 620px) {
+    .produto-texto {
+        max-width: 82%;
+    }
+    
+    .produto-texto h1 {
+        font-size: 2em;
+    }
+
+    .produto-texto h2 {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    
+    .produto-texto p {
+        padding: 2% 0;
+        font-size: 1em;
+    }
+
+    .bistec-edu-plataformas {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .nice_button {
+        width: 60%;
+    }
+}

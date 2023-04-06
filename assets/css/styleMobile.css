@@ -1,0 +1,254 @@
+
+@media (max-width: 951px){
+    .header-bistec {
+        width: 100%;
+        display: block;
+        padding: 10px 0;
+        background: #f3fafa;
+    }
+
+    .logoImg {
+        display: none;
+    }
+
+    
+    header .logo-bistec img:nth-child(3) {
+        display: inherit;
+    }
+
+    header .normal-menu li a{
+        font-size: 16px;
+        margin: 0;
+        letter-spacing: 0.5px;
+        text-align: left;
+        color: #141414;
+    }
+
+    .normal-menu{
+        text-align: center;
+        background-color: #F3FAFA;
+        display: none;
+        position: absolute;
+        width: 100%;
+        right: 0;
+        font-size: 12px;
+        border-bottom: 1px solid #f3fafa;
+    }
+    
+    .logo-bistec img {
+        width: 32vw;
+        margin-left: 5px;
+    }
+
+    .normal:hover{
+        border: none;
+        color: #0c407c;
+        transition: 0.2s;
+    } 
+
+    .normal ion-icon:hover {
+        color: #0c407c;
+    }
+
+    header .normal-submenu li a:hover {
+        background: #141414;
+        color: white;
+        transition: 0.2s;
+    }
+
+    .normal-submenu ion-icon:hover {
+        font-size: 15px;
+        color: #141414;
+        margin-right: 5px;
+    }
+
+    .support_icon {
+        background: none;
+    }
+    
+    .button_support:hover {
+        background: #0b0b0b;
+    }
+
+    /* 
+     */
+
+    .logo-bistec img {
+        margin: 0; 
+        width: 32vw;
+        margin-left: 5px;
+    }
+    
+
+    .menu-cell {
+        display: block;
+        float: right;
+        margin-right: 20px;
+    }
+    .menu-cell li ion-icon {
+        color: #141414;
+        display: block;
+        padding: 0;
+        margin-top: 10px;
+        font-size: 35px;
+    }
+    .normal {
+        padding-left: 20px;
+    }
+
+    .normal-submenu{
+        /* width: 100%; */
+        display: block;
+        border: none;
+        width: 100%;
+        top: 30px;
+        /* margin: 0;
+        padding: 0; */
+    }
+
+    header .normal-submenu li a {
+        width: 100%;
+    padding: 10px 20px;
+    font-size: 12px;
+    box-shadow: none;
+    text-align: left;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .support_icon {
+        background: none;
+        border: none;
+        color: white;
+        padding: 5px 0;
+        padding-left: 20px;
+    }
+
+    .button_support {
+        width: 100%;
+        margin-top: 340px;
+        display: block;
+        height: 45px;
+        font-size: 16px;
+        border-radius: 0;
+        background: #0c407c;
+    }
+
+    .button_text {
+        color: white;
+    }
+
+    .button_support:hover {
+      background: #141414;
+    }
+
+}
+
+@media (max-width: 768px) {
+    
+    /* banner */
+
+   /*PROVISÓRIO PARA CORREÇÃO DE DUPLICIDADE DE IMAGENS NAS OUTRAS PÁGINAS*/
+    .banner-bistec {
+        display: none;
+    }
+    /*para ignorar a index, provisório tbm*/
+    #imagemUnica{
+        display: block;
+    }
+    .banner-bistec-mobile {
+        display: block;
+        width: auto;
+        margin: auto;
+        position: relative;
+    }
+
+    .banner-bistec-mobile img{
+        width: 100%;
+        height: 85vh;
+        margin-top: 56px;
+    }
+
+    .banner-bistec-texto {    
+        transform: translate(-30%, -50%);
+        left: 42%;
+    }  
+    .banner-bistec-texto h1 {
+        font-size: 6vw;
+    }
+    .banner-bistec-texto h2 {
+        font-size: 4vw;
+    }
+
+    /* produtos */
+
+    .bistec-produtos {
+        flex-direction: column;
+        margin-top: 5em;
+    }
+
+    .bistec-produtos img {
+      width: 85%;
+    }
+
+    .texto-produtos {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      max-width: 90%;
+      font-size: 0.8em;
+    }
+    .texto-produtos h2{
+      text-align: center;
+      font-size: 5.2vw;
+      font-weight: 500;
+    }
+    .texto-produtos h3{
+        text-align: justify;
+        font-size: 4.2vw;
+        font-weight: 400;
+    }
+    
+    .bt-dialog {
+        padding: 10px 10px;
+        margin: auto;
+        margin-top: 2vh;
+        font-size: 1.4em;
+        height: auto;
+        text-align: center;
+        min-width: 0;
+    }
+    
+    .bt-dialog .button_text {
+        font-size: 3vh;
+    }
+
+    /* rodapé */
+
+    footer {
+        margin-top: 1em;
+    }
+
+    .redes-sociais {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer ion-icon {
+        padding: 12px;
+        font-size: 4.5vh;
+    }
+
+    .contacts {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 26px;
+        max-width: 65%;
+    }
+
+    .footer-copyright p {
+        max-width: 73%;
+    }
+}

@@ -1,0 +1,42 @@
+.email-enviado{
+    max-width: 55%;
+    color: #141414;
+    margin: auto;
+    text-align: center;
+    padding: 8vh 0;
+}
+
+.email-enviado h1 {
+    font-size: 4vw;
+    padding-top: 8vh;
+}
+
+.email-enviado p {
+    font-size: 2vw;
+    padding: 1.75vh 0;
+}
+
+.email-enviado ion-icon {
+    font-size: 25vh;
+    color: rgb(46, 206, 81);
+    opacity: 0.3;
+}
+.email-enviado #ionicEmailFalhou{
+    color: rgb(244, 18, 18);
+}
+
+@media (max-width: 620px){
+    .email-enviado{
+        max-width: 75%;
+        padding-top: 5vh;
+        padding-bottom: 0;
+    }
+    
+    .email-enviado h1 {
+        font-size: 7vw;
+    }
+    
+    .email-enviado p {
+        font-size: 4vw;
+    }
+}

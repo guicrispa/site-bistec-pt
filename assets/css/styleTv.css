@@ -1,0 +1,30 @@
+
+/* tv */
+
+@media (min-width: 2400px) {
+
+    .logo-bistec img{
+        width: 8vw;
+    }
+
+    .bt-dialog {
+        padding: 1em;
+    }
+    .redes-sociais {
+        max-width: 70%;
+    }
+
+    footer ion-icon {
+        padding: 8px;
+        font-size: 45px;
+    }
+
+    .texto-produtos {
+        font-size: 30px;
+    }
+
+    .contacts {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 55%;
+    }
+}

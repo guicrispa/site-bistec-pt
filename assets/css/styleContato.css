@@ -1,0 +1,88 @@
+
+body {
+    background: linear-gradient(135deg, #10588c, #07305f);
+   /* background: linear-gradient(135deg, #71b7ed, #9b59b6); */
+}
+
+article {
+    margin-top: 97px;
+    max-width: 60%;
+}
+
+.formulario {
+    border-radius: 1em;
+    background-color:#F3FAFA;
+    color: #000;
+    margin: 2.5em 0;
+    border: 4px solid #A0C8F9;
+}
+
+.campos {
+    padding: 1% 2%;
+}
+
+.campos label {
+    font-size: 1em;
+    font-weight: 500;
+    margin: 9em 0;
+}
+input, textarea {
+    padding: 2%;
+    margin: 1.5% 0;
+    width: 100%;
+    background: #F3FAFA;
+    color: #161616;
+    border: 1px solid #161616;
+    border-radius: 10px;
+}
+
+.formulario h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2em;
+    padding: 0.5em 0;
+    text-align: center;
+}
+
+input[type=submit] {
+    background: linear-gradient(135deg, #10588c, #07305f);
+    /* background: linear-gradient(135deg, #65ADE2, #BA83C0); */
+    border: transparent;
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 900;
+}
+
+input[type=submit]:hover {
+/*    background: linear-gradient(135deg, #BA83C0, #65ADE2);*/
+    cursor: pointer;
+    background: linear-gradient(135deg, #07305f, #10588c);
+    color: #fff;
+}
+
+
+input[type=submit]:focus-within {
+    cursor: pointer;
+    background-color: #A0C8F9;
+    color: #161616;
+}
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background: #1c1c1c;
+    }
+}
+
+
+@media (max-width: 620px) {
+    .formulario h1 {
+        font-size: 1.5em;
+    }
+    .formulario form h3 {
+        font-size: 1.4em;
+    }
+    article {
+        margin-top: 117px;
+        max-width: 95%;
+    }
+}
