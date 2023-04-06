@@ -6,7 +6,7 @@
         $emailRemetente=$_POST['emailRemetente'];
         $conteudoEmail=$_POST['conteudoEmail'];
 
-        $emailDestinatario="guilhermebistec@gmail.com";
+        $emailDestinatario="contato@bistec.com.pt";
         $headersR="From: ".$emailRemetente;
         $headersD="From: ".$emailDestinatario;
 
@@ -30,11 +30,11 @@
             && mail($emailRemetente, "Email entregue: ".$assuntoEmail, $txtRemetente, $headersD)
         ){
             $_SESSION['falha']=false;
-            header('location: ./obrigado.php');
+            header('location: ./obrigado');
         }
         else{
             $_SESSION['falha']=true;
-            header('location: ./falha.php');
+            header('location: ./falha');
         } 
     }else{
         session_destroy();

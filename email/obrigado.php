@@ -32,7 +32,7 @@
         <link rel="stylesheet" href="../assets/css/styleTv.css">
         <link rel="stylesheet" href="../assets/css/styleEmail.css">
         <link rel="stylesheet" href="../assets/css/styleDark.css">
-        <link rel="icon" href="../assets/images/logo-bistec-favicon.png">
+        <link rel="icon" href="https://ik.imagekit.io/bistecbr/simbolo.png">
     </head>
     <body>
         <!-- cabeçalho -->
