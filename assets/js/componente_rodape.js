@@ -28,10 +28,7 @@ rodape.insertAdjacentHTML('afterend',/*html*/`
             </a>  
             <p>
                 <a href="tel:+55(13)3235-7735">+55 (13) 3235-7735</a>  
-            </p>
-            <p>
-                <a href="tel:+55(11)3522-8184">+55 (11) 3522-8184</a>
-            </p>                    
+            </p>                  
         </div>
 
         <div class="contact item3">
